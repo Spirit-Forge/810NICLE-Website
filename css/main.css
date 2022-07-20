@@ -36,6 +36,12 @@
  * END FONTS *
  *************/
 
+
+/*************
+ * UNIVERSAL *
+ *************/
+
+
 * {
   scrollbar-width: thin;
   scrollbar-color: rgb(180, 196, 8) rgb(41, 46, 27);
@@ -58,7 +64,6 @@
   border-radius: 20px;
   border: 3px solid rgb(41, 46, 27);
 }
-
 
 
 * {
@@ -200,6 +205,16 @@ main section:nth-of-type(odd) p {
 }
 
 
+/*****************
+ * END UNIVERSAL *
+ *****************/
+
+
+/************
+ * ZOOMABLE *
+ ************/
+
+
 img.zoomable {
     max-width: 40%;
     transition: all .2s ease-in-out;
@@ -217,6 +232,11 @@ img.zoomable:active {
     transform: scale(0.96875);
     filter: brightness(0.9);
 }
+
+
+/****************
+ * END ZOOMABLE *
+ ****************/
 
 
 main section.social {
