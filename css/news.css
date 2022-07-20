@@ -35,8 +35,6 @@
 /*************
  * END FONTS *
  *************/
-
-
 * {
     font-family: 'Gill Sans Std', Helvetica Now, Helvetica, Arial, sans-serif;
 }
@@ -333,7 +331,7 @@ section.posters img.zoomable {
 
 #bs01-logo,
 #mod-logo {
-    position: absolute;
+    position: fixed;
 }
 
 
@@ -364,8 +362,45 @@ footer {
     color: white;
 }
 
+/**********************
+ * NEWS GRID STYLES *
+ **********************/
 
-@media screen and (max-width: 600px) {
+.grid-container {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  grid-template-areas:
+    'twitter news1'
+    'twitter news2'
+    'twitter news3'
+    'twitter news4'
+    'twitter news5';
+  gap: 10px;
+  margin-top:1.5em;
+  margin-bottom:20px;
+  column-gap: 40px;
+  height:auto;
+  min-height: 500px;
+}
+
+.grid-container > div {
+  text-align: left;
+  height:auto;
+}
+
+.twitter {
+grid-area: twitter;
+height: 100%;
+}
+.news1 { grid-area: news1; }
+}
+.news2 { grid-area: news2; }
+.news3 { grid-area: news3; }
+.news4 { grid-area: news4; }
+.news5 { grid-area: news5; }
+.newsold { grid-area: newsold; }
+
+@media screen and (max-width: 843px) {
     main {
         max-width: 95vw;
     }
@@ -377,7 +412,7 @@ footer {
 
 
     main h2 {
-        font-size: 0.9375em;
+        font-size: 0.85em;
     }
 
 
@@ -418,4 +453,18 @@ footer {
     section.posters img.zoomable {
         width: 45%;
     }
+.grid-container {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-areas:
+    'news1'
+    'news2'
+    'news3'
+    'twitter';
+  gap: 10px;
+  min-height:500px;
+}
+.twitter {
+  height:1500px !important;
+}
 }
