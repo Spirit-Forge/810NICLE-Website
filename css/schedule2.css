@@ -1,0 +1,354 @@
+table {
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+	max-width: 1024px;
+}
+
+
+table tr {
+	min-height: 48px;
+	height: 48px;
+	max-height: 48px;
+}
+
+
+table tr:nth-child(even) th {
+	color: #ccc;
+	font-size: small;
+	font-weight: normal;
+}
+
+
+table th,
+table td {
+	padding: 0.5rem 1rem;
+}
+
+
+table th {
+	font-weight: normal;
+	border-top: thin dotted #ccc;
+}
+
+
+table td {
+	font-size: 0.8125em;
+	width: 75%;
+	font-weight: bold;
+	line-height: 1.4;
+	border-radius: 0.2rem;
+	background-color: olivedrab;
+	transition: opacity 0.3s ease;
+	padding: 0em 1em;
+}
+
+table td h3,
+table td h3 em,
+table td p {
+	margin: 0em;
+	text-shadow: 0px 0px 4px #080808, 0px 0px 4px #080808;
+}
+
+
+/****************
+ * EVENT COLORS *
+ ****************/
+
+
+.gathered {
+	background-color: hotpink;
+	background-image: url("../img/schedule/gf.webp");
+	background-position: center right;
+	background-size: cover;
+}
+
+
+.gathered h3,
+.gathered p {
+	max-width: 60%;
+}
+
+.break {
+	background-color: #663366;
+	background-image: url("../img/schedule/break.webp");
+	background-position: center;
+	background-size: cover;
+}
+.break2 {
+	background-color: #663366;
+	background-image: url("../img/schedule/break2.webp");
+	background-position: center;
+	background-size: cover;
+}
+.break2 h3 {
+	filter:blur(10px);
+}
+.break2 p {
+	filter:blur(10px);
+}
+
+.direct {
+	background-image: url("../img/schedule/direct.png");
+	background-position: center;
+	background-size: cover;
+}
+.treehut{
+	background-image: url("../img/schedule/treehut.webp");
+	background-position: right;
+	background-size: cover;
+	overflow:hidden;
+}
+.treehut p {
+	max-width: 60%;
+	filter:blur(50px);
+}
+.treehut h3 {
+	filter:blur(10px);
+}
+.woh {
+	background-image: url("../img/schedule/woh.webp");
+	background-position: center;
+	background-size: cover;
+}
+
+
+.mangai {
+	background-color: rgb(88, 88, 88);
+	background-image: url("../img/schedule/mangai.png");
+	background-position: right;
+	background-size: cover;
+}
+.jl {
+	background-image: url("../img/schedule/justin.webp");
+	background-position: center;
+	background-size: cover;
+}
+.jl h3 {
+	filter:blur(10px);
+}
+.jl p {
+	filter:blur(10px);
+}
+
+.wcp{
+	background-color: #c9c8cb;
+	background-image: url("../img/schedule/wcp.webp");
+	background-position: right;
+	background-size: cover;
+}
+.wcp h3 {
+	filter:blur(10px);
+}
+.wcp p {
+	filter:blur(10px);
+}
+.koli {
+	background-color: #09c2e3;
+	background-image: url("../img/schedule/koli.webp");
+	background-position: center;
+	background-size: cover;
+}
+
+
+.fs {
+	background-color: #09c2e3;
+	background-image: url("../img/schedule/fs.webp");
+	background-position: right;
+	background-size: cover;
+}
+.fs h3 {
+	filter:blur(10px);
+}
+.fs p {
+	filter:blur(10px);
+}
+
+.oranges {
+	background-image: url("../img/schedule/oranges.png");
+	background-position: right;
+	background-size: cover;
+}
+
+
+.iceberg {
+	background: linear-gradient(0deg, rgba(9,9,37,1) 0%, rgba(0,153,255,1) 100%);
+	background-image: url("../img/schedule/iceberg.png");
+	background-position: center;
+	background-size: cover;
+}
+
+
+.tryna {
+	background-image: url("../img/schedule/tryna.webp");
+	background-position: center;
+	background-size: cover;
+}
+
+
+.sayger {
+	background-image: url("../img/schedule/sayger.webp");
+	background-position: center;
+	background-size: cover;
+}
+
+
+.duck {
+	background-image: url("../img/schedule/duck.webp");
+	background-position: right;
+	background-size: cover;
+}
+.duck h3 {
+	filter:blur(10px);
+}
+.duck p {
+	filter:blur(10px);
+}
+
+.sunny {
+	background-image: url("../img/schedule/sunny.webp");
+	background-position: center;
+	background-size: cover;
+}
+.sunny h3 {
+	filter:blur(10px);
+}
+.sunny p {
+	filter:blur(10px);
+}
+
+.rsg {
+	background-color: #ff0000;
+	background-image: url("../img/schedule/rsg.webp");
+	background-position: top center;
+	background-size: cover;
+}
+.rsg h3 {
+	filter:blur(10px);
+}
+.rsg p {
+	filter:blur(10px);
+}
+.speed {
+	background-color: darkblue;
+	background-image: url("../img/schedule/speed2.webp");
+	background-position: center;
+	background-size: cover;
+}
+.speed h3 {
+	filter:blur(10px);
+}
+.speed p {
+	filter:blur(10px);
+}
+
+.rem {
+	background-color: skyblue;
+	background-image: url("../img/schedule/rem2.webp");
+	background-position: center;
+	background-size: cover;
+}
+.rem h3 {
+	filter:blur(10px);
+}
+.rem p {
+	filter:blur(10px);
+}
+
+.tammy {
+	background-image: url("../img/schedule/tammy.webp");
+	background-position: center;
+	background-size: cover;
+}
+.tammy h3 {
+	filter:blur(10px);
+}
+.tammy p {
+	filter:blur(10px);
+}
+
+.btgs {
+	background-color: crimson;
+	background-image: url("../img/schedule/btgs2.webp");
+	background-position: top right;
+	background-size: cover;
+}
+.btgs h3 {
+	width:55%;
+	filter:blur(10px);
+}
+.btgs p {
+	width:55%;
+	filter:blur(10px);
+}
+.ide {
+	background-image: url("../img/schedule/ide.png");
+	background-position: center;
+	background-size: cover;
+}
+.ide p{
+	width:58%;
+}
+
+div.schedulecontainer {
+	display: flex;
+	flex-flow: row wrap;
+	gap: 1em;
+	align-items: stretch;
+}
+
+
+div.schedule {
+	width: calc(50% - 0.5em);
+}
+
+
+div.schedule table {
+	height: 100%;
+}
+
+
+footer {
+	margin-top: 6em;
+}
+
+
+@media screen and (max-width: 1280px) {
+	body main {
+		max-width: 90vw;
+	}
+
+
+	div.schedulecontainer {
+		width: 100%;
+		display: flex;
+		flex-flow: column;
+	}
+	
+	
+	div.schedule {
+		width: 100%;
+	}
+
+
+	table tr th {
+		width: 15%;
+	}
+
+
+	table tr {
+		min-height: 32px;
+		height: 32px;
+		max-height: 32px;
+	}
+
+
+	table tr td h3 {
+		font-size: 1em;
+	}
+
+
+	table tr td p {
+		font-size: 0.875em;
+	}
+}
