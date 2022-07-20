@@ -15,7 +15,7 @@ div#twitch-embed {
 footer {
     position: absolute;
     width: 99%;
-    bottom: 0em;
+    bottom: -7em !important;
 }
 
 
