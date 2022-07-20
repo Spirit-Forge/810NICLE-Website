@@ -36,6 +36,27 @@
  * END FONTS *
  *************/
 
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgb(180, 196, 8) rgb(41, 46, 27);
+  scrollbar-color:hover: rgb(180, 196, 8);
+}
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 10px;
+}
+
+*::-webkit-scrollbar-track {
+  background: rgb(41, 46, 27);
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: rgb(180, 196, 8);
+  border-radius: 20px;
+  border: 3px solid rgb(41, 46, 27);
+}
+
 
 * {
     font-family: 'Gill Sans Std', Helvetica Now, Helvetica, Arial, sans-serif;
@@ -333,7 +354,7 @@ section.posters img.zoomable {
 
 #bs01-logo,
 #mod-logo {
-    position: absolute;
+    position: fixed;
 }
 
 
@@ -365,7 +386,7 @@ footer {
 }
 
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 843px) {
     main {
         max-width: 95vw;
     }
@@ -377,7 +398,7 @@ footer {
 
 
     main h2 {
-        font-size: 0.9375em;
+        font-size: 0.85em;
     }
 
 
