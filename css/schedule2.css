@@ -49,7 +49,16 @@ table td p {
 	margin: 0em;
 	text-shadow: 0px 0px 4px #080808, 0px 0px 4px #080808;
 }
-
+.qm {
+	position: sticky;
+	width:30%;
+	height:0%;
+	top:15%;
+	margin-left: auto;
+	margin-right: auto;
+	z-index: 1;
+	overflow:visible;
+}
 
 /****************
  * EVENT COLORS *
@@ -317,8 +326,7 @@ footer {
 	body main {
 		max-width: 90vw;
 	}
-
-
+	
 	div.schedulecontainer {
 		width: 100%;
 		display: flex;
@@ -351,4 +359,7 @@ footer {
 	table tr td p {
 		font-size: 0.875em;
 	}
+.qm{
+	height:0px;
+}
 }
