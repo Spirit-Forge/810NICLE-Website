@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- STANDARD -->
+  <meta property="og:url" content="https://biosector01.com/810/schedule/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="810NICLE Day 2022" />
+  <meta property="og:description" content="810NICLE Day is back!" />
+  <meta property="og:image" content="https://biosector01.com/810/img/ogp.jpg" />
+  <meta property="og:image:alt" content="810NICLE Day 2022" />
+  <!-- TWITTER -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="810NICLE Day 2022" />
+  <meta name="twitter:site" content="@810NICLE" />
+  <meta name="twitter:creator" content="@JSLBrowning" />
+  <meta name="twitter:description" content="810NICLE Day is back!" />
+  <meta name="twitter:image" content="https://biosector01.com/810/img/ogp.jpg" />
+  <meta name="twitter:image:alt" content="810NICLE Day 2022" />
+  <!-- END OF OGP DATA -->
+  <link rel="stylesheet" type="text/css" href="../css/main.css">
+  <link rel="stylesheet" type="text/css" href="../css/watch.css">
+  <title>810NICLE Day 2022</title>
+</head>
+
+<body>
+  <a id="bs01-logo-wrapper" href="https://biosector01.com">
+    <img id="bs01-logo" alt="BIONICLEsector01" title="BIONICLEsector01" src="../img/chips/bs01-logo-triangle.png" width="64" height="64">
+  </a>
+  <a id="mod-logo-wrapper" href="https://linktr.ee/MaskofDestiny">
+      <img id="mod-logo" alt="Mask of Destiny" title="Mask of Destiny Linktree" src="../img/chips/mod.webp" width="64" height="64">
+  </a>
+  <header>
+    <img onclick="window.location.href='../index.html'" src="../img/810_2022_Logo_Trailer_2.png">
+  </header>
+  <main>
+    <h2><a href="../">Home</a> | <a href="../news/">News</a> | <a href="../events/">Events</a> | <a href="../schedule/">Schedule</a> | <span
+        class="disabled">Watch</span></h2>
+    <hr>
+    <h1 class="title">Watch</h1>
+    <h1 id="countdown">99:99:99:99</h1>
+    <div id="twitch-embed"></div>
+  </main>
+  <footer>
+    <p>Site designed by <a href="https://linktr.ee/JSLBrowning">JSLBrowning</a> of <a href="https://wallofhistory.com/">Wall of History</a>.</p>
+  </footer>
+  <script src="../js/jquery/jquery-3.6.0.min.js"></script>
+  <script src="../js/jquery/jquery-ui-1.13.0/jquery-ui.min.js"></script>
+  <script src="../js/timer.js"></script>
+  <script src="https://embed.twitch.tv/embed/v1.js"></script>
+  <script type="text/javascript">
+    new Twitch.Embed("twitch-embed", {
+      width: '100%',
+      height: '100%',
+      channel: 'beaverhousetv',
+      parent: ['forge.wallofhistory.com'],
+      theme: 'dark'
+    });
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,442 @@
+/*********
+ * FONTS *
+ *********/
+
+
+@font-face {
+    font-family: 'TradeMarker';
+    src: url('../fonts/TradeMarker-Bold.woff2') format('woff2'), url('../fonts/TradeMarker-Bold.woff') format('woff');
+    font-weight: bold;
+}
+
+
+@font-face {
+    font-family: 'Gill Sans Std';
+    src: url('../fonts/GillSansStd-Light.woff2') format('woff2'), url('../fonts/GillSansStd-Light.woff') format('woff');
+}
+
+
+@font-face {
+    font-family: 'Matoran';
+    src: url('../fonts/BIONRG__.woff2') format('woff2'), url('../fonts/BIONRG__.woff') format('woff');
+}
+
+
+.trademarker {
+    font-family: 'TradeMarker', Helvetica Now, Helvetica, Arial, sans-serif;
+}
+
+
+.matoran {
+    font-family: 'Matoran', 'Gill Sans Std', Helvetica Now, Helvetica, Arial, sans-serif;
+}
+
+
+/*************
+ * END FONTS *
+ *************/
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgb(180, 196, 8) rgb(41, 46, 27);
+  scrollbar-color:hover: rgb(180, 196, 8);
+}
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 10px;
+}
+
+*::-webkit-scrollbar-track {
+  background: rgb(41, 46, 27);
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: rgb(180, 196, 8);
+  border-radius: 20px;
+  border: 3px solid rgb(41, 46, 27);
+}
+
+
+* {
+    font-family: 'Gill Sans Std', Helvetica Now, Helvetica, Arial, sans-serif;
+}
+
+
+body {
+    background-color: #0a0b08;
+    background-image: url('../img/bg.webp');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+
+header,
+header img {
+    margin: auto;
+    max-width: 75vw;
+}
+
+
+header img {
+    cursor: pointer;
+}
+
+
+main {
+    margin: auto;
+    max-width: 80vw;
+    color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+}
+
+
+main h1,
+main h2,
+main h3,
+main h1 a,
+main h2 a,
+main h2 span,
+main h3 a,
+main h3 em {
+    font-family: 'TradeMarker';
+    letter-spacing: 0.125em;
+    text-shadow: 2px 2px 0px olivedrab;
+    text-transform: uppercase;
+}
+
+
+#countdown {
+    margin: 0em;
+    text-align: center;
+}
+
+
+main h3 {
+    text-shadow: 1px 1px 0px olivedrab;
+}
+
+
+h2 span.disabled {
+    color: lightgray;
+    user-select: none;
+}
+
+
+main h1,
+main h2 {
+    margin: 0em;
+    text-align: center;
+}
+
+
+main h1.title {
+    font-size: 3em;
+}
+
+
+main h1.separate {
+    margin-top: 0.5em;
+}
+
+
+main table {
+    margin-top: 1em;
+}
+
+
+main section {
+    margin: 1.5em 0em;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    gap: 1em;
+}
+
+
+hr {
+    margin: 0.75em 0em 0.5em 0em;
+    margin-left: auto;
+    margin-right: auto;
+    width: 66.66vw;
+    max-width: 640px;
+    border: 1px solid white;
+    box-shadow: 2px 2px 0px olivedrab;
+}
+
+
+div h2 {
+    text-align: left;
+}
+
+
+div h3 {
+    margin: 0em;
+}
+
+
+div p {
+    margin: 0.375em 0em;
+}
+
+
+main section:nth-of-type(even) {
+    flex-flow: row-reverse nowrap;
+}
+
+
+main section:nth-of-type(odd),
+main section:nth-of-type(odd) h2,
+main section:nth-of-type(odd) h3,
+main section:nth-of-type(odd) h3 a,
+main section:nth-of-type(odd) p {
+    text-align: right;
+}
+
+
+img.zoomable {
+    max-width: 40%;
+    transition: all .2s ease-in-out;
+    cursor: pointer;
+}
+
+
+img.zoomable:hover {
+    transform: scale(1.03125);
+    filter: brightness(1.1);
+}
+
+
+img.zoomable:active {
+    transform: scale(0.96875);
+    filter: brightness(0.9);
+}
+
+
+main section.social {
+    margin: 0em;
+    margin-top: 1em;
+    justify-content: center;
+    gap: 2em;
+}
+
+
+main section.social a img {
+    max-width: 2em;
+}
+
+
+main section div {
+    min-width: calc(60% - 1em);
+}
+
+
+main section p {
+    font-size: larger;
+}
+
+
+a {
+    color: whitesmoke;
+    font-weight: bolder;
+    text-decoration: none;
+    transition: all .2s ease-in-out;
+}
+
+
+a:hover {
+    color: lightgray;
+}
+
+
+a:active {
+    color: darkgray;
+}
+
+
+/***************
+ * ZOOM STYLES *
+ ***************/
+
+
+body .zoom {
+    display: flex;
+    opacity: 0%;
+    position: fixed;
+    top: 0px;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.875);
+    z-index: 20;
+
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-grow: none;
+}
+
+
+.zoom p {
+    font-family: "Gill Sans Std", Helvetica Now, Helvetica, Arial, sans-serif;
+    margin: 0.25em;
+    padding: 0.25em;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.75);
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 0.1875em;
+    box-shadow: 0em 0em 0.25em 0.25em rgba(0, 0, 0, 0.75);
+}
+
+
+.zoom img {
+    max-height: 90vh;
+    max-width: 90vw;
+    border-radius: 0.25em;
+    margin: 0.5em;
+}
+
+
+span.exitSpan {
+    position: absolute;
+    top: 1em;
+    right: 1.5em;
+    max-width: 1em;
+    max-height: 1em;
+    font-size: 2em;
+    line-height: 1em;
+    border-radius: 50%;
+    cursor: pointer;
+    color: whitesmoke;
+    transition: all 0.2s ease-in-out;
+    opacity: 0.75;
+}
+
+
+span.exitSpan:hover {
+    color: lightgray;
+    transform: scale(1.03125);
+}
+
+
+span.exitSpan:active {
+    color: darkgray;
+    transform: scale(0.9875);
+}
+
+
+/**********************
+ * POSTER PAGE STYLES *
+ **********************/
+
+
+body main section.posters,
+body main section.posters:nth-of-type(odd) {
+    all: initial;
+    margin-top: 1em;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+section.posters img.zoomable {
+    margin-top: 0.5em;
+    width: 27.5%;
+    margin-bottom: 1em;
+}
+
+
+#bs01-logo,
+#mod-logo {
+    position: fixed;
+}
+
+
+#bs01-logo:hover,
+#bs01-logo:active,
+#mod-logo:hover,
+#mod-logo:active {
+    cursor: pointer;
+    filter: brightness(.75);
+}
+
+
+#bs01-logo {
+    top: 0;
+    left: 0;
+}
+
+
+#mod-logo {
+    top: 0;
+    right: 0;
+}
+
+
+footer {
+    margin: 0em;
+    text-align: center;
+    color: white;
+}
+
+
+@media screen and (max-width: 843px) {
+    main {
+        max-width: 95vw;
+    }
+
+
+    main h1 {
+        font-size: 1.5em;
+    }
+
+
+    main h2 {
+        font-size: 0.85em;
+    }
+
+
+    main section,
+    main section:nth-of-type(odd),
+    main section:nth-of-type(even) {
+        margin: 1em 0em;
+        flex-flow: column nowrap;
+        text-align: left;
+    }
+
+
+    main section.social {
+        flex-flow: row nowrap;
+    }
+
+
+    main section img {
+        max-width: 50%;
+    }
+
+
+    main section div {
+        min-width: 100%;
+    }
+
+
+    main section div h2:first-of-type {
+        margin-top: 0em;
+    }
+
+
+    main section div h3 {
+        font-size: 0.9375em;
+    }
+
+
+    section.posters img.zoomable {
+        width: 45%;
+    }
+}

@@ -1,0 +1,38 @@
+header, header img {
+    max-width: 50vw;
+}
+
+
+div#twitch-embed {
+    margin-top: 1em;
+    width: 100%;
+    min-height: 66.66vh;
+    height: 66.66vh;
+    max-height: 66.66vh;
+}
+
+
+footer {
+    position: absolute;
+    width: 99%;
+    bottom: 0em;
+}
+
+
+@media screen and (max-width: 600px) {
+    body header,
+    body header img {
+        min-width: 75vw;
+        width: 75vw;
+        max-width: 75vw;
+    }
+
+
+    main {
+        margin-left: auto;
+        min-width: 95vw;
+        width: 95vw;
+        max-width: 95vw;
+        margin-right: auto;
+    }
+}
