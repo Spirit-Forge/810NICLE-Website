@@ -324,7 +324,7 @@ footer {
 
 @media screen and (max-width: 1280px) {
 	body main {
-		max-width: 90vw;
+		max-width: 95vw;
 	}
 	
 	div.schedulecontainer {
