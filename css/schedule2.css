@@ -359,12 +359,15 @@ footer {
 	table tr td p {
 		font-size: 0.875em;
 	}
-.qm{
-	height:0px;
-	width:60%;
-	margin-left: 30%;
 
-}
-.qm img{
-	width:100%;
+	.qm{
+		height:0px;
+		width:60%;
+		margin-left: 30%;
+
+	}
+	
+	.qm img{
+		width:100%;
+	}
 }
