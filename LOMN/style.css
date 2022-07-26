@@ -21,7 +21,7 @@ body:before {
 	left: -100%;
 	width: 300%;
 	height: 300%;
-	background: url('http://biomediaproject.com/bmp/files/gms/tlomn/Launcher/Web/bg/mata%20nui.jpg') no-repeat center center;
+	background: url('bg/mata%20nui.jpg') no-repeat center center;
 	background-size: cover;
 	opacity: 0.50;
 
