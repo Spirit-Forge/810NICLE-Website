@@ -1,0 +1,50 @@
+html {
+	height:3000px;
+	width: 934px;
+	scroll-behavior: smooth;
+	background: #393939;
+ }
+ a{
+	 color: fff;
+ }
+@font-face {
+    font-family: 'Perfect DOS VGA 437 Win';
+    src: url('Perfect DOS VGA 437 Win.woff2') format('woff2'), url('Perfect-DOS-VGA-437-Win.woff') format('woff');
+}
+#readmore{
+	position:absolute; top:2000px;
+}
+.question{
+	position:inherit;
+	height:710px;
+	width:auto;
+	top: 0px;
+	left: 0px;
+	font-family: 'Perfect DOS VGA 437 Win';
+    font-size: 3em;
+	color: #04FF00;
+	padding-left: 0.2em;
+	padding-top: 0.2em;
+	overflow: hidden;
+}
+
+.screen{
+	position: fixed;
+	height:0%;
+	top:15%;
+	z-index: 1;
+	overflow:hidden;
+	top: 0px;
+	left: 0px;
+	height:710px;
+	width:934px;
+	z-index: 3;
+	padding-right: 0em;
+	margin-right: 0em;
+	margin-bottom: 0em;
+}
+
+.scroll{
+	position:absolute;
+	left:950px;
+}
