@@ -362,9 +362,11 @@ footer {
     color: white;
 }
 
+
 /**********************
  * NEWS GRID STYLES *
  **********************/
+
 
 .grid-container {
   display: grid;
@@ -383,22 +385,26 @@ footer {
   min-height: 500px;
 }
 
+
 .grid-container > div {
   text-align: left;
   height:auto;
 }
 
+
 .twitter {
 grid-area: twitter;
 height: 100%;
 }
+
+
 .news1 { grid-area: news1; }
-}
 .news2 { grid-area: news2; }
 .news3 { grid-area: news3; }
 .news4 { grid-area: news4; }
 .news5 { grid-area: news5; }
 .newsold { grid-area: newsold; }
+
 
 @media screen and (max-width: 843px) {
     main {

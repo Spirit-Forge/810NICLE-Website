@@ -80,12 +80,12 @@ table td p {
 
 
 .direct {
-	background-image: url("../img/schedule/direct.png");
+	background-image: url("../img/schedule/direct.webp");
 	background-position: center;
 	background-size: cover;
 }
 .treehut{
-	background-image: url("../img/schedule/treehut.png");
+	background-image: url("../img/schedule/treehut_clear.webp");
 	background-position: right;
 	background-size: cover;
 }
@@ -101,12 +101,12 @@ table td p {
 
 .mangai {
 	background-color: rgb(88, 88, 88);
-	background-image: url("../img/schedule/mangai.png");
+	background-image: url("../img/schedule/mangai.webp");
 	background-position: right;
 	background-size: cover;
 }
 .jl {
-	background-image: url("../img/schedule/justin.png");
+	background-image: url("../img/schedule/justin_clear.webp");
 	background-position: center;
 	background-size: cover;
 }
@@ -116,7 +116,7 @@ table td p {
 }
 .wcp{
 	background-color: #c9c8cb;
-	background-image: url("../img/schedule/wcp.png");
+	background-image: url("../img/schedule/wcp_clear.webp");
 	background-position: right;
 	background-size: cover;
 }
@@ -131,14 +131,14 @@ table td p {
 
 .fs {
 	background-color: #09c2e3;
-	background-image: url("../img/schedule/fs.png");
+	background-image: url("../img/schedule/fs_clear.webp");
 	background-position: right;
 	background-size: cover;
 }
 
 
 .oranges {
-	background-image: url("../img/schedule/oranges.png");
+	background-image: url("../img/schedule/oranges.webp");
 	background-position: right;
 	background-size: cover;
 }
@@ -146,7 +146,7 @@ table td p {
 
 .iceberg {
 	background: linear-gradient(0deg, rgba(9,9,37,1) 0%, rgba(0,153,255,1) 100%);
-	background-image: url("../img/schedule/iceberg.png");
+	background-image: url("../img/schedule/iceberg.webp");
 	background-position: center;
 	background-size: cover;
 }
@@ -167,14 +167,14 @@ table td p {
 
 
 .duck {
-	background-image: url("../img/schedule/duck.png");
+	background-image: url("../img/schedule/duck_clear.webp");
 	background-position: right;
 	background-size: cover;
 }
 
 
 .sunny {
-	background-image: url("../img/schedule/sunny.png");
+	background-image: url("../img/schedule/sunny_clear.webp");
 	background-position: center;
 	background-size: cover;
 }
@@ -182,7 +182,7 @@ table td p {
 
 .rsg {
 	background-color: #ff0000;
-	background-image: url("../img/schedule/rsg.png");
+	background-image: url("../img/schedule/rsg_clear.webp");
 	background-position: top center;
 	background-size: cover;
 }
@@ -205,7 +205,7 @@ table td p {
 
 
 .tammy {
-	background-image: url("../img/schedule/tammy.png");
+	background-image: url("../img/schedule/tammy_clear.webp");
 	background-position: center;
 	background-size: cover;
 }
@@ -213,21 +213,28 @@ table td p {
 
 .btgs {
 	background-color: crimson;
-	background-image: url("../img/schedule/btgs.png");
+	background-image: url("../img/schedule/btgs_clear.webp");
 	background-position: top right;
 	background-size: cover;
 }
+
+
 .btgs p {
 	width:55%;
 }
+
+
 .ide {
-	background-image: url("../img/schedule/ide.png");
+	background-image: url("../img/schedule/ide.webp");
 	background-position: center;
 	background-size: cover;
 }
+
+
 .ide p{
 	width:58%;
 }
+
 
 div.schedulecontainer {
 	display: flex;

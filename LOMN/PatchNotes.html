@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="style.css" />
+<title>BIONICLE: The Legend of Mata Nui Patch Notes</title>
+<style>
+				@font-face {
+					font-family: "CGP";
+					src: url("classicgrotesquepro.ttf");
+					}
+    
+					body { font-family: "CGP" }
+	
+					.Dance {
+						float: right;
+						}
+				</style>
+</head>
+<div style="width: 30%; float: right;">
+<video width="200" muted autoplay loop>
+<source src="Nobua.webm" type="video/webm">
+</video>
+</div>
+<img src="Logo.png" alt="He got the moves like Jaller." style="width:400px;height:165px;margin-right:15px;">
+<font size="2"><p>Please report all undocumented bugs to our Github. Additionally, please check the currently reported bugs before reporting one.
+<br><br>Be sure to check out the game's install notes on <a href="http://biomediaproject.com/bmp/the-legend-of-mata-nui/">The BioMediaProject.</a></p></font>
+<style>
+.collapsible {
+  background-color: #777;
+  color: white;
+  cursor: pointer;
+  padding: 1px;
+  width: 50%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover {
+  background-color: #555;
+}
+
+.content {
+  padding: 0 0px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+</style>
+</head>
+<body>
+<h2><p>Patch Notes:</p></h2>
+<button class="collapsible"><font size="1"><h2>&nbsp&nbspRebuilt Patch Notes:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp+</h2></font></button>
+<div class="content">
+<br><font size="1">(Full list of credits can be found in the game's included PatchNotes.txt)</font>
+<p><font size="3">v1.0.2 :<ul class="inside"></font>
+<font size="1">
+<li> Fixed an issue that caused corrupted saves on quitting from Frontend
+<li> Fixed an issue in BetterSaver causing the current mask not to be written
+</ul></font></p>
+<p><font size="3">v1.0.1 :<ul class="inside"></font>
+<font size="1">
+<li> Updated credits
+<li> Fixed an issue where collecting over 100 tokens would break save files
+<li> Added an unlock system for adding overall progress based rewards
+<li> Fixed an issue where talking to the tree keeper set a quest flag
+<li> Fixed and finished token door coding
+<li> Continued clean up of area blks, taking out unused models
+<li> Fixed various area cleanup problems
+<li> Implemented French language
+</ul></font></p>
+<p><font size="1">Per-level fixes:
+<ul class="inside">
+<li> FREN:	Added Toa to the title screen based on progress
+<li> ONUA: Added a mask tutorial sign in PTV1
+<li> GALI: Temporarily restored MTUP cutscene warp
+<li> TAHU: Fixed a missing-in-action apostrophe
+</ul></font></p>
+<p><font size="3">v1.0.0:<ul class="inside"></font>
+<font size="1">
+<li> Implemented custom colours for various Tohunga throughout the game
+<li> Added reading of location table in cin_char for better Takara rendering
+<li> Reimplemented dancing Tohunga, and added to all villages
+<li> Combined Takara pits with main village meshes
+<li> Re-enabled the Great Takara for all villages
+<li> Implemented Amana Volo, (hp/energy upgrades) as rewards for sidequests
+<li> Implemented Vuata Maca Tree/keeper as a form of recharge station
+<li> Updated Tohunga/Turaga conversations to reflect reimplemented quests
+<li> Re-enabled the use of Kanohi Masks in boss fights
+<li> Re-enabled altered SFX for Kanohi Mask activation
+<li> Implemented unused SFX for the Kanohi Ruru
+<li> Changed default ammo and ammo HUD sprites to those of the alpha powerups
+</ul></font></p>
+<p><font size="1">Per-level fixes:
+<ul class="inside">
+<li> TEST: Removed background music due to internal hatred
+<li> FREN: Added logo for a proper title screen
+<li> FREN: Added background ambience
+<li> FREN: Changed background music to "MusicShrine"
+<li> FREN: Changed Onua's default spawn position
+<li> FREN: Changed credits music to BIONICLE Age, added Paul Hardcastle
+<li> ONUA: Reverted voice clips to the alpha versions
+<li> ONUA: Re-enabled Nobua cutscenes from the alpha
+<li> ONUA: Replaced BECH with alpha version
+<li> ONUA: Replaced VLLG with modified early alpha version
+<li> ONUA: Replaced "Legend" stills in Whenua's conversation with an FMV
+<li> ONUA: Replaced Onepu in PTV1 with Nobua; updated conversation text
+<li> ONUA: Added and implemented ROLL and unused rolling animations for Onua
+<li> GALI: Reverted intro cinematic to extended alpha version
+<li> GALI: Cleaned up MTUP cinema by loading set pieces into the cin obj slb
+<li> GALI: Implemented the Gate Stone quest in STRT
+<li> GALI: Expanded beta Ga-Koro to accommodate new Tohunga requirements
+<li> GALI: Fixed an issue where the sfsh Rahi would stick to the floor
+<li> GALI: Changed music in HK01
+<li> GALI: Modifed movelist of pira to allow it to be damaged
+<li> GALI: Renovated GLY3 using alpha map and numerous additions
+<li> GALI: Added miniboss camera pan for the Tarakava in TAKV
+<li> POHATU: Reverted intro cinematic to extended alpha version
+<li> POHATU: Replaced VLLG with modified alpha version
+<li> POHATU: Changed music in BLCV
+<li> POHATU: Replaced Kane Ra cinematics with extended alpha versions
+<li> POHATU: Changed Kane-Ra running animation to superior alpha version
+<li> POHATU: Added miniboss camera pan for the Kane-Ra in BLCV
+<li> KOPAKA: Fixed an issue with the Takara causing the camera to clip a wall
+<li> KOPAKA: Changed music in SNFL and PATH
+<li> LEWA: Reverted intro cinematic to extended alpha version
+<li> LEWA: Fixed an issue with the Takara causing the camera to clip Matau
+<li> LEWA: Changed music in LEP1, ROOM, GLY1, and LE04
+<li> LEWA: Replaced LE04's main level model with the alpha version
+<li> LEWA: Replaced Nui Rama dismount cinematic with extended alpha version
+<li> LEWA: Removed GLY3 to use for ROLL and for a future new slide section
+<li> LEWA: Added miniboss camera pans for the Tarakava and Nui-Rama
+<li> TAHU: Changed music in TVIL, TA01, TA02, TA11, TA12, and TA13
+<li> TAHU: Made Vahi orange
+<li> TAHU: Added the raising of the Ta-Koro bridge, using the Winch Lever
+</ul></font></p>
+</div>
+<button class="collapsible"><font size="1"><h2>&nbsp&nbspBeta Patch Notes:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp+</h2></font></button>
+<div class="content">
+<br><font size="1">(Full list of credits can be found in the game's included PatchNotes.txt)</font>
+<p><font size="3">v1.4.1 :<ul class="inside"></font>
+<font size="1">
+<li> Fixed an issue that caused corrupted saves on quitting from Frontend
+<li> Fixed an issue in BetterSaver causing the current mask not to be written
+</ul></font></p>
+<p><font size="3">v1.4:<ul class="inside"></font>
+<font size="1">
+<li> Updated credits
+<li> Added French language option
+<li> Added Dutch language option
+<li> Added Italian language option
+<li> Reverted boss names to vanilla
+<li> Snapped pickups properly to the ground in all areas
+<li> Added BetterBink dll to improve FMVs
+<li> Removed FMV letterboxing
+<li> Added check to prevent opening FMVs from playing more than once
+<li> Reverted various out-of-date trigger removals
+<li> Fixed various area cleanup issues
+<li> Fixed notorious sound buffers crash
+<li> Fixed Huna crash when around stationary characters
+</ul></font></p>
+<p><font size="1">Per-level fixes:
+<ul class="inside">
+<li> ONUA: Increased hitbox sizes for Fikou-Nui and Nui-Jaga
+<li> ONUA: Fixed backtracking issues in SCRP & SPCV
+<li> ONUA: Fixed a broken tri in L1A8
+<li> GALI: Reverted MTUP cutscene warp
+<li> GALI: Fixed the grappling hook issue with the Ga-Koro horns
+<li> GALI: Fixed an issue where the Rau set the invasion condition
+<li> GALI: Fixed issues with SHRN boss door
+<li> GALI: Fixed WTHK
+<li> GALI: Fixed out-of-bounds token placements
+<li> POHATU: Fixed the Kane-Ra cleanup once and for all
+<li> POHATU: Fixed bug where loading a save into the BLR areas crashed
+<li> KOPAKA: Fixed items appearing in inventory menu
+<li> KOPAKA: Partial fix for platforms leading to the Element of Melting
+<li> LEWA: Fixed the infamous death vine in LE03
+<li> LEWA: Added invisible walls into LE02
+<li> LEWA: Fixed floating platform collision in LE02 and LE03
+<li> LEWA: Fixed broken door code in ROOM
+<li> LEWA: Fixed deltatime issues with the Air Elemental
+<li> TAHU: Fixed killbox in MTUP
+<li> TAHU: Fixed backtracking into TA03 and TA12
+<li> TAHU: Fixed issue in VLLG where fog obscured the skybox
+<li> MAKUTA: Added end FMV + warp back to FREN in TAHU
+</ul></font></p>
+<p><font size="3">v1.3.2:<ul class="inside"></font>
+<font size="1">
+<li> Nulled out OptionalPatchNative DLL causing issues with cinematics
+</ul></font></p>
+<p><font size="1">Per-level fixes:
+<ul class="inside">
+<li> POHATU: Fixed UV mapping and texture on grapple item
+<li> KOPAKA: Fixed texture mapping in Lev4/TURA.
+</ul></font></p>
+<p><font size="3">v1.3.1:<ul class="inside"></font>
+<font size="1">
+<li> Fixed OSIProjectDebugServer mod, and resulting error box in 1.3
+</ul></font></p>
+<p><font size="3">v1.3:<ul class="inside"></font>
+<font size="1">
+<li> Updated DGVoodoo version to address various compatibility issues
+<li> Overhauled save system. Files are now written in plain XML
+<li> Temporarily removed OSIDebugServer DLL due to unresolved issues
+<li> Updated various hookmod DLLs to newer versions
+<li> Fixed an issue in 1.2 causing various entities to become untextured
+<li> Moved PrinterPics BLK out of the Art BLK in preparation for printer fix
+<li> Fixed some texture antialiasing and alpha issues with masks
+<li> Set spawn points for all areas (except for BLR1 and BLR2) to the ground
+<li> Fixed grammatical errors and other mistakes in German translation
+<li> Fixed issue of certain items becoming offset from their sprites
+</ul></font></p>
+<p><font size="1">Per-level fixes:
+<ul class="inside">
+<li> ONUA: Fixed small hitbox preventing melee attack from being useful
+<li> ONUA: Sealed off collision holes in TURA
+<li> ONUA: Removed problematic scorpion from SCRP
+<li> ONUA: Adjusted lighting in MUD0 to improve appearance of Vatuka-Nui
+<li> POHATU: Fixed Pohatu's lacking of a proper hurtbox
+<li> POHATU: Added coloring and mask to Husi rider
+<li> POHATU: Fixed all issues with the Rock Elemental
+<li> LEWA: Froze Kongu in place to prevent player being pushed out of bounds
+<br><br>
+* This currently breaks certain options in the debug menu such as visual debugger.
+<br>As such, be aware that using this may result in unexpected crashes.
+</ul></font></p>
+<p><font size="3">v1.2.1:<ul class="inside"></font>
+<font size="1">
+<li> Fixed a missing file causing hookmods to not be loaded
+<li> Fixed an issue with falling platforms retaining their velocity on reset
+</ul></font></p>
+<p><font size="1">Per-level fixes:
+<ul class="inside">
+<li> ONUA: Fixed an incorrect camera pan in Whenua's TURA conversation
+<li> ONUA: Fixed an issue in CLF1 causing platforms to be present by default
+<li> ONUA: Fixed vertex colour lighting on mushrooms in CAVE
+<li> ONUA: Fixed an issue causing crash loops on backtracking to CAVE
+<li> ONUA: Fixed an issue in BUGS causing trigger to be largely avoidable
+<li> ONUA: Fixed an issue causing warped water textures in MUD0
+<li> ONUA: Fixed floating objects and dull Lightstones in MUD0
+<li> GALI: Fixed a typo in text regarding the Kanohi Kaukau
+<li> KOPAKA: Fixed issue with SNFL boulders not working properly
+<li> LEWA: Fixed an issue causing shutdown loops after collecting grapple
+<li> TAHU: Fixed an issue causing mask powers to be functional in BOSS
+</ul></font></p>
+<p><font size="3">v1.2.0:<ul class="inside"></font>
+<font size="1">
+<li> Added German language option
+<li> Fixed an issue in the launcher causing crashes upon selecting game dir
+<li> Fixed Turaga vertex color barfing
+<li> Added debug menu options for wireframe and collision box modes
+<li> Restored missing glossary entries
+<li> Restored FMVs that were disabled due to rendering issues*
+<li> Fixed issues with saver failing to load certain aspects of a file
+<li> Fixed issues with saver not clearing properly upon level transition
+</ul></font></p>
+<p><font size="1">Per-level fixes:
+<ul class="inside">
+<li> ONUA: Fixed an issue causing delayed SFX for idle jump
+<li> ONUA: Fixed an issue causing warped water textures in BECH
+<li> ONUA: Fixed an issue with sidestep footprints
+<li> ONUA: Fixed an issue in CLF1 causing platforms to be present by default
+<li> GALI: Fixed an issue that caused water splash sfx to not play
+<li> GALI: Fixed an issue with tokens being placed out of bounds	in VLLG
+<li> GALI: Fixed an issue causing the totem in VLLG to display no text
+<li> GALI: Fixed an issue with VLLG token door not working properly
+<li> GALI: Fixed an issue in MTOP causing the player to get stuck in water
+<li> GALI: Fixed slide physics from WTHK not cancelling upon entry to GLY3
+<li> POHATU: Fixed killboxes from warping player around in BLR areas
+<li> POHATU: Fixed bull movement sound loop from not stopping properly
+<li> POHATU: Fixed BLR2 crashing upon exit. Reimplemented areas accordingly
+<li> KOPAKA: Fixed MAZ2 UI disappearance bug; fixed killbox coding as well
+<li> KOPAKA: Fixed non-functional grapple box in CRSS
+<li> KOPAKA: Fixed an issue in STRT where the button would clip the floor
+<li> LEWA: Fixed an issue with the camera clipping a wall in Cin1
+<li> TAHU: Fixed a cleanup issue in SHRN causing various boss issues
+<li> TAHU: Fixed stalactites in Taratoka Nui fight being tied to low FPS
+<li> TAHU: Fixed Taratoka Nui being unhittable in its stunned phase
+<li> TAHU: Fixed a punctuation error in Vakama's level end dialogue
+</ul></font></p>
+<p><font size="3">v1.1.0, [The SHADOWKNIGHT Patch]:<ul class="inside"></font>
+<font size="1">
+<li> Launcher includes a resolution selector, can run the game from anywhere
+<li> Updated credits list with Beaverhouse/Litestone team members
+<li> Added Load Game option back into the test menu
+<li> Temporarily hijacked the Q key for a broken function in Gali's VLLG
+<li> Debug warp list now universally follows levels in order of appearance
+<li> Slowed down the scroll speed of the credits sequence
+<li> Fixed disabled footprint function for certain Toa
+<li> Fixed various Tohunga lacking colours or masks
+<li> Slightly lightened black Tohunga colours to a dark gray
+<li> Fixed Kanohi mask rooms shutting down on re-entry
+<li> Fixed various texture issues caused by previous patch
+<li> Fixed music scripting for villages during Rahi invasions
+<li> Fixed various areas failing to play or overlapping music tracks
+<li> Fixed further typos and grammatical errors in conversations
+<li> Implemented unused death and respawn sounds for all areas
+<li> Fixed Kanohi Huna causing a crash in Turaga huts
+</ul></font></p>
+<p><font size="1">Per-level fixes:
+<ul class="inside">
+<li> ONUA: Fixed a misplaced token in SHRN
+<li> ONUA: Updated texture animations for Vatuka-Nui
+<li> GALI: Fixed slight sound errors in intro cutscene
+<li> GALI: Fixed broken backstep FX for GALI
+<li> GALI: Changed Gali's elemental sphere colours
+<li> GALI: Forced the game to load intro and MTUP in test menu
+<li> GALI: Fixed softlock when cutscene fails to play in MTUP
+<li> GALI: Made MTUP area playable after intro cinematic
+<li> GALI: Fixed Kanohi not appearing on defeat of Rahi in MWAT*
+<li> GALI: Removed residual whirlpool SFX from MWAT
+<li> GALI: Temporarily removed WTHK due to unresolved issues
+<li> GALI: Updated texture animations & transparency for Taniwa-Nui	
+<li> POHATU: Fixed sequence/boundary break in MTUP
+<li> POHATU: Updated the token requirements for locked doors
+<li> POHATU: Fixed cutscene audio not ending on skip in BLCV
+<li> POHATU: Temporarily removed BLR1 & BLR2 due to an unresolved crash
+<li> POHATU: Reverted water changes to BLR2 causing physics issues
+<li> POHATU: Fixed incorrect camera coordinates for Onewa's conversation
+<li> POHATU: Fixed incorrect spawn coordinates for SHRN returning from GLY3
+<li> KOPAKA: Programmed in missing Toa meeting cinematic
+<li> KOPAKA: Fixed missing text in intro cinematic
+<li> KOPAKA: Fixed geometry clipping various things in intro cinematic
+<li> KOPAKA: Fixed missing voice clips in intro cinematic
+<li> KOPAKA: Fixed Kopaka starting level with the incorrect default masks
+<li> KOPAKA: Fixed broken text references on the Hail Storm Glyph
+<li> KOPAKA: Changed snowboarding speed in BRD3 & BRD4
+<li> KOPAKA: Temporarily removed doors in VISN due to non-functional buttons
+<li> LEWA: Fixed missing jump SFX
+<li> LEWA: Removed dummy SFX in LE04
+<li> LEWA: Removed out of bounds item spawns in LE04
+<li> LEWA: Added missing water effects to SHRN
+<li> LEWA: Updated texture animations & transparency for Tukoati-Nui
+<li> TAHU: Added water ambience to background audio for intro cinematic
+<li> TAHU: Forced the game to load intro and MTUP in test menu
+<li> TAHU: Made MTUP area playable after intro cinematic
+<li> TAHU: Fixed sequence break in FVIL caused by Miru jumping around door
+<li> TAHU: Fixed broken textures & transparency on FVIL token door
+<li> TAHU: Fixed misplaced tokens in VLLG
+<li> TAHU: Increased surfing speed in TA05
+<li> TAHU: Made SHRN cutscene skippable
+<li> TAHU: Fixed broken text references on the Fire Rain Glyph
+<li> MAKUTA: Added background music to all areas
+<li> MAKUTA: Implemented unused timer SFX
+<li> MAKUTA: Fixed Toa starting with incorrect default masks
+<br><br>
+*MWAT requires further testing, as we have not been able to confirm that it functions correctly on all systems
+</ul></font></p>
+<p><font size="3">v1.0.0:<ul class="inside"></font>
+<font size="1">
+<li> Added Windows 10 support
+<li> Added HD upscaling and widescreen support*
+<li> Fixed SVPRad necessity permanently
+<li> Fixed inverted billboard objects RESULTING from SVPRad fix
+<li> Fixed various typos/formatting issues in the glossary and other levels
+<li> Fixed incorrect SHRN to TURA portal spawn locations in all levels
+<li> Fixed broken Turaga conversations in all levels
+<li> Fixed various Tohunga rendering white from improper lighting
+<li> Fixed various objects, textures, and vertex colours rendering incorrectly
+<li> Created and added names for all untitled bosses
+<li> Ported various texture and model fixes from previous alpha patches
+<li> Temporarily dummied out FMVs due to conflicts with upres patch*
+<li> Temporarily re-enabled the level select due to severe save issues*
+</ul></font></p>
+<p><font size="1">Per-level fixes:
+<ul class="inside">
+<li> FREN: Fixed the position and vertex colours of various objects
+<li> ONUA: Fixed visible stage edges in BECH
+<li> ONUA: Fixed lack of stage boundaries in BECH
+<li> ONUA: Fixed various collision issues in BECH, VLLG, ATRM, & CLF2
+<li> ONUA: Fixed broken water collision in VLLG
+<li> ONUA: Fixed CAVE crash on Windows 10
+<li> ONUA: Fixed the infamous high killbox bug in HK01
+<li> GALI: Fixed incorrect voice being played in intro cutscene
+<li> GALI: Fixed melee animation crash
+<li> GALI: Fixed missing water animations in HK01
+<li> GALI: Fixed MTOP crash
+<li> GALI: Fixed TTUN spawn, Rahi and object placements
+<li> GALI: Fixed GLY3 crash on Windows 10
+<li> GALI: Fixed spawn point for backtrack from TAKV
+<li> GALI: Fixed an issue with HYDR preventing Rahi spawning from hives
+<li> POHATU: Re-enabled BLDR area
+<li> POHATU: Fixed Kane-Ra mount cutscene crash
+<li> KOPAKA: Fixed broken Ice Bat animations
+<li> KOPAKA: Added missing ammo pickups in SNFL
+<li> LEWA: Fixed broken Nui-Rama animations
+<li> TAHU: Fixed numerous broken door triggers
+<li> MAKUTA: Fixed lack of ambient noise in all stages
+<li> MAKUTA: Fixed broken water physics & textures in Gali's stage
+<li> MAKUTA: Fixed broken lava animations in Tahu's stage
+<br><br>
+* Widescreen currently breaks some Frontend menus. Disabled by default, but configurable via DGVoodoo and Bionicle.ini
+* FMVs can still be found in the "ORIGINAL" subfolder of "LEGO Bionicle (Beta)\Data\cinematics"
+* Frontend can still be selected from the level select, or my removing "CheatMenu=LEGOTester" from Bionicle.ini
+</ul></font></p>
+</div>
+<button class="collapsible"><font size="1"><h2>&nbsp&nbspAlpha Patch Notes:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp+</h2></font></button>
+<div class="content">
+<br><font size="1">(Full list of credits can be found in the game's included PatchNotes.txt)</font>
+<p><font size="3">v1.1.1<ul class="inside">
+</ul></font></p>
+<p><font size="1">Per-level fixes:
+<ul class="inside">
+<li> ONUA: Fixed invisible dancy bois once and for all
+</ul></font></p>
+<p><font size="3">v1.1.0<ul class="inside">
+<font size="1">
+<li> Restored FMVs that were disabled due to rendering issues
+<li> Fixed an issue with falltodeath sounds not playing
+<li> Added code to global_class exit subroutine, fixing various crashes
+<li> Added code to lego_area_cleanup subroutines, fixing various cache issues
+<li> Fixed Turaga vertex colors issues
+</ul></font></p>
+<p><font size="1">Per-level fixes:
+<ul class="inside">
+<li> ONUA: Fixed text issues with Fikou-Nui fight
+<li> ONUA: Removed Kaita sounds from L1A8 platforms
+<li> ONUA: Fixed Kaita sound playing on CLF1 killbox death
+<li> ONUA: Fixed diggable wall shutdown in SCRP
+<li> GALI: Fixed an issue with animated textures causing death in water
+<li> GALI: Fixed issue where collecting air bubbles would result in a crash
+<li> GALI: Fixed issue with fish sticking to the floor in TTUN
+<li> GALI: Fixed a model issue with GLY3 causing a crash
+<li> GALI: Fixed a typo in OSI code causing the Ga-Koro horn shutdown
+<li> GALI: Fixed GLY3 doors rendering invisible
+<li> POHATU: Restored missing sky animations
+<li> POHATU: Removed extra music track that overlaps the cinematic in MTUP
+<li> POHATU: Fixed an issue with music playback in MTUP
+<li> POHATU: Fixed incorrect music playing in VLLG
+<li> POHATU: Fixed BLR6 from crashing upon exiting area
+<li> KOPAKA: Fixed upgraded energy ball textures from not rendering
+<li> KOPAKA: Fixed backtracking crash issues for all affected areas
+<li> KOPAKA: Fixed a number of incorrect door triggers
+<li> KOPAKA: Fixed an issue in STRT where the button would clip the floor
+<li> KOPAKA: Fixed Matatu collection causing a cutscene softlock
+<li> KOPAKA: Fixed shutdown in WELL
+<li> KOPAKA: Fixed ice bridge causing a game freeze in SHRN
+<li> KOPAKA: Backported missing boss door textures/added animations for them
+<li> KOPAKA: Backported missing ice skates and Element of Melting textures
+<li> LEWA: Fixed an issue with the camera clipping a wall in CIN1
+<li> LEWA: Fixed LE10 spawn point so Toa faces proper direction
+<li> LEWA: Backported missing slb to fix Kapura's lack of dialogue
+<li> MAKUTA: Fixed KUTA spawn point so Toa faces proper direction
+</ul></font></p>
+<p><font size="3">v1.0.0:<ul class="inside"></font>
+<font size="1">
+<li> Backported graphical fixes from the beta
+<li> Backported Takara animations from beta to replace those that were missing
+<li> Reverted beta animation changes for alpha content preservation
+<li> Removed various non-functional warp list entries and reorganized the rest
+<li> Fixed various objects from rendering incorrectly
+<li> Fixed various text issues
+<li> Fixed Kanohi Mask rooms shutting down on re-entry
+</ul></font></p>
+<p><font size="1">Per-level fixes:
+<ul class="inside">
+<li> ONUA: Fixed Whenua not rendering in Onua's Takara
+<li> GALI: Fixed Onua Meets Gali not playing
+<li> GALI: Fixed Nokama's spawn position
+<li> KOPAKA: Fixed Pohatu Meets Kopaka cinematic not playing
+<li> KOPAKA: Backported beta animations for Pohatu due to missing data
+<li> KOPAKA: Fixed Nuju's spawn position
+<li> LEWA: Fixed an issue with the Takara causing the camera to clip Matau
+<li> TAHU: Backported Lewa Meets Tahu from beta due to missing data
+<li> TAHU: Fixed Vakama's spawn position
+<li> TAHU: Fixed MOSH shutdown on re-entry
+</ul></font></p>
+<p><font size="3">v0.007:<ul class="inside"></font>
+<font size="1">
+<li> Reworked patching system once again. Game now runs from a new launcher
+<li> Updated various Toa animations with those from DeepBrick's onua.blk
+<li> Fixed various objects from rendering incorrectly
+<li> Fixed various areas that previously crashed due to lack of collision data
+<li> Fixed various text issues
+<li> Updated AutoHotkey script to close when the game is no longer running
+</ul></font></p>
+<p><font size="1">Per-level fixes:
+<ul class="inside">
+<li> ONUA: Replaced missing sign & trees in Onua's PTV2
+<li> ONUA: Fixed Onua's SCRP crashing outright on Windows 10 machines
+<li> GALI: Fixed all water in Ga-Wahi lacking animations
+<li> GALI: Fixed Ga-Koro Takara softlock
+<li> KOPAKA: Fixed Nuju not rendering in his hut
+<li> KOPAKA: Fixed typo in BRD3 exit trigger that caused a crash
+<li> KOPAKA: Fixed Ice Bats lacking animations (For real this time!)
+<li> LEWA: Fixed Nui Rama lacking animations
+<li> TAHU: Fixed Vakama not rendering in his hut
+<li> MAKUTA: Pointed Tahu's door to the unused Kuta level
+</ul></font></p>
+<p><font size="3">v0.006.1:<ul class="inside"></font>
+<font size="1">
+<li> Fixed an issue with the patcher throwing a setup error
+<li> Reverted a change involving Takara breaking Tohunga elsewhere
+<li> Cleaned up redundant files in the installer
+<li> Increased the brightness of the game to 140%
+</ul></font></p>
+<p><font size="1">Per-level fixes:
+<ul class="inside">
+<li> FREN: Replaced placeholder textures for Frontend
+</ul></font></p>
+<p><font size="3">v0.006:<ul class="inside"></font>
+<font size="1">
+<li> Laid ground work for a universal game updater, patcher, and launcher
+<li> Patch installer can now install to a custom game location
+<li> Fixed objects rendering through walls
+<li> Fixed jagged edges on object intersections
+<li> Fixed 99% of rendering issues with Kanohi items
+<li> Updated the AutoHotkey script for the debug menu with debug cam options
+<li> Added a new help screen. Now shows extra controls not detailed
+</ul></font></p>
+<p><font size="1">Per-level fixes:
+<ul class="inside">
+<li> FREN: Fixed load crash. Currently only has barebones functionality
+<li> FREN: Added placeholders for missing textures
+<li> KOPAKA: Fixed Kopaka's Takara not rendering*
+<li> KOPAKA: Fixed missing bat and ice bat animations
+<li> LEWA: Fixed Lewa's Takara not rendering*
+*Currently Kopaka and Lewa share the same dance as Onua. We know not whether original dance animations exist for them
+</ul></font></p>
+<p><font size="3">v0.005:<ul class="inside"></font>
+<font size="1">
+<li> Added DGVoodoo to the patch, fixing the following graphical bugs:
+<p>
+<li> Window mode (Toggle in game with Alt+Enter)
+<li> Improper texture filtering
+<li> Improper antialiasing
+<li> Uncapped FPS (Causing certain animations to run too fast)
+<li> Missing death screen transitions
+</p><br>
+<li> Temporarily dummied out intro FMVs until an outstanding bug can be fixed
+<li> Added autohotkey script to make navigating the debug menu easier.
+</ul></font></p>
+<p><font size="3">v0.004:<ul class="inside"></font>
+<font size="1">
+<li> Patches are now included in a fancy new installer! Ooh! Ahhh!
+</ul></font></p>
+<p><font size="1">Per-level fixes:
+<ul class="inside">
+<li> ONUA: Fixed Onu-Matoran dancers For real this time!
+</ul></font></p>
+<p><font size="3">v0.003:<ul class="inside"></font>
+<font size="1">
+<li> Added Windows 10 support
+</ul></font></p>
+<p><font size="1">Per-level fixes:
+<ul class="inside">
+<li> GALI: Fixed Turaga Nokama rendering invisible
+<li> GALI: Fixed crash on warping to Gali's shrine
+</ul></font></p>
+<p><font size="3">v0.002:<ul class="inside"></font>
+<font size="1">
+<li> POHATU: Fixed Po-Wahi crash
+<li> LEWA: Fixed Le-Koro crash
+<li> MAKUTA: Fixed Akamai crash
+</ul></font></p>
+<p><font size="3">v0.001:<ul class="inside"></font>
+<font size="1">
+<li> Upscaled the game's default resolution
+</ul></font></p>
+<p><font size="1">Per-level fixes:
+<ul class="inside">
+<li> ONUA: Fixed Onu-Matoran dancers being invisible
+<li> KOPAKA: Fixed Turaga Nuju's animations
+</ul></font></p>
+</div>
+<p><font size="2">Notes:
+<li>Alpha FMVs do not currently function in widescreen mode. Additionally, make sure for all builds that compatibility mode is set to XP.
+If you encounter any issues, simply delete or move the files from the "cinematics" folder.<br><br>
+<li>Legacy localizations are not official in any capacity and are included exclusively as an accessibility feature.
+</font></p><br><br>
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } 
+  });
+}
+</script>
+</body>
+</html>

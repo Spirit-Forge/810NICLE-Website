@@ -49,16 +49,26 @@ table td p {
 	margin: 0em;
 	text-shadow: 0px 0px 4px #080808, 0px 0px 4px #080808;
 }
+
+
 .qm {
 	position: sticky;
-	width:30%;
+	margin-left: 25%;
+	width: 75%;
 	height:0%;
 	top:15%;
-	margin-left: auto;
 	margin-right: auto;
 	z-index: 1;
 	overflow:visible;
 }
+
+
+.qm img {
+	margin: auto;
+	margin-left: 20%;
+	width: 60%;
+}
+
 
 /****************
  * EVENT COLORS *
@@ -84,37 +94,52 @@ table td p {
 	background-position: center;
 	background-size: cover;
 }
+
+
 .break2 {
 	background-color: #663366;
 	background-image: url("../img/schedule/break2.webp");
 	background-position: center;
 	background-size: cover;
 }
+
+
 .break2 h3 {
 	filter:blur(10px);
 }
+
+
 .break2 p {
 	filter:blur(10px);
 }
 
+
 .direct {
-	background-image: url("../img/schedule/direct.png");
+	background-image: url("../img/schedule/direct.webp");
 	background-position: center;
 	background-size: cover;
 }
+
+
 .treehut{
 	background-image: url("../img/schedule/treehut.webp");
 	background-position: right;
 	background-size: cover;
 	overflow:hidden;
 }
+
+
 .treehut p {
 	max-width: 60%;
 	filter:blur(50px);
 }
+
+
 .treehut h3 {
 	filter:blur(10px);
 }
+
+
 .woh {
 	background-image: url("../img/schedule/woh.webp");
 	background-position: center;
@@ -124,21 +149,28 @@ table td p {
 
 .mangai {
 	background-color: rgb(88, 88, 88);
-	background-image: url("../img/schedule/mangai.png");
+	background-image: url("../img/schedule/mangai.webp");
 	background-position: right;
 	background-size: cover;
 }
+
+
 .jl {
 	background-image: url("../img/schedule/justin.webp");
 	background-position: center;
 	background-size: cover;
 }
+
+
 .jl h3 {
 	filter:blur(10px);
 }
+
+
 .jl p {
 	filter:blur(10px);
 }
+
 
 .wcp{
 	background-color: #c9c8cb;
@@ -146,12 +178,18 @@ table td p {
 	background-position: right;
 	background-size: cover;
 }
+
+
 .wcp h3 {
 	filter:blur(10px);
 }
+
+
 .wcp p {
 	filter:blur(10px);
 }
+
+
 .koli {
 	background-color: #09c2e3;
 	background-image: url("../img/schedule/koli.webp");
@@ -166,15 +204,20 @@ table td p {
 	background-position: right;
 	background-size: cover;
 }
+
+
 .fs h3 {
 	filter:blur(10px);
 }
+
+
 .fs p {
 	filter:blur(10px);
 }
 
+
 .oranges {
-	background-image: url("../img/schedule/oranges.png");
+	background-image: url("../img/schedule/oranges.webp");
 	background-position: right;
 	background-size: cover;
 }
@@ -182,7 +225,7 @@ table td p {
 
 .iceberg {
 	background: linear-gradient(0deg, rgba(9,9,37,1) 0%, rgba(0,153,255,1) 100%);
-	background-image: url("../img/schedule/iceberg.png");
+	background-image: url("../img/schedule/iceberg.webp");
 	background-position: center;
 	background-size: cover;
 }
@@ -207,24 +250,34 @@ table td p {
 	background-position: right;
 	background-size: cover;
 }
+
+
 .duck h3 {
 	filter:blur(10px);
 }
+
+
 .duck p {
 	filter:blur(10px);
 }
+
 
 .sunny {
 	background-image: url("../img/schedule/sunny.webp");
 	background-position: center;
 	background-size: cover;
 }
+
+
 .sunny h3 {
 	filter:blur(10px);
 }
+
+
 .sunny p {
 	filter:blur(10px);
 }
+
 
 .rsg {
 	background-color: #ff0000;
@@ -232,12 +285,18 @@ table td p {
 	background-position: top center;
 	background-size: cover;
 }
+
+
 .rsg h3 {
 	filter:blur(10px);
 }
+
+
 .rsg p {
 	filter:blur(10px);
 }
+
+
 .speed {
 	background-color: darkblue;
 	background-image: url("../img/schedule/speed2.webp");
@@ -247,9 +306,12 @@ table td p {
 .speed h3 {
 	filter:blur(10px);
 }
+
+
 .speed p {
 	filter:blur(10px);
 }
+
 
 .rem {
 	background-color: skyblue;
@@ -257,24 +319,34 @@ table td p {
 	background-position: center;
 	background-size: cover;
 }
+
+
 .rem h3 {
 	filter:blur(10px);
 }
+
+
 .rem p {
 	filter:blur(10px);
 }
+
 
 .tammy {
 	background-image: url("../img/schedule/tammy.webp");
 	background-position: center;
 	background-size: cover;
 }
+
+
 .tammy h3 {
 	filter:blur(10px);
 }
+
+
 .tammy p {
 	filter:blur(10px);
 }
+
 
 .btgs {
 	background-color: crimson;
@@ -282,22 +354,31 @@ table td p {
 	background-position: top right;
 	background-size: cover;
 }
+
+
 .btgs h3 {
 	width:55%;
 	filter:blur(10px);
 }
+
+
 .btgs p {
 	width:55%;
 	filter:blur(10px);
 }
+
+
 .ide {
-	background-image: url("../img/schedule/ide.png");
+	background-image: url("../img/schedule/ide.webp");
 	background-position: center;
 	background-size: cover;
 }
+
+
 .ide p{
 	width:58%;
 }
+
 
 div.schedulecontainer {
 	display: flex;
@@ -359,12 +440,15 @@ footer {
 	table tr td p {
 		font-size: 0.875em;
 	}
-.qm{
-	height:0px;
-	width:60%;
-	margin-left: 30%;
 
-}
-.qm img{
-	width:100%;
+	.qm{
+		height:0px;
+		width:60%;
+		margin: auto;
+
+	}
+	
+	.qm img{
+		width:100%;
+	}
 }

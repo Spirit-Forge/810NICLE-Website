@@ -36,20 +36,28 @@
  * END FONTS *
  *************/
 
+
+/*************
+ * UNIVERSAL *
+ *************/
+
+
 * {
   scrollbar-width: thin;
   scrollbar-color: rgb(180, 196, 8) rgb(41, 46, 27);
-  scrollbar-color:hover: rgb(180, 196, 8);
 }
 
-/* Works on Chrome, Edge, and Safari */
+
+/* Chrome, Edge, and Safari */
 *::-webkit-scrollbar {
   width: 10px;
 }
 
+
 *::-webkit-scrollbar-track {
   background: rgb(41, 46, 27);
 }
+
 
 *::-webkit-scrollbar-thumb {
   background-color: rgb(180, 196, 8);
@@ -197,6 +205,16 @@ main section:nth-of-type(odd) p {
 }
 
 
+/*****************
+ * END UNIVERSAL *
+ *****************/
+
+
+/************
+ * ZOOMABLE *
+ ************/
+
+
 img.zoomable {
     max-width: 40%;
     transition: all .2s ease-in-out;
@@ -214,6 +232,11 @@ img.zoomable:active {
     transform: scale(0.96875);
     filter: brightness(0.9);
 }
+
+
+/****************
+ * END ZOOMABLE *
+ ****************/
 
 
 main section.social {
