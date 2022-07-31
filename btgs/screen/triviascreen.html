@@ -2,50 +2,70 @@
 <head>
 	<link rel="stylesheet" type="text/css" href="screen.css">
 	<style>
-	.Typewriter__cursor{-webkit-animation:Typewriter-cursor 1s infinite;animation:Typewriter-cursor 1s infinite;margin-left:1px}@-webkit-keyframes Typewriter-cursor{0%{opacity:0}50%{opacity:1}100%{opacity:0}}@keyframes Typewriter-cursor{0%{opacity:0}50%{opacity:1}100%{opacity:0}}
+		.Typewriter__cursor {
+			-webkit-animation: Typewriter-cursor 1s infinite;
+			animation: Typewriter-cursor 1s infinite;
+			margin-left: 1px
+		}
+
+		@-webkit-keyframes Typewriter-cursor {
+			0% {
+				opacity: 0
+			}
+
+			50% {
+				opacity: 1
+			}
+
+			100% {
+				opacity: 0
+			}
+		}
+
+		@keyframes Typewriter-cursor {
+			0% {
+				opacity: 0
+			}
+
+			50% {
+				opacity: 1
+			}
+
+			100% {
+				opacity: 0
+			}
+		}
 	</style>
 </head>
-	<body>
-		<div class="screen"><img src="MaxilOS.png">
-		</div>
-<div class="scroll"><button onclick="q1()">Start Q1</button> <a href="#q2">Blah</a></div>
+<body>
+	<div class="screen"><img src="MaxilOS.png">
+	</div>
+	<div class="scroll">
+		<button onclick="loadText()">Forward</button>
+		<p id="position">0</p>
+		<input id="positionInput" type="text" value="">
+		<button onclick="reverse()">Reverse</button>
+	</div>
 	<div id="q1" class="question">
-		  <div id="q1"></div>
-		<script src='typewriter-effect/dist/core.js'></script>
-		<script type='text/javascript'>
-		var typewriter = new Typewriter('#q1', {
-		  autoStart: false,
-    });
+		<div id="q1"></div>
+		<!--
+			<script id="typewriterMain" type='text/javascript'>
+			var typewriter = new Typewriter('#q1', {
+				autoStart: false,
+			});
 
-    typewriter.pauseFor(1500)
-	  .typeString('Hello Liam!')
-      .pauseFor(2000)
-      .typeString('<br/><br/><br/>ur mom zyglak')
-	  .pauseFor(500)
-	  .deleteAll()
-	  .start();
+			typewriter.pauseFor(1500)
+				.typeString('Hello Liam!')
+				.pauseFor(2000)
+				.typeString('<br/><br/><br/>ur mom zyglak')
+				.pauseFor(500)
+				.deleteAll();
 
-  </script>
+			</script>
+		-->
 	</div>
-	<div class="scroll"><button onclick="typewriter()">Start Q2</button></div>
-	<div id="q2" class="question">
+	<script src='typewriter-effect/dist/core.js'></script>
+	<script src="/btgs/screen/typewriter-modules.js"></script>
+</body>
 
-		  <div id="q2"></div>
-
-		<script type='text/javascript'>
-		var typewriter = new Typewriter('#q2', {
-		  autoStart: false,
-    });
-
-    typewriter.pauseFor(2500)
-	  .typeString('Hello Liam!')
-      .pauseFor(2000)
-      .typeString('<br/><br/><br/>ur mom zyglak')
-	  .pauseFor(500)
-	  .deleteAll()
-	  .start();
-
-  </script>
-	</div>
-	</body>
 </html>
