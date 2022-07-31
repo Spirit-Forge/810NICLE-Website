@@ -4,5 +4,5 @@ CLEAR
 Where was the Spirit's Wish located?
 At the source of the River Dormus.
 CLEAR
-How many statues were placed along the Path of Prophecies?
-Six<br>Four<br>Twelve<br>24
+How many statues were placed along the Path of Prophecies?<br>Six<br>Four<br>Twelve<br>24
+Correct Answer: Six
