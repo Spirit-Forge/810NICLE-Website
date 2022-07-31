@@ -26,6 +26,7 @@ a {
 	top: 0px;
 	left: 0px;
 	font-family: 'Perfect DOS VGA 437 Win';
+	text-transform: uppercase;
 	font-size: 3em;
 	color: #04FF00;
 	padding-left: 0.2em;
