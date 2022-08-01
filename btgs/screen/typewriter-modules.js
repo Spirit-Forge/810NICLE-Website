@@ -23,13 +23,13 @@ xhr.send();
 function loadText() {
     let currentLine = questions[position];
     if (currentLine == "CLEAR") {
-        typewriter.deleteAll();
+        typewriter.deleteAll(10);
         typewriter.start();
         document.getElementById("position").innerText = position;
         position++;
         loadText();
     } else {
-        typewriter.typeString(currentLine + "<br>");
+        typewriter.typeString(currentLine);
         typewriter.start();
         document.getElementById("position").innerText = position;
         position++;
@@ -50,7 +50,7 @@ function reverse() {
 function reverse() {
     let replacement = document.getElementById("positionInput").value;
     position = parseInt(replacement);
-    typewriter.deleteAll();
+    typewriter.deleteAll(10);
     typewriter.start();
     loadText();
 }
