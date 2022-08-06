@@ -51,6 +51,16 @@ table td p {
 	text-shadow: 0px 0px 4px #080808, 0px 0px 4px #080808;
 }
 
+table td h4,
+table td h4 em {
+    font-family: 'TradeMarker';
+    letter-spacing: 0.125em;
+	margin-top: 0.2em;
+	margin-bottom: 0.2em;
+	font-size: 0.9em;
+	text-shadow: 0px 0px 4px #080808, 0px 0px 4px #080808;
+}
+
 
 /****************
  * EVENT COLORS *
