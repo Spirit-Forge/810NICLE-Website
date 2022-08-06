@@ -7,9 +7,9 @@ table {
 
 
 table tr {
-	min-height: 48px;
-	height: 48px;
-	max-height: 48px;
+	min-height: 64px;
+	height: 64px;
+	max-height: 64px;
 }
 
 
