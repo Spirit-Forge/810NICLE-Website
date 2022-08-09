@@ -80,6 +80,7 @@ body:before {
 
 .loading {
 	background-image: url('bg/loading.png');
+	backdrop-filter: blur(5px);
 	position:fixed;
 	top:0px;
 	left:0px;
