@@ -57,13 +57,20 @@ body:before {
 		left: -30%;
 	}
 }
-
+.vahi-cover{
+	position:fixed;
+	top:0px;
+	left:0px;
+	width:684px;
+	height:467px;
+	z-index:2;
+}
 .vahi {
-	position: fixed;
-	left:271px;
-	top:184px;
-	height:200px;
-	width:400px;
+	position: relative;
+	margin: auto;
+	height:auto;
+	width:auto;
+	top:15%;
 	z-index: 2;
 	overflow:visible;
 	display:block;
