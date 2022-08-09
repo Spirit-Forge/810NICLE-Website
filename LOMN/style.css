@@ -1,5 +1,6 @@
 html, body {
 	height: 100%;
+	width:684px;
 }
 
 body {
@@ -59,12 +60,15 @@ body:before {
 
 .vahi {
 	position: fixed;
-	top:10%;
-	left:25%;
-	width:50%;
+	left:271px;
+	top:184px;
+	height:200px;
+	width:400px;
 	z-index: 2;
 	overflow:visible;
 	display:block;
+	text-align: center;
+	font-size: 2em;
 }
 
 .loading {
