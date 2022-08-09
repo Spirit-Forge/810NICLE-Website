@@ -59,7 +59,7 @@ body:before {
 
 .vahi {
 	position: fixed;
-	top:35%;
+	top:25%;
 	left:40%;
 	width:50%;
 	z-index: 2;
@@ -68,8 +68,7 @@ body:before {
 }
 
 .loading {
-	opacity: 60%;
-	background-color: black;
+	background-image: url('bg/loading.png');
 	position:fixed;
 	top:0px;
 	left:0px;
