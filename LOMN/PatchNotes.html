@@ -54,6 +54,152 @@
 <button class="collapsible"><font size="1"><h2>&nbsp&nbspRebuilt Patch Notes:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp+</h2></font></button>
 <div class="content">
 <br><font size="1">(Full list of credits can be found in the game's included PatchNotes.txt)</font>
+<p><font size="3">v1.1.0 :<ul class="inside"></font>
+<font size="1">
+<li> Updated credits, added Alastair Swinnerton; credits are now an FMV
+<li> Moved lev3-lev5 help Tohunga into villages post-invasion
+<li> Added printing glyphs to each level, to be moved later
+<li> Changed grappling hook text per Toa to be more fitting
+<li> Added invasion as a door condition to prevent skipping village saving
+<li> Fixed textures in TURA areas that were unfitting and/or broken
+<li> Added villager equipment via updated AddPart system
+<li> Added Toa weapon holstering via updated AddPart system
+<li> Updated 24 music tracks with new high quality versions from David Madden
+<li> Updated Toa bump maps; added bump maps to Gali, Kopaka, Lewa, and Tahu
+<li> Changed music in miniboss areas to new theme, DrumAndBassPart1
+<li> Added alpha pedestals beneath masks
+<li> Added new pillar pedestals underneath grapples based on lev2 version
+<li> Added new, original pedestals for glyphs
+<li> Quest items now appear in the village after returning them
+<li> Unworn masks and grappling hooks are now gray for canon consistency
+<li> Fixed a small normals issue on the Hau
+<li> Added unused ToaDamage and lowhealth sounds
+<li> Added ToaWarp sound to Shrine/Turaga hut portals
+<li> Added unused ThingyAppear sound to Amana Volo Spheres
+<li> Ported alpha Help menu; updated controls and graphics
+<li> Added multiple language versions of the Help menu
+<li> Recoded and remade inventory menu; fixed softlock
+<li> Added new Toa/Tohunga models for set accuracy with new custom skeletons
+<li> Turaga now disappear from their huts when the shrine portal is open
+<li> HUD eye colors now change depending on character
+<li> Updated Amana Volo model to match Tales of the Tohunga/Quest for the Toa
+<li> Changed drowning system with new air meter; applied to all Toa
+<li> Added small conversations with new passive Rahi in each village
+<li> Varied music in certain areas to prevent overuse of SurfAndSnowboard
+<li> Extra text has been added to token doors if another item is required
+<li> Renamed most boss areas
+<li> Changed certain mask hotkeys to make more sense
+<li> Upscaled/updated HUD and pickup textures
+<li> Added new pause graphics based on unused texture, using an unused font
+<li> Reimplemented passive Rahi; only die when hitting a killbox
+<li> Fixed Tarakava AI and animations
+<li> Fixed Whenua movelist; additionally, all Turaga now stand still in huts
+<li> Music now silences post-invasion until villagers appear
+<li> Fixed certain issues caused by pausing
+<li> Split OptionalPatchNative.dll into multiple hookmods for convenience
+<li> Changed projectile colors of Onua and Tahu
+<li> Added new effects for entering a portal, along with better handling
+<li> Fixed floating spawn points in SHRN and TURA areas
+<li> Added new area transition system, making area swaps much cleaner
+<li> Added wrapping to debug menu scrolling
+<li> Added generic handling for killboxes to optimize handling for them
+<li> Fixed NPCs being able to trigger token door text
+<li> Fixed waypoint markers for Turaga huts so they appear only post-invasion
+<li> Fixed oversight causing Right Hands to trigger post-Takara Turaga speech
+<li> Fixed grappling hook from being active during a conversation or cutscene
+<li> Fixed masks from remaining active during conversations and cutscenes
+<li> Removed the ability to use masks or pause the game during a cutscene warp
+<li> Fixed an issue with player movement sounds overlapping start of cutscenes
+<li> Fixed music stop code for cutscene warps, now only stop audio if skipped
+<li> Replaced all fonts with new higher resolution versions
+<li> Cleaned up redundant files across the game, tidying up a bit
+<li> Unified the color palette for all characters and character objects
+<li> Fixed music sometimes playing for a frame before a cinematic starts
+<li> Fixed a number of issues with quest flags not working properly
+<li> Fixed some inconsistencies with various legacy saver flags
+<li> Fixed tree keepers sometimes tripping the conditions for inventory items
+<li> Disabled the grappling hook in VLLG, SHRN, TURA, and MOSH areas
+<li> Fixed hud remaining on-screen during a cutscene warp
+<li> Fixed hud not hiding correctly during camera pans/boss intros
+<li> Replaced and optimized respawn handling with new system
+<li> Fixed dancers not using dance animations during conversations
+<li> Fixed dancers not using dance animations after conversations
+<li> Dancers will now walk around villages post-Takara
+<li> Moved tokens in Matau's hut
+<li> Replaced the loading bar with a high-res version
+</ul></font></p>
+<p><font size="1">Per-level fixes:
+<ul class="inside">
+<li> TEST: Made the background look nicer
+<li> TEST: Added a test area for Tahu
+<li> TEST: Added test map for future flight sections
+<li> TEST: Enabled and overhauled the cut Language Test menu for future use
+<li> FREN: Fixed and updated clicking textures for cursor on title screen
+<li> FREN: Added new Extras menu; includes Glossary, Print, Theater
+<li> FREN: Added images to the Glossary where they were missing
+<li> FREN: Fixed grammar and punctuation of certain Glossary entries
+<li> FREN: Toa Kaita now appear in the area once they have been played as
+<li> FREN: Reordered print menu
+<li> ONUA: Changed certain token positions in ROLL for easier collection
+<li> ONUA: Fixed KRB2 (Ussal Crab) Rahi for future use
+<li> ONUA: Fixed music in MDMN; starts with silence, leads to OnuaTheme
+<li> ONUA: Added a missing killbox into ROLL
+<li> ONUA: Edited BECH to remove water wall and extend sea floor
+<li> ONUA: Added bubbles to ATRM to prevent easy drowning
+<li> ONUA: Added tutorial totem to HK01 for elemental glyph controls
+<li> ONUA: Added Eathquake symbol on wall in MDMN
+<li> ONUA: Added unused webs, boudler to CLF2
+<li> ONUA: Updated Nui-Jaga model with pre-alpha high-poly model
+<li> ONUA: Added WIP area to warplist based on pre-alpha BUGS model, NEST
+<li> ONUA: Fixed HUD from showing after Legend FMV during convo with Whenua
+<li> ONUA: Fixed hive bases rendering in Onu-Koro introduction cinematic
+<li> ONUA: Fixed various door models lacking bottom and side faces
+<li> ONUA: Improved the hitboxes for the Nui-Jaga and Fikou-Nui
+<li> ONUA: Added ledge grab tutorial totem back into L1A1
+<li> ONUA: Replaced tools in Onu-Koro with high-poly versions
+<li> GALI: Fixed AI and movement speed of TTRT Rahi
+<li> GALI: Reverted sphere color to vanilla
+<li> GALI: Moved disc quest Tohunga out of the water
+<li> GALI: Re-enabled HYDR boss intro pan
+<li> GALI: Added new underwater hives; added to invasion
+<li> GALI: Improved MTUP area to look better and hide animation quirks
+<li> GALI: Fixed Ga-Koro horn pedestals being too short
+<li> GALI: Fixed horn glyphs in Ga-Koro lacking side faces
+<li> GALI: Moved energy pickups that were stuck in the ground in GLY3
+<li> GALI: Added collision to furniture and plants in Ga-Koro
+<li> POHATU: Changed stone rain glyph texture to alternate lev6 version
+<li> POHATU: Changed stone rain glyph text to better fit its new functionality
+<li> POHATU: Moved RKFL between XROD and SHRN for a smoother difficulty curve
+<li> POHATU: Changed music in GLY1 to TechnoSnowboardPart2
+<li> POHATU: Fixed two Tohunga in Po-Koro that had incorrect colors
+<li> POHATU: Fixed ability to change or use masks in BLR1 and BLR2
+<li> KOPAKA: Added energy pellets into TELE, moved cliff tokens
+<li> KOPAKA: Added extra skate to ice skates model
+<li> KOPAKA: Added missing invasion door to Nuju's hut
+<li> KOPAKA: Fixed collision of trees and stone cubes in Ko-Koro
+<li> KOPAKA: Moved a token previously up a tree in Ko-Koro to the ground
+<li> KOPAKA: Updated ice shield model for Kopaka
+<li> KOPAKA: Fixed entrance of Nuju's hut allowing access during invasion
+<li> KOPAKA: Fixed a snow geometry cutoff on the Vuata Maca tree
+<li> LEWA: Added missing invasion door to Matau's hut
+<li> LEWA: Moved tokens in LE01 to less frustrating positions
+<li> LEWA: Updated a certain Tohunga in VLLG
+<li> TAHU: Replaced all instances of bats with unused btfr enemy
+<li> TAHU: Changed vanilla line so that Ta-Koro itself didn't see a creature
+<li> TAHU: Ported alpha area TA10; moved and added tokens
+<li> TAHU: Overhauled TA05 code, fixing various script errors
+<li> TAHU: Adjusted entirety of TA10's UV maps to look less garbage
+<li> MAKUTA: Split ToaKaitaFight FMV in two to account for new gameplay
+<li> MAKUTA: Ported previously unused alpha area, KUTA; added new code/detail
+<li> MAKUTA: Ported Toa Kaita, added Aki and Rua masks*
+<li> MAKUTA: Ported MANA, PST1, MAN1, and PST2 from the alpha*
+<li> MAKUTA: Added new area, MAN3*
+<li> MAKUTA: Cleaned up existing level code
+<li> MAKUTA: Credits now play after ending FMV
+<li> MAKUTA: Replaced Toa Kaita models with high-poly set accurate versions
+<br><br>
+*The Kaita, along with their areas and the rest of lev7, are not quite complete and polished yet, so keep that in mind when playing.
+</ul></font></p>
 <p><font size="3">v1.0.2 :<ul class="inside"></font>
 <font size="1">
 <li> Fixed an issue that caused corrupted saves on quitting from Frontend
@@ -139,6 +285,65 @@
 <button class="collapsible"><font size="1"><h2>&nbsp&nbspBeta Patch Notes:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp+</h2></font></button>
 <div class="content">
 <br><font size="1">(Full list of credits can be found in the game's included PatchNotes.txt)</font>
+<p><font size="3">v1.5.0 :<ul class="inside"></font>
+<font size="1">
+<li> Added ijl15_native.dll
+<li> Continued area code cleanup
+<li> Updated credits
+<li> Fixed an issue that prevented level transitions being written to the save
+<li> Fixed certain pickups having text wrap incorrectly
+<li> Reverted masks and grapple pickups to vanilla appearance (chrome)
+<li> Adjusted fixes for unlit Tohunga to stay closer to vanilla lighting
+<li> Removed duplicate mistextured triangles in various areas
+<li> Added/redid various invisible walls
+<li> Optimized screenwipe upon death/respawn to play on a generic basis
+<li> Fixed a bug that allowed the player to die several times before respawn
+<li> Fixed several scripting errors with grappling hook deactivation
+<li> Optimized the camera follow upon death to work on a generic basis
+<li> Removed player death and respawn sounds that were previously implemented
+<li> Added temporary invincibility period after respawn
+<li> Fixed alt-tabbing unpausing the game if the game was already paused
+<li> Fixed grappling hook causing the player to disappear during a cutscene
+<li> Fixed glyphs not working properly when used with 1 energy left
+<li> Disabled player input during cinematic warps to fix a crash
+<li> Fixed "Press SPACE to Continue" text not updating upon language change
+<li> Replaced files that had bad decompression due to a typo in BLKFile script
+<li> Fixed foreign characters to properly display, allowing full localization
+<li> Fixed the grapple flying bug (mostly)
+<li> Redirected save files to be in [User]/AppData/Roaming/[Game Edition]
+</ul></font></p>
+<p><font size="1">Per-level fixes:
+<ul class="inside">
+<li> FREN: Fixed Controls camera pan that went through the floor
+<li> ONUA: Fixed broken water in L1A7
+<li> ONUA: Fixed dying and respawning causing a crash in BECH
+<li> ONUA: Fixed improper event call for respawning in MUD0
+<li> ONUA: Fixed rendering limits in L1A1 and BUGS being too low
+<li> ONUA: Fixed CLF2 allowing player input too early after respawn
+<li> ONUA: Fixed BUGS cleanup not fully working
+<li> ONUA: Fixed softlock in SHRN by readding BUGS backtrack trigger
+<li> ONUA: Fixed NPCs triggering token door text in Onu-Koro
+<li> ONUA: Fixed Onua's right sidestep footprints overlapping incorrectly
+<li> GALI: Fixed GLY3 not saving on exit
+<li> GALI: Improved fixes for positions of things in TTUN
+<li> GALI: Fixed an issue where drowning slowed Gali's animations
+<li> GALI: Fixed backstep sounds not playing properly
+<li> GALI: Fixed air bubbles from causing a particle overload crash
+<li> POHATU: Reverted Husi rider to uncolored vanilla state
+<li> KOPAKA: Fixed issue where the Kakama would not be equipped post-meetup
+<li> KOPAKA: Fixed door buttons in VISN
+<li> KOPAKA: Redid meetup cutscene fix to be as close to vanilla as possible
+<li> KOPAKA: Reverted PATH music to vanilla
+<li> LEWA: Reverted quest spider color to vanilla
+<li> LEWA: Fixed displaced trigger in SHRN that allowed boss door skip
+<li> LEWA: Redid fix for visibly out of bounds camera pan in meetup cutscene
+<li> LEWA: Fixed mask swap in HIVE/SHRN not taking place post-cutscene
+<li> TAHU: Fixed TA02 infinite death when falling into lava
+<li> TAHU: Fixed lavafall in TA02 not killing the player properly
+<li> TAHU: Fixed cooled lava platform in TA02 lacking collision
+<li> MAKUTA: Fixed grappling hook deactivation only working in killbox in ONUA
+<li> MAKUTA: Updated grappling hook deactivation code in GALI
+</ul></font></p>
 <p><font size="3">v1.4.1 :<ul class="inside"></font>
 <font size="1">
 <li> Fixed an issue that caused corrupted saves on quitting from Frontend
@@ -398,6 +603,44 @@
 <button class="collapsible"><font size="1"><h2>&nbsp&nbspAlpha Patch Notes:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp+</h2></font></button>
 <div class="content">
 <br><font size="1">(Full list of credits can be found in the game's included PatchNotes.txt)</font>
+<p><font size="3">v1.2.0<ul class="inside">
+<font size="1">
+<li> Reverted texture, animation, and cinematic backports for preservation
+<li> Fixed some texture antialiasing and alpha issues with masks
+<li> Fixed an issue with player animation speed not resetting upon death
+<li> Updated debug menu scrolling to be single press instead of scroll
+<li> Added wrapping to debug menu scrolling
+<li> Optimized screenwipe upon death/respawn to play on a generic basis
+<li> Optimized the camera follow upon death to work on a generic basis
+<li> Backported some beta code into base_screenlist to resolve instabilities
+<li> Fixed a case where mask active sound would be playing post-cinematic
+<li> Added script classes for Turaga hutts to prevent quit crashing
+</ul></font></p>
+<p><font size="1">Per-level fixes:
+<ul class="inside">
+<li> ONUA: Fixed some Onu-Matoran dialogue showing up as XXX
+<li> ONUA: Fixed music from not playing properly in L1A8
+<li> ONUA: Made another attempt at fixing SCRP model crashing issues
+<li> ONUA: Fixed SCRP/SPCV intros not cleaning text when quitting
+<li> GALI: Fixed AI issue causing sfsh and tfsh to stick to floor
+<li> GALI: Fixed Ga-Koro horn softlock
+<li> POHATU: Fixed second cinematic in BLCV being unskippable
+<li> POHATU: Fixed instabilities with BLDR code and cleanup
+<li> POHATU: Fixed bad animation call triggering a crash with the bull in BLR2
+<li> POHATU: Fixed bull movement sounds continuing to play after leaving BLR2
+<li> KOPAKA: Fixed Ice Elemental crash
+<li> KOPAKA: Fixed issue where the Kakama would not be equipped post-meetup
+<li> LEWA: Fixed SHRN cutscene skipping causing a softlock
+<li> LEWA: Fixed mask swap in HIVE/SHRN not taking place post-cutscene
+<li> TAHU: Fixed burn sound from playing repeatedly when falling into lava
+<li> TAHU: Fixed freezing in Vakama's hutt by replacing collision data
+<li> TAHU: Fixed exits of TA12, TA13, and TA14 from crashing
+<li> TAHU: Fixed TA14 exit having incorrect spawn position set for SHRN
+<li> TAHU: Fixed respawning in lava in SHRN after dying
+<li> TAHU: Fixed boss door camera pan in SHRN6 from softlocking the game
+<li> TAHU: Fixed TA10 crashing on exiting the area
+<li> TAHU: Fixed TA09 surfboard not working properly
+</ul></font></p>
 <p><font size="3">v1.1.1<ul class="inside">
 </ul></font></p>
 <p><font size="1">Per-level fixes:

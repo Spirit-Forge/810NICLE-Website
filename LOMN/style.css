@@ -1,5 +1,6 @@
 html, body {
 	height: 100%;
+	width:684px;
 }
 
 body {
@@ -56,13 +57,33 @@ body:before {
 		left: -30%;
 	}
 }
-
+.vahi-cover{
+	position:fixed;
+	top:0px;
+	left:0px;
+	width:684px;
+	height:467px;
+	z-index:2;
+}
 .vahi {
-	position: fixed;
-	top:40%;
-	left:40%;
-	width:50%;
-	z-index: 1;
+	position: relative;
+	margin: auto;
+	height:auto;
+	width:auto;
+	top:15%;
+	z-index: 2;
 	overflow:visible;
 	display:block;
+	text-align: center;
+	font-size: 2em;
+}
+
+.loading {
+	background-image: url('bg/loading.png');
+	position:fixed;
+	top:0px;
+	left:0px;
+	width:100%;
+	height:100%;
+	z-index: 1;
 }
