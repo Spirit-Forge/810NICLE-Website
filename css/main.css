@@ -112,7 +112,7 @@ main h3 a,
 main h3 em {
     font-family: 'TradeMarker';
     letter-spacing: 0.125em;
-    text-shadow: 2px 2px 0px gold;
+    text-shadow: 2px 2px 0px olivedrab;
     text-transform: uppercase;
 }
 
@@ -124,7 +124,7 @@ main h3 em {
 
 
 main h3 {
-    text-shadow: 1px 1px 0px gold;
+    text-shadow: 1px 1px 0px olivedrab;
 }
 
 
@@ -172,7 +172,7 @@ hr {
     width: 66.66vw;
     max-width: 640px;
     border: 1px solid white;
-    box-shadow: 2px 2px 0px gold;
+    box-shadow: 2px 2px 0px olivedrab;
 }
 
 
