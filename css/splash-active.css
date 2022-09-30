@@ -427,6 +427,15 @@ div.zoom video {
 }
 
 
+div.zoom iframe {
+    width: 80vw;
+    height: calc(80vw * 9 / 16);
+
+    max-width: 1920px;
+    max-height: 1080px;
+}
+
+
 @media screen and (max-width: 843px) {
     body header {
         margin-top: 25vh;
