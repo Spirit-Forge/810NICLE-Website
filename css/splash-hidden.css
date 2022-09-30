@@ -411,6 +411,12 @@ footer {
 
 
 @media screen and (max-width: 843px) {
+    body header {
+        margin-top: 25vh;
+        max-width: 99vw;
+    }
+
+
     main {
         max-width: 95vw;
     }
