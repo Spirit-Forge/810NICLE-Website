@@ -33,6 +33,25 @@ function addZoomEventListeners() {
             $(".zoom").fadeTo("fast", 1);
         });
     }
+
+    let trailerButtons = document.querySelectorAll("main > h1 > a.trailerButton");
+
+    for (var i = 0; i < trailerButtons.length; i++) {
+        trailerButtons[i].addEventListener("click", function () {
+            let zoom = document.createElement("div");
+            zoom.classList.add("zoom");
+
+            document.body.appendChild(zoom);
+            zoom.innerHTML += '<video controls autoplay><source src="/img/810_2023_Logo_active_VP9.webm" type="video/webm">Your browser does not support the video tag.</video>';
+
+            let exit = document.createElement("span");
+            exit.classList.add("exitSpan");
+            exit.setAttribute("onclick", "closeImage();");
+            exit.innerHTML = "🞮";
+            zoom.appendChild(exit);
+            $(".zoom").fadeTo("fast", 1);
+        });
+    }
 }
 
 
