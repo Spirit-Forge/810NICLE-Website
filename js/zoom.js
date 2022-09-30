@@ -42,7 +42,7 @@ function addZoomEventListeners() {
             zoom.classList.add("zoom");
 
             document.body.appendChild(zoom);
-            zoom.innerHTML += '<video controls autoplay><source src="/img/810_2023_Logo_active_VP9.webm" type="video/webm">Your browser does not support the video tag.</video>';
+            zoom.innerHTML += '<iframe width="560" height="315" src="https://www.youtube.com/embed/-7vay6RzRu8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
 
             let exit = document.createElement("span");
             exit.classList.add("exitSpan");
