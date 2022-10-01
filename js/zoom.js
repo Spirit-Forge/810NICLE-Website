@@ -28,7 +28,7 @@ function addZoomEventListeners() {
             let exit = document.createElement("span");
             exit.classList.add("exitSpan");
             exit.setAttribute("onclick", "closeImage();");
-            exit.innerHTML = "🞬";
+            exit.innerHTML = "X";
             zoom.appendChild(exit);
             $(".zoom").fadeTo("fast", 1);
         });
@@ -47,7 +47,7 @@ function addZoomEventListeners() {
             let exit = document.createElement("span");
             exit.classList.add("exitSpan");
             exit.setAttribute("onclick", "closeImage();");
-            exit.innerHTML = "🞬";
+            exit.innerHTML = "X";
             zoom.appendChild(exit);
             $(".zoom").fadeTo("fast", 1);
         });
