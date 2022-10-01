@@ -27,6 +27,6 @@ let x = setInterval(function() {
   // If the count down is finished, write some text
   if (distance < 0) {
     clearInterval(x);
-    document.getElementById("demo").innerHTML = "BEWARE.";
+    document.getElementById("countdown").innerHTML = "BEWARE.";
   }
 }, 1000);
