@@ -90,7 +90,6 @@ table td p {
 }
 
 .break {
-	
 	background-color: #663366;
 	background-image: url("../img/schedule/break.webp");
 	background-position: center;
@@ -101,7 +100,7 @@ table td p {
 .break2 {
 	background-color: #663366;
 	background-image: url("../img/schedule/break2.webp");
-	background-position: center;
+	background-position: center;	
 	background-size: cover;
 }
 
