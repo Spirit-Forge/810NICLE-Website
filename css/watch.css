@@ -12,13 +12,6 @@ div#twitch-embed {
 }
 
 
-footer {
-    position: absolute;
-    width: 99%;
-    bottom: -7em !important;
-}
-
-
 iframe {
     margin: 2em auto;
     width: 80vw;
