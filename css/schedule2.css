@@ -23,6 +23,7 @@ table tr:nth-child(even) th {
 table th,
 table td {
 	padding: 0.5rem 1rem;
+	text-shadow: 2px 2px 0px darkgoldenrod;
 }
 
 
