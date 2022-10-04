@@ -85,10 +85,12 @@ table td p {
 
 .gathered h3,
 .gathered p {
+	filter:blur(10px);
 	max-width: 60%;
 }
 
 .break {
+	
 	background-color: #663366;
 	background-image: url("../img/schedule/break.webp");
 	background-position: center;
