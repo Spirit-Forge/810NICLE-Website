@@ -19,6 +19,13 @@ footer {
 }
 
 
+iframe {
+    margin: 2em auto;
+    width: 80vw;
+    height: calc(80vw * 9 / 16);
+}
+
+
 @media screen and (max-width: 600px) {
     body header,
     body header img {
