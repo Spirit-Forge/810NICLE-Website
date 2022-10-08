@@ -12,10 +12,16 @@ div#twitch-embed {
 }
 
 
-footer {
-    position: absolute;
-    width: 99%;
-    bottom: -7em !important;
+h2.playlisttitle {
+    margin-top: 1em;
+    margin-bottom: .25em;
+}
+
+
+iframe {
+    margin: auto;
+    width: 80vw;
+    height: calc(80vw * 9 / 16);
 }
 
 

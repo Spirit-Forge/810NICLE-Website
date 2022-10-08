@@ -23,6 +23,7 @@ table tr:nth-child(even) th {
 table th,
 table td {
 	padding: 0.5rem 1rem;
+	text-shadow: 2px 2px 0px darkgoldenrod;
 }
 
 
@@ -69,11 +70,41 @@ table td p {
 	width: 60%;
 }
 
+.qm2 {
+	position: sticky;
+	margin-left: 70%;
+	width: 75%;
+	height:0%;
+	top:15%;
+	margin-right: auto;
+	z-index: 1;
+	overflow:visible;
+}
+
+
+.qm2 img {
+	margin: auto;
+	margin-left: 20%;
+	width: 60%;
+}
+
+
 
 /****************
  * EVENT COLORS *
  ****************/
 
+.takuta {
+	background-color: #00061d;
+	background-image: url("../img/schedule/takutapepis.webp");
+	background-position: center right;
+	background-size: cover;
+}
+.takuta h3,
+.takuta p 	{
+	filter:blur(10px);
+	max-width: 60%;
+}
 
 .gathered {
 	background-color: hotpink;
@@ -85,6 +116,7 @@ table td p {
 
 .gathered h3,
 .gathered p {
+	filter:blur(10px);
 	max-width: 60%;
 }
 
@@ -99,7 +131,7 @@ table td p {
 .break2 {
 	background-color: #663366;
 	background-image: url("../img/schedule/break2.webp");
-	background-position: center;
+	background-position: center;	
 	background-size: cover;
 }
 
@@ -451,4 +483,15 @@ footer {
 	.qm img{
 		width:100%;
 	}
+	.qm2{
+		height:0px;
+		width:60%;
+		margin: auto;
+
+	}
+	
+	.qm2 img{
+		width:100%;
+	}
+	
 }

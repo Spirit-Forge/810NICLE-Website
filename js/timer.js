@@ -1,4 +1,4 @@
-let countdownDate = new Date("2022-08-10T16:00:00Z").getTime();
+let countdownDate = new Date("2023-08-10T16:00:00Z").getTime();
 
 
 function pad(num, size) {
@@ -27,6 +27,6 @@ let x = setInterval(function() {
   // If the count down is finished, write some text
   if (distance < 0) {
     clearInterval(x);
-    document.getElementById("countdown").innerHTML = "BEWARE.";
+    document.getElementById("countdown").innerHTML = "A GREAT KANOHI MASK!!!!";
   }
 }, 1000);
