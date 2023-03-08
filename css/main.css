@@ -259,6 +259,18 @@ main section div {
 }
 
 
+main section.social div {
+    min-width: 0px;
+    width: 176px;
+    max-width: 176px;
+}
+
+
+main section.social div iframe {
+    max-width: 176px;
+}
+
+
 main section p {
     font-size: larger;
 }
