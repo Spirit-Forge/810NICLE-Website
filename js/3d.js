@@ -1,5 +1,4 @@
 let scene, camera, renderer, controls;
-var id = null;
 
 
 function closeImage() {
@@ -26,11 +25,6 @@ document.addEventListener('keydown', function (event) {
 
 
 function show3D(id) {
-    // Collect garbage.
-    if (id !== null) {
-        cancelAnimationFrame(id);
-    }
-
     // Create container.
     let zoom = document.createElement("div");
     zoom.classList.add("zoom");
@@ -58,6 +52,7 @@ function show3D(id) {
     // Set up controls.
     controls = new THREE.OrbitControls(camera, renderer.domElement);
     controls.autoRotate = true;
+    controls.autoRotateSpeed = 1.125;
     controls.addEventListener('start', function () {
         controls.autoRotate = false;
     });
@@ -85,7 +80,7 @@ function show3D(id) {
 
 
 function animate() {
-    id = requestAnimationFrame(animate);
+    requestAnimationFrame(animate);
     controls.update();
     renderer.render(scene, camera);
 }
@@ -97,3 +92,42 @@ function onWindowResize() {
     renderer.setSize(.875 * window.innerWidth, .875 * window.innerHeight);
 }
 
+
+function checkIfPastDate(cardArray) {
+    // Get current date.
+    let today = new Date();
+    // Get date from card (first element of cardArray).
+    let cardDate = new Date(cardArray[0]);
+    // Compare dates.
+    if (today > cardDate) {
+        console.log("true");
+        return true;
+    }
+    console.log("false");
+    return false;
+}
+
+
+let cardArray = [
+    ["2023-06-01", "01"],
+    ["2023-06-02", "05"],
+    ["2023-06-21", "07"]
+];
+
+
+// On document load.
+window.onload = function () {
+    // For each card in cardArray.
+    for (let i = 0; i < cardArray.length; i++) {
+        // If card is past date.
+        if (checkIfPastDate(cardArray[i])) {
+            // Add card to section.cards.
+            let deck = document.getElementsByClassName("cards")[0];
+            let card = document.createElement("img");
+            card.classList.add("threed");
+            card.setAttribute("onclick", "show3D('" + cardArray[i][1] + "');");
+            card.setAttribute("src", "/img/cards/" + cardArray[i][1] + "/5.png");
+            deck.appendChild(card);
+        }
+    }
+}
