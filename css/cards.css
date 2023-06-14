@@ -1,0 +1,28 @@
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 1rem auto;
+}
+
+
+.cards .threed {
+    width: 25%;
+    height: auto;
+    margin: 1rem;
+    transition: all 0.25s ease-in-out;
+}
+
+
+.cards .threed:hover {
+    transform: scale(1.03125);
+    filter: brightness(1.0625);
+    cursor: pointer;
+}
+
+
+.cards .threed:active {
+    transform: scale(0.96875);
+    filter: brightness(0.625);
+}
