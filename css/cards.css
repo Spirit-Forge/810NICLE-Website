@@ -26,3 +26,7 @@
     transform: scale(0.96875);
     filter: brightness(0.625);
 }
+
+main section.cards {
+    flex-flow: row wrap;
+}

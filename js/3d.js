@@ -61,8 +61,8 @@ function show3D(id) {
     loadManager = new THREE.LoadingManager();
     loader = new THREE.TextureLoader(loadManager);
     const material = [
-        new THREE.MeshBasicMaterial({ map: loader.load('/img/cards/' + id + '/5.png'), side: THREE.DoubleSide, wireframe: false }),
-        new THREE.MeshBasicMaterial({ map: loader.load('/img/cards/' + id + '/6.png'), side: THREE.DoubleSide, wireframe: false }),
+        new THREE.MeshBasicMaterial({ map: loader.load('/img/cards/' + id + '/5.webp'), side: THREE.DoubleSide, wireframe: false }),
+        new THREE.MeshBasicMaterial({ map: loader.load('/img/cards/' + id + '/6.webp'), side: THREE.DoubleSide, wireframe: false }),
         // Plain white material for the sides.
         new THREE.MeshBasicMaterial({ color: 0xffffff }),
     ];
@@ -109,29 +109,24 @@ function checkIfPastDate(cardArray) {
 }
 
 
-let cardArray = [
-    ["2023-06-01", "01"],
-    ["2023-06-02", "05"],
-    ["2023-06-21", "07"]
-];
+/*
+let cardArray = ["01", "02", "03", "04"];
 
 
 // On document load.
 window.onload = function () {
     // For each card in cardArray.
     for (let i = 0; i < cardArray.length; i++) {
-        // If card is past date.
-        if (checkIfPastDate(cardArray[i])) {
-            // Add card to section.cards.
-            let deck = document.getElementsByClassName("cards")[0];
-            let card = document.createElement("img");
-            card.classList.add("threed");
-            card.setAttribute("onclick", "show3D('" + cardArray[i][1] + "');");
-            card.setAttribute("src", "/img/cards/" + cardArray[i][1] + "/5.png");
-            deck.appendChild(card);
-        }
+        // Add card to section.cards.
+        let deck = document.getElementsByClassName("cards")[0];
+        let card = document.createElement("img");
+        card.classList.add("threed");
+        card.setAttribute("onclick", "show3D('" + cardArray[i] + "');");
+        card.setAttribute("src", "../img/cards/" + cardArray[i] + "/5.webp");
+        deck.appendChild(card);
     }
 }
+*/
 
 
 
