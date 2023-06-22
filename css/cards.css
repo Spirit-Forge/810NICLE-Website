@@ -12,6 +12,7 @@
     height: auto;
     margin: 1rem;
     transition: all 0.25s ease-in-out;
+    border-radius: .75rem;
 }
 
 
