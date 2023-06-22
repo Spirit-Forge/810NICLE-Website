@@ -1,4 +1,4 @@
-let countdownDate = new Date("2023-08-10T16:00:00Z").getTime();
+let countdownDate = new Date("2023-08-10T15:45:00Z").getTime();
 
 
 function pad(num, size) {
