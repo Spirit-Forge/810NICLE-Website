@@ -1,3 +1,6 @@
+let position = 0;
+
+
 let lines = [];
 let xhr = new XMLHttpRequest();
 xhr.open('GET', 'upnext.txt', true);
@@ -14,25 +17,15 @@ xhr.send();
 
 function loadText() {
     let currentLine = questions[position];
-    if (currentLine == "CLEAR") {
-        typewriter.deleteAll(10);
-        typewriter.start();
-        document.getElementById("position").innerText = position;
-        position++;
-        loadText();
-    } else {
-        typewriter.typeString(currentLine);
-        typewriter.start();
-        document.getElementById("position").innerText = position;
-        position++;
-    }
+    let upNextContainer = document.getElementById("up__next");
+    upNextContainer.innerHTML = currentLine;
+    position++;
 }
 
 
 function reverse() {
-    let replacement = document.getElementById("positionInput").value;
-    position = parseInt(replacement);
-    typewriter.deleteAll(10);
-    typewriter.start();
-    loadText();
+    position--;
+    let currentLine = questions[position];
+    let upNextContainer = document.getElementById("up__next");
+    upNextContainer.innerHTML = currentLine;
 }
