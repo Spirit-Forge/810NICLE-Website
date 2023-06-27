@@ -1,6 +1,4 @@
 let position = 0;
-
-
 let lines = [];
 let xhr = new XMLHttpRequest();
 xhr.open('GET', 'upnext.txt', true);
@@ -16,7 +14,7 @@ xhr.send();
 
 
 function loadText() {
-    let currentLine = questions[position];
+    let currentLine = lines[position];
     let upNextContainer = document.getElementById("up__next");
     upNextContainer.innerHTML = currentLine;
     position++;
@@ -25,7 +23,23 @@ function loadText() {
 
 function reverse() {
     position--;
-    let currentLine = questions[position];
+    let currentLine = lines[position];
     let upNextContainer = document.getElementById("up__next");
     upNextContainer.innerHTML = currentLine;
+}
+
+
+// Call loadText() one second after the page loads.
+setTimeout(loadText, 1000);
+
+
+// Control using arrow keys.
+document.onkeydown = checkKey;
+function checkKey(e) {
+    e = e || window.event;
+    if (e.keyCode == '37') {
+        reverse();
+    } else if (e.keyCode == '39') {
+        loadText();
+    }
 }

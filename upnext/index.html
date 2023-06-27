@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Up Next | 810NICLE Day</title>
     <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
         body img {
             width: 100%;
             height: auto;
@@ -21,10 +26,20 @@
             text-shadow: 0 0 10px black;
             margin-top: 1rem;
         }
+
+        @font-face {
+            font-family: "TradeMarker Light";
+            src: url("../fonts/TradeMarker-Light.woff");
+        }
+
+        * {
+            font-family: "TradeMarker Light";
+        }
     </style>
 </head>
 <body>
     <img src="../img/upnext/Bioday_streamassets_topbar.png">
-    <p id="up__next">Up Next: Swert Shoots Liam with a Big Laser</p>
+    <p id="up__next"></p>
+    <script src="upnext.js"></script>
 </body>
 </html>
