@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,16 +16,17 @@
             height: auto;
         }
 
-        body p#up__next {
+        body div.wrapper {
             position: absolute;
             top: 0;
-            left: 33vw;
-            width: 33vw;
+            left: 30vw;
+            width: 40vw;
             text-align: center;
-            font-size: 2rem;
+            font-size: 1.125rem;
             color: white;
             text-shadow: 0 0 10px black;
-            margin-top: 1rem;
+            margin-top: 3.125rem;
+            overflow: hidden;
         }
 
         @font-face {
@@ -35,11 +37,58 @@
         * {
             font-family: "TradeMarker Light";
         }
+
+
+        p#up__next {
+            -moz-animation: marquee 20s linear infinite;
+            -webkit-animation: marquee 20s linear infinite;
+            animation: marquee 20s linear infinite;
+            overflow: hidden;
+            min-width: 100vw;
+        }
+
+        @-moz-keyframes marquee {
+            0% {
+                transform: translateX(100%);
+            }
+
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+
+        @-webkit-keyframes marquee {
+            0% {
+                transform: translateX(100%);
+            }
+
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+
+        @keyframes marquee {
+            0% {
+                -moz-transform: translateX(100%);
+                -webkit-transform: translateX(100%);
+                transform: translateX(100%)
+            }
+
+            100% {
+                -moz-transform: translateX(-100%);
+                -webkit-transform: translateX(-100%);
+                transform: translateX(-100%);
+            }
+        }
     </style>
 </head>
+
 <body>
     <img src="../img/upnext/Bioday_streamassets_topbar.png">
-    <p id="up__next"></p>
-    <script src="upnext.js"></script>
+    <div class="wrapper">
+        <p id="up__next">Up Next: Swert Shoots Liam with a Big Laser and He Explodes || Up Next: Swert Shoots Liam with a Big Laser and He Explodes</p>
+    </div>
+    <!-- <script src="upnext.js"></script> -->
 </body>
+
 </html>
