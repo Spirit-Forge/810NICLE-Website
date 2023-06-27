@@ -16,6 +16,11 @@
             height: auto;
         }
 
+        div.screen {
+            min-width: 100vw;
+            min-height: calc(100vw * 9 / 16);
+        }
+
         body div.wrapper {
             position: absolute;
             top: 0;
@@ -53,14 +58,33 @@
             margin-top: auto;
             margin-bottom: auto;
         }
+
+        body button {
+            margin: 1rem;
+            height: 4rem;
+            width: 16rem;
+            font-size: larger;
+        }
+
+        div.button__wrapper {
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: center;
+            width: 99vw;
+        }
     </style>
 </head>
 
 <body>
-    <img src="../img/upnext/Bioday_streamassets_topbar.png">
-    <div class="wrapper">
-        <p id="up__next__label">Up Next:</p>
-        <marquee id="up__next">Swert Shoots Liam with a Big Laser and He Explodes</marquee>
+    <div class="screen">
+        <div class="wrapper">
+            <p id="up__next__label">Up Next:</p>
+            <marquee id="up__next">Swert Shoots Liam with a Big Laser and He Explodes</marquee>
+        </div>
+    </div>
+    <div class="button__wrapper">
+        <button onclick="reverse()">Reverse</button>
+        <button onclick="loadText()">Forward</button>
     </div>
     <script src="upnext.js"></script>
 </body>
