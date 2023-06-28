@@ -16,7 +16,12 @@ xhr.send();
 function loadText() {
     let currentLine = lines[position];
     let upNextContainer = document.getElementById("up__next");
-    upNextContainer.innerHTML = currentLine;
+    // If currentLine is LONGER than 45 characters, make sure up__next element is a MARQUEE, not a P.
+    if (currentLine.length > 45) {
+        upNextContainer.innerHTML = "<marquee>" + currentLine + "</marquee>";
+    } else {
+        upNextContainer.innerHTML = currentLine;
+    }
     position++;
 }
 
@@ -25,7 +30,12 @@ function reverse() {
     position--;
     let currentLine = lines[position];
     let upNextContainer = document.getElementById("up__next");
-    upNextContainer.innerHTML = currentLine;
+    // If currentLine is LONGER than 45 characters, make sure up__next element is a MARQUEE, not a P.
+    if (currentLine.length > 45) {
+        upNextContainer.innerHTML = "<marquee>" + currentLine + "</marquee>";
+    } else {
+        upNextContainer.innerHTML = currentLine;
+    }
 }
 
 
