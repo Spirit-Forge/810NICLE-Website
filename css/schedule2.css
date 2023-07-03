@@ -100,7 +100,21 @@ table td h4 em {
 	background-position: center;
 	background-size: cover;
 }
-
+.mnr {
+	background-image: url("../img/schedule/Beans.webp");
+	background-position: center left;
+	background-size: cover;
+}
+.bc {
+	background-image: url("../img/schedule/BC.webp");
+	background-position: center right;
+	background-size: cover;
+}
+.marketing {
+	background-image: url("../img/schedule/marketing.webp");
+	background-position: center right;
+	background-size: cover;
+}
 .break {
 	background-color: #663366;
 	background-image: url("../img/schedule/break1.webp");
