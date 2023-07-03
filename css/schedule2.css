@@ -94,7 +94,11 @@ table td h4 em {
 	background-position: center;
 	background-size: cover;
 }
-
+.mol {
+	background-image: url("../img/schedule/MOL20th.webp");
+	background-position: center;
+	background-size: cover;
+}
 .direct {
 	background-color: white;
 	background-image: url("../img/schedule/direct.webp");
