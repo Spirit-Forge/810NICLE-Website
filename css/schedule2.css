@@ -7,9 +7,9 @@ table {
 
 
 table tr {
-	min-height: 48px;
-	height: 48px;
-	max-height: 48px;
+	min-height: 64px;
+	height: 64px;
+	max-height: 64px;
 }
 
 
@@ -39,10 +39,11 @@ table td {
 	font-weight: bold;
 	line-height: 1.4;
 	border-radius: 0.2rem;
-	background-color: olivedrab;
+	background-color: darkgoldenrod;
 	transition: opacity 0.3s ease;
 	padding: 0em 1em;
 }
+
 
 table td h3,
 table td h3 em,
@@ -51,64 +52,25 @@ table td p {
 	text-shadow: 0px 0px 4px #080808, 0px 0px 4px #080808;
 }
 
-
-.qm {
-	position: sticky;
-	margin-left: 25%;
-	width: 75%;
-	height:0%;
-	top:15%;
-	margin-right: auto;
-	z-index: 1;
-	overflow:visible;
+table td h4,
+table td h4 em {
+    font-family: 'TradeMarker';
+    letter-spacing: 0.125em;
+	margin-top: 0.2em;
+	margin-bottom: 0.2em;
+	font-size: 0.9em;
+	text-shadow: 0px 0px 4px #080808, 0px 0px 4px #080808;
 }
-
-
-.qm img {
-	margin: auto;
-	margin-left: 20%;
-	width: 60%;
-}
-
-.qm2 {
-	position: sticky;
-	margin-left: 70%;
-	width: 75%;
-	height:0%;
-	top:15%;
-	margin-right: auto;
-	z-index: 1;
-	overflow:visible;
-}
-
-
-.qm2 img {
-	margin: auto;
-	margin-left: 20%;
-	width: 60%;
-}
-
 
 
 /****************
  * EVENT COLORS *
  ****************/
 
-.takuta {
-	background-color: #00061d;
-	background-image: url("../img/schedule/takutapepis.webp");
-	background-position: center right;
-	background-size: cover;
-}
-.takuta h3,
-.takuta p 	{
-	filter:blur(10px);
-	max-width: 60%;
-}
 
-.gathered {
-	background-color: hotpink;
-	background-image: url("../img/schedule/gf.webp");
+.asabove {
+	background-color: #4e7f94;
+	background-image: url("../img/schedule/aasb.webp");
 	background-position: center right;
 	background-size: cover;
 }
@@ -116,9 +78,9 @@ table td p {
 
 .gathered h3,
 .gathered p {
-	filter:blur(10px);
 	max-width: 60%;
 }
+
 
 .break {
 	background-color: #663366;
@@ -126,52 +88,28 @@ table td p {
 	background-position: center;
 	background-size: cover;
 }
-
-
 .break2 {
 	background-color: #663366;
-	background-image: url("../img/schedule/break2.webp");
-	background-position: center;	
-	background-size: cover;
-}
-
-
-.break2 h3 {
-	filter:blur(10px);
-}
-
-
-.break2 p {
-	filter:blur(10px);
-}
-
-
-.direct {
-	background-image: url("../img/schedule/direct.webp");
+	background-image: url("../img/schedule/break.webp");
 	background-position: center;
 	background-size: cover;
 }
 
-
+.direct {
+	background-color: white;
+	background-image: url("../img/schedule/direct.webp");
+	background-position: left;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
 .treehut{
-	background-image: url("../img/schedule/treehut.webp");
+	background-image: url("../img/schedule/treehut_clear.webp");
 	background-position: right;
 	background-size: cover;
-	overflow:hidden;
 }
-
-
 .treehut p {
 	max-width: 60%;
-	filter:blur(50px);
 }
-
-
-.treehut h3 {
-	filter:blur(10px);
-}
-
-
 .woh {
 	background-image: url("../img/schedule/woh.webp");
 	background-position: center;
@@ -185,42 +123,21 @@ table td p {
 	background-position: right;
 	background-size: cover;
 }
-
-
 .jl {
-	background-image: url("../img/schedule/justin.webp");
+	background-image: url("../img/schedule/justin_clear.webp");
 	background-position: center;
 	background-size: cover;
 }
 
-
-.jl h3 {
-	filter:blur(10px);
+.bs01 {
+	background-color: #09c2e3;
 }
-
-
-.jl p {
-	filter:blur(10px);
-}
-
-
 .wcp{
 	background-color: #c9c8cb;
-	background-image: url("../img/schedule/wcp.webp");
+	background-image: url("../img/schedule/wcp_clear.webp");
 	background-position: right;
 	background-size: cover;
 }
-
-
-.wcp h3 {
-	filter:blur(10px);
-}
-
-
-.wcp p {
-	filter:blur(10px);
-}
-
 
 .koli {
 	background-color: #09c2e3;
@@ -232,19 +149,9 @@ table td p {
 
 .fs {
 	background-color: #09c2e3;
-	background-image: url("../img/schedule/fs.webp");
+	background-image: url("../img/schedule/fs_clear.webp");
 	background-position: right;
 	background-size: cover;
-}
-
-
-.fs h3 {
-	filter:blur(10px);
-}
-
-
-.fs p {
-	filter:blur(10px);
 }
 
 
@@ -278,125 +185,60 @@ table td p {
 
 
 .duck {
-	background-image: url("../img/schedule/duck.webp");
+	background-image: url("../img/schedule/duck_clear.webp");
 	background-position: right;
 	background-size: cover;
 }
 
 
-.duck h3 {
-	filter:blur(10px);
-}
-
-
-.duck p {
-	filter:blur(10px);
-}
-
-
 .sunny {
-	background-image: url("../img/schedule/sunny.webp");
+	background-image: url("../img/schedule/sunny_clear.webp");
 	background-position: center;
 	background-size: cover;
-}
-
-
-.sunny h3 {
-	filter:blur(10px);
-}
-
-
-.sunny p {
-	filter:blur(10px);
 }
 
 
 .rsg {
 	background-color: #ff0000;
-	background-image: url("../img/schedule/rsg.webp");
+	background-image: url("../img/schedule/rsg_clear.webp");
 	background-position: top center;
 	background-size: cover;
 }
 
 
-.rsg h3 {
-	filter:blur(10px);
-}
-
-
-.rsg p {
-	filter:blur(10px);
-}
-
-
 .speed {
 	background-color: darkblue;
-	background-image: url("../img/schedule/speed2.webp");
+	background-image: url("../img/schedule/speed.webp");
 	background-position: center;
 	background-size: cover;
-}
-.speed h3 {
-	filter:blur(10px);
-}
-
-
-.speed p {
-	filter:blur(10px);
 }
 
 
 .rem {
 	background-color: skyblue;
-	background-image: url("../img/schedule/rem2.webp");
+	background-image: url("../img/schedule/rem.webp");
 	background-position: center;
 	background-size: cover;
-}
-
-
-.rem h3 {
-	filter:blur(10px);
-}
-
-
-.rem p {
-	filter:blur(10px);
 }
 
 
 .tammy {
-	background-image: url("../img/schedule/tammy.webp");
+	background-image: url("../img/schedule/tammy_clear.webp");
 	background-position: center;
 	background-size: cover;
-}
-
-
-.tammy h3 {
-	filter:blur(10px);
-}
-
-
-.tammy p {
-	filter:blur(10px);
 }
 
 
 .btgs {
 	background-color: crimson;
-	background-image: url("../img/schedule/btgs2.webp");
+	background-image: url("../img/schedule/btgs_clear.webp");
 	background-position: top right;
 	background-size: cover;
 }
 
 
-.btgs h3 {
-	width:55%;
-	filter:blur(10px);
-}
-
-
 .btgs p {
 	width:55%;
-	filter:blur(10px);
 }
 
 
@@ -439,7 +281,8 @@ footer {
 	body main {
 		max-width: 95vw;
 	}
-	
+
+
 	div.schedulecontainer {
 		width: 100%;
 		display: flex;
@@ -472,26 +315,4 @@ footer {
 	table tr td p {
 		font-size: 0.875em;
 	}
-
-	.qm{
-		height:0px;
-		width:60%;
-		margin: auto;
-
-	}
-	
-	.qm img{
-		width:100%;
-	}
-	.qm2{
-		height:0px;
-		width:60%;
-		margin: auto;
-
-	}
-	
-	.qm2 img{
-		width:100%;
-	}
-	
 }
