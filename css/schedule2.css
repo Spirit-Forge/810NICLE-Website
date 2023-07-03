@@ -74,7 +74,7 @@ table td h4 em {
 	background-position: center right;
 	background-size: cover;
 }
-.tso1 {
+.tso {
 	background-image: url("../img/schedule/tso.webp");
 	background-position: center right;
 	background-size: cover;
@@ -94,6 +94,11 @@ table td h4 em {
 .gathered h3,
 .gathered p {
 	max-width: 60%;
+}
+.beyond {
+	background-image: url("../img/schedule/beyond.webp");
+	background-position: center;
+	background-size: cover;
 }
 .legacy {
 	background-image: url("../img/schedule/legacy.webp");
