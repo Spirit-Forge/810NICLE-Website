@@ -39,7 +39,7 @@ table td {
 	font-weight: bold;
 	line-height: 1.4;
 	border-radius: 0.2rem;
-	background-color: olivedrab;
+	background-color: darkgoldenrod;
 	transition: opacity 0.3s ease;
 	padding: 0em 1em;
 }
@@ -68,31 +68,80 @@ table td h4 em {
  ****************/
 
 
-.gathered {
-	background-color: hotpink;
-	background-image: url("../img/schedule/gf.webp");
+.asabove {
+	background-color: #4e7f94;
+	background-image: url("../img/schedule/aasb.webp");
 	background-position: center right;
 	background-size: cover;
 }
-
-
+.tso {
+	background-image: url("../img/schedule/TSO.webp");
+	background-position: center right;
+	background-size: cover;
+}
+.loss {
+	background-color: #4e7f94;
+	background-image: url("../img/schedule/LossOfPower.webp");
+	background-position: center right;
+	background-size: cover;
+}
+.sciabr {
+	background-color: transparent;
+	background-image: url("../img/schedule/sciabr.webp");
+	background-position: center right;
+	background-size: cover;
+}
 .gathered h3,
 .gathered p {
 	max-width: 60%;
 }
-
-
-.break {
-	background-color: #663366;
-	background-image: url("../img/schedule/break.webp");
+.beyond {
+	background-image: url("../img/schedule/beyond.webp");
 	background-position: center;
 	background-size: cover;
 }
-
-
-.direct {
-	background-image: url("../img/schedule/direct.webp");
+.legacy {
+	background-image: url("../img/schedule/legacy.webp");
 	background-position: center;
+	background-size: cover;
+}
+.mnr {
+	background-image: url("../img/schedule/Beans.webp");
+	background-position: center left;
+	background-size: cover;
+}
+.bc {
+	background-image: url("../img/schedule/BC.webp");
+	background-position: center left;
+	background-size: cover;
+}
+.marketing {
+	background-image: url("../img/schedule/marketing.webp");
+	background-position: center right;
+	background-size: cover;
+}
+.break {
+	background-color: #663366;
+	background-image: url("../img/schedule/break1.webp");
+	background-position: center;
+	background-size: cover;
+}
+.break2 {
+	background-color: #663366;
+	background-image: url("../img/schedule/break2.webp");
+	background-position: center;
+	background-size: cover;
+}
+.mol {
+	background-image: url("../img/schedule/MOL20th.webp");
+	background-position: center;
+	background-size: cover;
+}
+.direct {
+	background-color: white;
+	background-image: url("../img/schedule/direct.webp");
+	background-position: left;
+	background-repeat: no-repeat;
 	background-size: cover;
 }
 .treehut{
