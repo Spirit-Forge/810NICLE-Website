@@ -74,8 +74,18 @@ table td h4 em {
 	background-position: center right;
 	background-size: cover;
 }
-
-
+.loss {
+	background-color: #4e7f94;
+	background-image: url("../img/schedule/LossOfPower.webp");
+	background-position: center right;
+	background-size: cover;
+}
+.sciabr {
+	background-color: transparent;
+	background-image: url("../img/schedule/sciabr.webp");
+	background-position: center right;
+	background-size: cover;
+}
 .gathered h3,
 .gathered p {
 	max-width: 60%;
