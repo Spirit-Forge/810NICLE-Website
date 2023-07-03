@@ -74,6 +74,11 @@ table td h4 em {
 	background-position: center right;
 	background-size: cover;
 }
+.tso1 {
+	background-image: url("../img/schedule/tso.webp");
+	background-position: center right;
+	background-size: cover;
+}
 .loss {
 	background-color: #4e7f94;
 	background-image: url("../img/schedule/LossOfPower.webp");
@@ -90,7 +95,11 @@ table td h4 em {
 .gathered p {
 	max-width: 60%;
 }
-
+.legacy {
+	background-image: url("../img/schedule/legacy.webp");
+	background-position: center;
+	background-size: cover;
+}
 
 .break {
 	background-color: #663366;
