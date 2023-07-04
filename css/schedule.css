@@ -101,13 +101,19 @@ table td h4 em {
 	background-position: center right;
 	background-size: cover;
 }
-.sciabr {
+.sci {
 	background-color: transparent;
-	background-image: url("../img/schedule/sciabr.webp");
-	background-position: center right;
+	background-image: url("../img/schedule/sci.webp");
+	background-position: center;
 	background-size: cover;
 }
-
+.abr {
+	background-color: black;
+	background-image: url("../img/schedule/abr.webp");
+	background-position: center right;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
 .beyond {
 	background-image: url("../img/schedule/beyond.webp");
 	background-position: center;
@@ -125,17 +131,22 @@ table td h4 em {
 }
 .bc {
 	background-image: url("../img/schedule/BC.webp");
-	background-position: center left;
+	background-position: center right;
 	background-size: cover;
 }
 
 .marketing {
 	background-image: url("../img/schedule/marketing.webp");
-	background-position: center right;
+	background-position: center;
 	background-size: cover;
 }
 .marketing p {
 	width:54%;
+}
+.elliot {
+	background-image: url("../img/schedule/elliot.webp");
+	background-position: center;
+	background-size: cover;
 }
 .break {
 	background-color: #663366;
