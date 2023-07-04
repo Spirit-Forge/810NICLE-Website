@@ -114,6 +114,11 @@ table td h4 em {
 	background-repeat: no-repeat;
 	background-size: contain;
 }
+.behindbonk {
+	background-image: url("../img/schedule/BehindBonk.webp");
+	background-position: center;
+	background-size: cover;
+}
 .beyond {
 	background-image: url("../img/schedule/beyond.webp");
 	background-position: center;
