@@ -52,6 +52,14 @@ table td p {
 	text-shadow: 0px 0px 4px #080808, 0px 0px 4px #080808;
 }
 
+table td h3 {
+	line-height: 1rem;
+}
+
+table td p {
+	line-height: .875rem;
+}
+
 table td h4,
 table td h4 em {
     font-family: 'TradeMarker';
@@ -298,7 +306,7 @@ table td h4 em {
 
 div.schedulecontainer {
 	display: flex;
-	flex-flow: row wrap;
+	flex-flow: row nowrap;
 	gap: 1em;
 	align-items: stretch;
 }
