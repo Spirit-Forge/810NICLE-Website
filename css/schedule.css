@@ -139,14 +139,14 @@ table td h4 em {
 	background-position: center right;
 	background-size: cover;
 }
+.bc p {
+	width:80%;
+}
 
 .marketing {
 	background-image: url("../img/schedule/marketing.webp");
 	background-position: center;
 	background-size: cover;
-}
-.marketing p {
-	width:54%;
 }
 .elliot {
 	background-image: url("../img/schedule/elliot.webp");
@@ -183,7 +183,7 @@ table td h4 em {
 	background-size: cover;
 }
 .treehut p {
-	max-width: 60%;
+	max-width: 55%;
 }
 .woh {
 	background-image: url("../img/schedule/woh.webp");
@@ -310,11 +310,13 @@ table td h4 em {
 	background-position: top right;
 	background-size: cover;
 }
-
+.btgs p {
+	width:60%;
+}
 
 .ide {
 	background-image: url("../img/schedule/ide.webp");
-	background-position: center;
+	background-position: left;
 	background-size: cover;
 }
 
