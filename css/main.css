@@ -105,6 +105,7 @@ main {
 main h1,
 main h2,
 main h3,
+main h4,
 main h1 a,
 main h2 a,
 main h2 span,
@@ -118,6 +119,11 @@ main h3 em {
 
 
 #countdown {
+    margin: 0em;
+    text-align: center;
+}
+
+main h4 {
     margin: 0em;
     text-align: center;
 }
