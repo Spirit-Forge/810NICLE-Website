@@ -1,0 +1,61 @@
+<html>
+
+<head>
+	<link rel="stylesheet" type="text/css" href="screen.css">
+	<style>
+		.Typewriter__cursor {
+			-webkit-animation: Typewriter-cursor 1s infinite;
+			animation: Typewriter-cursor 1s infinite;
+			margin-left: 1px;
+			color: rgba(0, 0, 0, 0)
+		}
+
+		.Typewriter__wrapper {
+			text-align: center;
+			margin: auto;
+			margin-left: 40%;
+		}
+
+		@-webkit-keyframes Typewriter-cursor {
+			0% {
+				opacity: 0
+			}
+
+			50% {
+				opacity: 1
+			}
+
+			100% {
+				opacity: 0
+			}
+		}
+
+		@keyframes Typewriter-cursor {
+			0% {
+				opacity: 0
+			}
+
+			50% {
+				opacity: 1
+			}
+
+			100% {
+				opacity: 0
+			}
+		}
+	</style>
+</head>
+
+<body>
+	<div class="scroll">
+		<button onclick="loadText()">Forward</button>
+		<p id="position">0</p>
+		<input id="positionInput" type="text" value="">
+		<button onclick="reverse()">Go To</button>
+	</div>
+	<div id="q1" class="question"></div>
+	<script src='typewriter-effect/dist/core.js'></script>
+	<script src="chalk.js"></script>
+</body>
+
+</html>
