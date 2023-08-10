@@ -1,6 +1,6 @@
 function demilitarize (num) {
-    if (num > 12) {
-        return num - 12;
+    if (num > 24) {
+        return num - 24;
     } else {
         return num;
     }
