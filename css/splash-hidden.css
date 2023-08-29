@@ -44,7 +44,7 @@
 
 * {
   scrollbar-width: thin;
-  scrollbar-color: rgb(255, 255, 240) rgb(184, 134,  11);
+  scrollbar-color: rgb(84,89,85) rgb(114, 0, 18);
 }
 
 
@@ -55,14 +55,14 @@
 
 
 *::-webkit-scrollbar-track {
-  background: rgb(184, 134,  11);
+  background: rgb(114, 0, 18);
 }
 
 
 *::-webkit-scrollbar-thumb {
-  background-color: rgb(255, 255, 240);
+  background-color: rgb(84,89,85);
   border-radius: 20px;
-  border: 3px solid rgb(184, 134,  11);
+  border: 3px solid rgb(114, 0, 18);
 }
 
 
@@ -73,7 +73,7 @@
 
 body {
     background-color: #0a0b08;
-    background-image: url('../img/ProtodermisDark.webp');
+    background-image: url('../img/BackgroundDark.webp');
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
@@ -112,7 +112,7 @@ main h3 a,
 main h3 em {
     font-family: 'TradeMarker';
     letter-spacing: 0.125em;
-    text-shadow: 2px 2px 0px darkgoldenrod;
+    text-shadow: 2px 2px 0px rgb(114, 0, 18);
     text-transform: uppercase;
 }
 
@@ -124,7 +124,7 @@ main h3 em {
 
 
 main h3 {
-    text-shadow: 1px 1px 0px darkgoldenrod;
+    text-shadow: 1px 1px 0px rgb(114, 0, 18);
 }
 
 
@@ -172,7 +172,7 @@ hr {
     width: 66.66vw;
     max-width: 640px;
     border: 1px solid white;
-    box-shadow: 2px 2px 0px darkgoldenrod;
+    box-shadow: 2px 2px 0px rgb(114, 0, 18);
 }
 
 
