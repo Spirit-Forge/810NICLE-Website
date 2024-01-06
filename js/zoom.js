@@ -4,7 +4,7 @@
 
 
 function addZoomEventListeners() {
-    let images = document.querySelectorAll("main > section > img.zoomable");
+    let images = document.querySelectorAll("main section img.zoomable");
 
     for (var i = 0; i < images.length; i++) {
         images[i].addEventListener("click", function () {
