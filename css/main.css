@@ -73,7 +73,8 @@
 
 body {
     background-color: #0a0b08;
-    background-image: url('../img/BackgroundLight.webp');
+    background-image: linear-gradient(180deg, rgba(0,0,0,0.2486927876619398) 0%, rgba(0,0,0,1) 100%),
+                      url('../img/BackgroundLight.webp');
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
@@ -122,6 +123,7 @@ main h3 em {
     margin: 0em;
     text-align: center;
 }
+
 
 main h4 {
     margin: 0em;
@@ -224,20 +226,20 @@ main section:nth-of-type(odd) p {
 
 img.zoomable {
     max-width: 40%;
-    transition: all .2s ease-in-out;
+    transition: all .25s ease-in-out;
     cursor: pointer;
 }
 
 
 img.zoomable:hover {
-    transform: scale(1.03125);
-    filter: brightness(1.1);
+    transform: scale(1.015625);
+    filter: brightness(1.05);
 }
 
 
 img.zoomable:active {
-    transform: scale(0.96875);
-    filter: brightness(0.9);
+    transform: scale(0.984375);
+    filter: brightness(0.95);
 }
 
 
