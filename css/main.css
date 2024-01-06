@@ -484,8 +484,16 @@ div.zoom iframe {
 
 
 @media screen and (max-width: 843px) {
+    * {
+        max-width: 100vw;
+    }
+    
+    body {
+        max-width: 100vw;
+    }
+
     main {
-        max-width: 95vw;
+        max-width: 100vw;
     }
 
 
@@ -493,23 +501,29 @@ div.zoom iframe {
         font-size: 1.5em;
     }
 
-
     main h2 {
         font-size: 0.85em;
     }
 
-
     main section,
     main section:nth-of-type(odd),
     main section:nth-of-type(even) {
-        margin: 1em 0em;
+        margin: 0rem;
         flex-flow: column nowrap;
         text-align: left;
     }
 
-
     main section.social {
+        margin: auto;
         flex-flow: row nowrap;
+        justify-content: space-between;
+        gap: .5rem;
+        padding: 0rem;
+        width: 95vw;
+    }
+
+    main section.social a img {
+        max-width: 1rem !important;
     }
 
 
