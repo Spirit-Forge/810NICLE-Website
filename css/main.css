@@ -73,7 +73,7 @@
 
 body {
     background-color: #0a0b08;
-    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.2486927876619398) 0%, rgba(0, 0, 0, 1) 100%),
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 1) 100%),
         url('../img/BackgroundLight.webp');
     background-repeat: no-repeat;
     background-position: center;
@@ -216,6 +216,30 @@ main section:nth-of-type(odd) p {
     text-align: right;
 }
 
+
+main div.metrus section:nth-of-type(even) {
+    flex-flow: row nowrap;
+}
+
+main div.metrus section:nth-of-type(odd) {
+    flex-flow: row-reverse nowrap;
+}
+
+main div.metrus section:nth-of-type(odd),
+main div.metrus section:nth-of-type(odd) h2,
+main div.metrus section:nth-of-type(odd) h3,
+main div.metrus section:nth-of-type(odd) h3 a,
+main div.metrus section:nth-of-type(odd) p {
+    text-align: left;
+}
+
+main div.metrus section:nth-of-type(even),
+main div.metrus section:nth-of-type(even) h2,
+main div.metrus section:nth-of-type(even) h3,
+main div.metrus section:nth-of-type(even) h3 a,
+main div.metrus section:nth-of-type(even) p {
+    text-align: right;
+}
 
 /*****************
  * END UNIVERSAL *
@@ -518,15 +542,28 @@ div.center {
     text-align: center;
 }
 
+.first_blurb,
+.second_blurb,
+.twenty_blurb,
+.bohrok_blurb,
+.mol_blurb {
+    margin-bottom: -4rem;
+}
+
 .first_blurb {
-    background-image: url('../img/8102019bg.webp');
-    background-size: contain;
-    background-repeat: repeat;
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, .625) 100%),
+        url('../img/8102019bg.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
     background-position: center center;
     background-attachment: fixed;
-    padding: 4rem 10vw;
+    padding: 6rem 10vw;
     -webkit-mask-image: linear-gradient(transparent 0%, black 10%, black 90%, transparent 100%);
     mask-image: linear-gradient(transparent 0%, black 10%, black 90%, transparent 100%);
+}
+
+.first_blurb img.zoomable {
+    max-width: 20% !important;
 }
 
 .first_blurb div h2 {
@@ -545,11 +582,11 @@ div.center {
 
 .second_blurb {
     background-image: url('../img/8102020bg.webp');
-    background-size: contain;
-    background-repeat: repeat;
+    background-size: cover;
+    background-repeat: no-repeat;
     background-position: center center;
     background-attachment: fixed;
-    padding: 4rem 10vw;
+    padding: 6rem 10vw;
     -webkit-mask-image: linear-gradient(transparent 0%, black 10%, black 90%, transparent 100%);
     mask-image: linear-gradient(transparent 0%, black 10%, black 90%, transparent 100%);
 }
@@ -569,7 +606,7 @@ div.center {
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: fixed;
-    padding: 4rem 10vw;
+    padding: 6rem 10vw;
     -webkit-mask-image: linear-gradient(transparent 0%, black 10%, black 90%, transparent 100%);
     mask-image: linear-gradient(transparent 0%, black 10%, black 90%, transparent 100%);
 }
@@ -593,7 +630,7 @@ div.center {
     background-repeat: repeat;
     background-position: center center;
     background-attachment: fixed;
-    padding: 4rem 10vw;
+    padding: 6rem 10vw;
     -webkit-mask-image: linear-gradient(transparent 0%, black 10%, black 90%, transparent 100%);
     mask-image: linear-gradient(transparent 0%, black 10%, black 90%, transparent 100%);
 }
@@ -614,7 +651,7 @@ div.center {
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: fixed;
-    padding: 4rem 10vw;
+    padding: 6rem 10vw;
     -webkit-mask-image: linear-gradient(transparent 0%, black 10%, black 90%, transparent 100%);
     mask-image: linear-gradient(transparent 0%, black 10%, black 90%, transparent 100%);
 }
@@ -630,4 +667,29 @@ div.center {
 
 .mol_blurb p {
     text-shadow: 0px 0px 2px #000000, 0px 0px 4px #000000 !important;
+}
+
+.metru_blurb {
+    margin-top: 6rem;
+    margin-bottom: 0rem;
+}
+
+.press_kit {
+    margin-top: 0rem;
+}
+
+div.metrus {
+    background-image: url('../img/BackgroundLight.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    padding: 6rem 10vw;
+    -webkit-mask-image: linear-gradient(transparent 0%, black 10%, black 90%, transparent 100%);
+    mask-image: linear-gradient(transparent 0%, black 10%, black 90%, transparent 100%);
+}
+
+div.metrus section {
+    margin: 0rem;
+    padding: 0rem;
 }
