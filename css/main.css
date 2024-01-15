@@ -2,108 +2,99 @@
  * FONTS *
  *********/
 
-
 @font-face {
-    font-family: 'TradeMarker';
-    src: url('../fonts/TradeMarker-Bold.woff2') format('woff2'), url('../fonts/TradeMarker-Bold.woff') format('woff');
-    font-weight: bold;
+  font-family: "TradeMarker";
+  src: url("../fonts/TradeMarker-Bold.woff2") format("woff2"),
+    url("../fonts/TradeMarker-Bold.woff") format("woff");
+  font-weight: bold;
 }
 
-
 @font-face {
-    font-family: 'Gill Sans Std';
-    src: url('../fonts/GillSansStd-Light.woff2') format('woff2'), url('../fonts/GillSansStd-Light.woff') format('woff');
+  font-family: "Gill Sans Std";
+  src: url("../fonts/GillSansStd-Light.woff2") format("woff2"),
+    url("../fonts/GillSansStd-Light.woff") format("woff");
 }
 
-
 @font-face {
-    font-family: 'Matoran';
-    src: url('../fonts/BIONRG__.woff2') format('woff2'), url('../fonts/BIONRG__.woff') format('woff');
+  font-family: "Matoran";
+  src: url("../fonts/BIONRG__.woff2") format("woff2"),
+    url("../fonts/BIONRG__.woff") format("woff");
 }
-
 
 .trademarker {
-    font-family: 'TradeMarker', Helvetica Now, Helvetica, Arial, sans-serif;
+  font-family: "TradeMarker", Helvetica Now, Helvetica, Arial, sans-serif;
 }
-
 
 .matoran {
-    font-family: 'Matoran', 'Gill Sans Std', Helvetica Now, Helvetica, Arial, sans-serif;
+  font-family: "Matoran", "Gill Sans Std", Helvetica Now, Helvetica, Arial,
+    sans-serif;
 }
-
 
 /*************
  * END FONTS *
  *************/
 
-
 /*************
  * UNIVERSAL *
  *************/
 
-
 * {
-    scrollbar-width: thin;
-    scrollbar-color: rgb(255, 255, 240) #720012;
+  scrollbar-width: thin;
+  scrollbar-color: rgb(255, 255, 240) #720012;
 }
-
 
 /* Chrome, Edge, and Safari */
 *::-webkit-scrollbar {
-    width: 10px;
+  width: 10px;
 }
-
 
 *::-webkit-scrollbar-track {
-    background: #720012;
+  background: #720012;
 }
-
 
 *::-webkit-scrollbar-thumb {
-    background-color: rgb(255, 255, 240);
-    border-radius: 20px;
-    border: 3px solid #720012;
+  background-color: rgb(255, 255, 240);
+  border-radius: 20px;
+  border: 3px solid #720012;
 }
-
 
 * {
-    font-family: 'Gill Sans Std', Helvetica Now, Helvetica, Arial, sans-serif;
+  font-family: "Gill Sans Std", Helvetica Now, Helvetica, Arial, sans-serif;
 }
-
 
 body {
-    background-color: #0a0b08;
-    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 1) 100%),
-        url('../img/BackgroundLight.webp');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-    background-size: cover;
-    margin: 0rem;
-    box-sizing: border-box;
+  background-color: #0a0b08;
+  background-image: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.25) 0%,
+      rgba(0, 0, 0, 1) 100%
+    ),
+    url("../img/BackgroundLight.webp");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  margin: 0rem;
+  box-sizing: border-box;
 }
-
 
 header,
 header img {
-    margin: auto;
-    max-width: 75vw;
+  margin: auto;
+  max-width: 75vw;
 }
-
 
 header img {
-    cursor: pointer;
+  cursor: pointer;
 }
-
 
 main {
-    margin: auto;
-    max-width: 100vw;
-    color: whitesmoke;
-    display: flex;
-    flex-direction: column;
+  margin: auto;
+  max-width: 100vw;
+  color: whitesmoke;
+  display: flex;
+  flex-direction: column;
 }
-
 
 main h1,
 main h2,
@@ -114,115 +105,99 @@ main h2 a,
 main h2 span,
 main h3 a,
 main h3 em {
-    font-family: 'TradeMarker';
-    letter-spacing: 0.125em;
-    text-shadow: 2px 2px 0px #720012;
-    text-transform: uppercase;
+  font-family: "TradeMarker";
+  letter-spacing: 0.125em;
+  text-shadow: 2px 2px 0px #720012;
+  text-transform: uppercase;
 }
-
 
 #countdown {
-    margin: 0em;
-    text-align: center;
+  margin: 0em;
+  text-align: center;
 }
-
 
 main h4 {
-    margin: 0em;
-    text-align: center;
+  margin: 0em;
+  text-align: center;
 }
-
 
 main h3 {
-    text-shadow: 1px 1px 0px #720012;
+  text-shadow: 1px 1px 0px #720012;
 }
-
 
 h2 span.disabled {
-    color: lightgray;
-    user-select: none;
+  color: lightgray;
+  user-select: none;
 }
-
 
 main h1,
 main h2 {
-    margin: 0em;
-    text-align: center;
+  margin: 0em;
+  text-align: center;
 }
-
 
 main h1.title {
-    font-size: 3em;
+  font-size: 3em;
 }
-
 
 main h1.separate {
-    margin-top: 0.5em;
+  margin-top: 0.5em;
 }
-
 
 main table {
-    margin-top: 1em;
+  margin-top: 1em;
 }
-
 
 main section {
-    margin: 1.5em 0em;
-    display: flex;
-    flex-flow: row nowrap;
-    align-items: center;
-    gap: 1em;
-    padding: 1rem 10vw;
+  margin: 1.5em 0em;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  gap: 1em;
+  padding: 1rem 10vw;
 }
-
 
 hr {
-    margin: 0.75em 0em 0.5em 0em;
-    margin-left: auto;
-    margin-right: auto;
-    width: 66.66vw;
-    max-width: 640px;
-    border: 1px solid white;
-    box-shadow: 2px 2px 0px #720012;
+  margin: 0.75em 0em 0.5em 0em;
+  margin-left: auto;
+  margin-right: auto;
+  width: 66.66vw;
+  max-width: 640px;
+  border: 1px solid white;
+  box-shadow: 2px 2px 0px #720012;
 }
-
 
 div h2 {
-    text-align: left;
+  text-align: left;
 }
-
 
 div h3 {
-    margin: 0em;
+  margin: 0em;
 }
-
 
 div p {
-    margin: 0.375em 0em;
-    text-shadow: 0px 0px 4px #000000;
+  margin: 0.375em 0em;
+  text-shadow: 0px 0px 4px #000000;
 }
-
 
 main section:nth-of-type(even) {
-    flex-flow: row-reverse nowrap;
+  flex-flow: row-reverse nowrap;
 }
-
 
 main section:nth-of-type(odd),
 main section:nth-of-type(odd) h2,
 main section:nth-of-type(odd) h3,
 main section:nth-of-type(odd) h3 a,
 main section:nth-of-type(odd) p {
-    text-align: right;
+  text-align: right;
 }
 
-
 main div.metrus section:nth-of-type(even) {
-    flex-flow: row nowrap;
+  flex-flow: row nowrap;
 }
 
 main div.metrus section:nth-of-type(odd) {
-    flex-flow: row-reverse nowrap;
+  flex-flow: row-reverse nowrap;
 }
 
 main div.metrus section:nth-of-type(odd),
@@ -230,7 +205,7 @@ main div.metrus section:nth-of-type(odd) h2,
 main div.metrus section:nth-of-type(odd) h3,
 main div.metrus section:nth-of-type(odd) h3 a,
 main div.metrus section:nth-of-type(odd) p {
-    text-align: left;
+  text-align: left;
 }
 
 main div.metrus section:nth-of-type(even),
@@ -238,322 +213,220 @@ main div.metrus section:nth-of-type(even) h2,
 main div.metrus section:nth-of-type(even) h3,
 main div.metrus section:nth-of-type(even) h3 a,
 main div.metrus section:nth-of-type(even) p {
-    text-align: right;
+  text-align: right;
 }
 
 /*****************
  * END UNIVERSAL *
  *****************/
 
-
 /************
  * ZOOMABLE *
  ************/
 
-
 img.zoomable {
-    max-width: 40%;
-    transition: all .25s ease-in-out;
-    cursor: pointer;
+  max-width: 40%;
+  transition: all 0.25s ease-in-out;
+  cursor: pointer;
 }
-
 
 img.zoomable:hover {
-    transform: scale(1.015625);
-    filter: brightness(1.05);
+  transform: scale(1.015625);
+  filter: brightness(1.05);
 }
-
 
 img.zoomable:active {
-    transform: scale(0.984375);
-    filter: brightness(0.95);
+  transform: scale(0.984375);
+  filter: brightness(0.95);
 }
-
 
 /****************
  * END ZOOMABLE *
  ****************/
 
 main section.social {
-    margin: 0em;
-    margin-top: 1em;
-    justify-content: center;
-    gap: 2em;
+  margin: 0em;
+  margin-top: 1em;
+  justify-content: center;
+  gap: 2em;
 }
-
 
 main section.social a img {
-    max-width: 2em;
+  max-width: 2em;
 }
-
 
 main section div {
-    min-width: calc(60% - 1em);
+  min-width: calc(60% - 1em);
 }
-
 
 main section.social div {
-    min-width: 0px;
-    width: 176px;
-    max-width: 176px;
+  min-width: 0px;
+  width: 176px;
+  max-width: 176px;
 }
-
 
 main section.social div iframe {
-    max-width: 176px;
+  max-width: 176px;
 }
-
 
 main section p {
-    font-size: larger;
+  font-size: larger;
 }
-
 
 a {
-    color: whitesmoke;
-    font-weight: bolder;
-    text-decoration: none;
-    transition: all .2s ease-in-out;
+  color: whitesmoke;
+  font-weight: bolder;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
 }
-
 
 a:hover {
-    color: lightgray;
+  color: lightgray;
 }
-
 
 a:active {
-    color: darkgray;
+  color: darkgray;
 }
-
 
 /***************
  * ZOOM STYLES *
  ***************/
 
-
 body .zoom {
-    display: flex;
-    opacity: 0%;
-    position: fixed;
-    top: 0px;
-    left: 0px;
-    height: 100%;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.875);
-    z-index: 20;
+  display: flex;
+  opacity: 0%;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.875);
+  z-index: 20;
 
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    flex-grow: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-grow: none;
 }
-
 
 .zoom p {
-    font-family: "Gill Sans Std", Helvetica Now, Helvetica, Arial, sans-serif;
-    margin: 0.25em;
-    padding: 0.25em;
-    text-align: center;
-    background-color: rgba(0, 0, 0, 0.75);
-    font-weight: bold;
-    color: white;
-    text-transform: uppercase;
-    letter-spacing: 0.1875em;
-    box-shadow: 0em 0em 0.25em 0.25em rgba(0, 0, 0, 0.75);
+  font-family: "Gill Sans Std", Helvetica Now, Helvetica, Arial, sans-serif;
+  margin: 0.25em;
+  padding: 0.25em;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.75);
+  font-weight: bold;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 0.1875em;
+  box-shadow: 0em 0em 0.25em 0.25em rgba(0, 0, 0, 0.75);
 }
-
 
 .zoom img {
-    max-height: 90vh;
-    max-width: 90vw;
-    border-radius: 0.25em;
-    margin: 0.5em;
+  max-height: 90vh;
+  max-width: 90vw;
+  border-radius: 0.25em;
+  margin: 0.5em;
 }
-
 
 span.exitSpan {
-    position: absolute;
-    top: 1em;
-    right: 1.5em;
-    max-width: 1em;
-    max-height: 1em;
-    font-size: 2em;
-    line-height: 1em;
-    border-radius: 50%;
-    cursor: pointer;
-    color: whitesmoke;
-    transition: all 0.2s ease-in-out;
-    opacity: 0.75;
+  position: absolute;
+  top: 1em;
+  right: 1.5em;
+  max-width: 1em;
+  max-height: 1em;
+  font-size: 2em;
+  line-height: 1em;
+  border-radius: 50%;
+  cursor: pointer;
+  color: whitesmoke;
+  transition: all 0.2s ease-in-out;
+  opacity: 0.75;
 }
-
 
 span.exitSpan:hover {
-    color: lightgray;
-    transform: scale(1.03125);
+  color: lightgray;
+  transform: scale(1.03125);
 }
-
 
 span.exitSpan:active {
-    color: darkgray;
-    transform: scale(0.9875);
+  color: darkgray;
+  transform: scale(0.9875);
 }
-
 
 /**********************
  * POSTER PAGE STYLES *
  **********************/
 
-
 body main section.posters,
 body main section.posters:nth-of-type(odd) {
-    all: initial;
-    margin-top: 1em;
-    display: flex;
-    flex-flow: row wrap;
-    align-items: center;
-    justify-content: space-around;
+  all: initial;
+  margin-top: 1em;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-around;
 }
-
 
 section.posters img.zoomable {
-    margin-top: 0.5em;
-    width: 27.5%;
-    margin-bottom: 1em;
+  margin-top: 0.5em;
+  width: 27.5%;
+  margin-bottom: 1em;
 }
-
 
 #bs01-logo,
 #mod-logo {
-    position: fixed;
+  position: fixed;
 }
-
 
 #bs01-logo:hover,
 #bs01-logo:active,
 #mod-logo:hover,
 #mod-logo:active {
-    cursor: pointer;
-    filter: brightness(.75);
+  cursor: pointer;
+  filter: brightness(0.75);
 }
-
 
 #bs01-logo {
-    top: 0;
-    left: 0;
+  top: 0;
+  left: 0;
 }
-
 
 #mod-logo {
-    top: 0;
-    right: 0;
+  top: 0;
+  right: 0;
 }
-
 
 footer {
-    margin: 0em;
-    text-align: center;
-    color: white;
+  margin: 0em;
+  text-align: center;
+  color: white;
 }
-
 
 h1 a {
-    cursor: pointer;
+  cursor: pointer;
 }
-
 
 div.zoom {
-    max-width: 100%;
-    max-height: 100%;
+  max-width: 100%;
+  max-height: 100%;
 }
-
 
 div.zoom video {
-    max-width: 80%;
-    max-height: 80%;
+  max-width: 80%;
+  max-height: 80%;
 }
-
 
 div.zoom iframe {
-    width: 80vw;
-    height: calc(80vw * 9 / 16);
+  width: 80vw;
+  height: calc(80vw * 9 / 16);
 
-    max-width: 1920px;
-    max-height: 1080px;
-}
-
-
-@media screen and (max-width: 843px) {
-    * {
-        max-width: 100vw;
-    }
-    
-    body {
-        max-width: 100vw;
-    }
-
-    main {
-        max-width: 100vw;
-    }
-
-
-    main h1 {
-        font-size: 1.5em;
-    }
-
-    main h2 {
-        font-size: 0.85em;
-    }
-
-    main section,
-    main section:nth-of-type(odd),
-    main section:nth-of-type(even) {
-        margin: 0rem;
-        flex-flow: column nowrap;
-        text-align: left;
-    }
-
-    main section.social {
-        margin: auto;
-        flex-flow: row nowrap;
-        justify-content: space-between;
-        gap: .5rem;
-        padding: 0rem;
-        width: 95vw;
-    }
-
-    main section.social a img {
-        max-width: 1rem !important;
-    }
-
-
-    main section img {
-        max-width: 50%;
-    }
-
-
-    main section div {
-        min-width: 100%;
-    }
-
-
-    main section div h2:first-of-type {
-        margin-top: 0em;
-    }
-
-
-    main section div h3 {
-        font-size: 0.9375em;
-    }
-
-
-    section.posters img.zoomable {
-        width: 45%;
-    }
+  max-width: 1920px;
+  max-height: 1080px;
 }
 
 div.center {
-    text-align: center;
+  text-align: center;
 }
 
 .first_blurb,
@@ -561,149 +434,279 @@ div.center {
 .twenty_blurb,
 .bohrok_blurb,
 .mol_blurb {
-    margin-bottom: -4rem;
+  margin-bottom: -4rem;
 }
 
 .first_blurb {
-    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, .625) 100%),
-        url('../img/8102019bg.webp');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-attachment: fixed;
-    padding: 6rem 10vw;
-    -webkit-mask-image: linear-gradient(transparent 0%, black 10%, black 90%, transparent 100%);
-    mask-image: linear-gradient(transparent 0%, black 10%, black 90%, transparent 100%);
+  background-image: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.25) 0%,
+      rgba(0, 0, 0, 0.625) 100%
+    ),
+    url("../img/8102019bg.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  padding: 6rem 10vw;
+  -webkit-mask-image: linear-gradient(
+    transparent 0%,
+    black 10%,
+    black 90%,
+    transparent 100%
+  );
+  mask-image: linear-gradient(
+    transparent 0%,
+    black 10%,
+    black 90%,
+    transparent 100%
+  );
 }
 
 .first_blurb img.zoomable {
-    max-width: 20% !important;
+  max-width: 20% !important;
 }
 
 .first_blurb div h2 {
-    text-shadow: 2px 2px 0px darkcyan !important;
+  text-shadow: 2px 2px 0px darkcyan !important;
 }
 
 .first_blurb h3,
 .first_blurb h3 a {
-    text-shadow: 1px 1px 0px darkcyan !important;
+  text-shadow: 1px 1px 0px darkcyan !important;
 }
 
 .first_blurb p {
-    font-weight: bolder;
-    text-shadow: 0px 0px 1px #000, 0px 0px 2px #000 !important;
+  font-weight: bolder;
+  text-shadow: 0px 0px 1px #000, 0px 0px 2px #000 !important;
 }
 
 .second_blurb {
-    background-image: url('../img/8102020bg.webp');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-attachment: fixed;
-    padding: 6rem 10vw;
-    -webkit-mask-image: linear-gradient(transparent 0%, black 10%, black 90%, transparent 100%);
-    mask-image: linear-gradient(transparent 0%, black 10%, black 90%, transparent 100%);
+  background-image: url("../img/8102020bg.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  padding: 6rem 10vw;
+  -webkit-mask-image: linear-gradient(
+    transparent 0%,
+    black 10%,
+    black 90%,
+    transparent 100%
+  );
+  mask-image: linear-gradient(
+    transparent 0%,
+    black 10%,
+    black 90%,
+    transparent 100%
+  );
 }
 
 .second_blurb div h2 {
-    text-shadow: 2px 2px 0px orangered !important;
+  text-shadow: 2px 2px 0px orangered !important;
 }
 
 .second_blurb h3,
 .second_blurb h3 a {
-    text-shadow: 1px 1px 0px orangered !important;
+  text-shadow: 1px 1px 0px orangered !important;
 }
 
 .twenty_blurb {
-    background-image: url('../img/8102021bg.webp');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-attachment: fixed;
-    padding: 6rem 10vw;
-    -webkit-mask-image: linear-gradient(transparent 0%, black 10%, black 90%, transparent 100%);
-    mask-image: linear-gradient(transparent 0%, black 10%, black 90%, transparent 100%);
+  background-image: url("../img/8102021bg.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  padding: 6rem 10vw;
+  -webkit-mask-image: linear-gradient(
+    transparent 0%,
+    black 10%,
+    black 90%,
+    transparent 100%
+  );
+  mask-image: linear-gradient(
+    transparent 0%,
+    black 10%,
+    black 90%,
+    transparent 100%
+  );
 }
 
 .twenty_blurb h2 {
-    text-shadow: 2px 2px 0px saddlebrown !important;
+  text-shadow: 2px 2px 0px saddlebrown !important;
 }
 
 .twenty_blurb h3,
 .twenty_blurb h3 a {
-    text-shadow: 1px 1px 0px saddlebrown !important;
+  text-shadow: 1px 1px 0px saddlebrown !important;
 }
 
 .twenty_blurb p {
-    text-shadow: 0px 0px 2px #000000, 0px 0px 4px #000000 !important;
+  text-shadow: 0px 0px 2px #000000, 0px 0px 4px #000000 !important;
 }
 
 .bohrok_blurb {
-    background-image: url('../img/bg2022.webp');
-    background-size: contain;
-    background-repeat: repeat;
-    background-position: center center;
-    background-attachment: fixed;
-    padding: 6rem 10vw;
-    -webkit-mask-image: linear-gradient(transparent 0%, black 10%, black 90%, transparent 100%);
-    mask-image: linear-gradient(transparent 0%, black 10%, black 90%, transparent 100%);
+  background-image: url("../img/bg2022.webp");
+  background-size: contain;
+  background-repeat: repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  padding: 6rem 10vw;
+  -webkit-mask-image: linear-gradient(
+    transparent 0%,
+    black 10%,
+    black 90%,
+    transparent 100%
+  );
+  mask-image: linear-gradient(
+    transparent 0%,
+    black 10%,
+    black 90%,
+    transparent 100%
+  );
 }
 
 .bohrok_blurb h2 {
-    text-shadow: 2px 2px 0px olivedrab !important;
+  text-shadow: 2px 2px 0px olivedrab !important;
 }
 
 .bohrok_blurb h3,
 .bohrok_blurb h3 a {
-    text-shadow: 1px 1px 0px olivedrab !important;
+  text-shadow: 1px 1px 0px olivedrab !important;
 }
 
-
 .mol_blurb {
-    background-image: url('../img/ProtodermisLight.webp');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-attachment: fixed;
-    padding: 6rem 10vw;
-    -webkit-mask-image: linear-gradient(transparent 0%, black 10%, black 90%, transparent 100%);
-    mask-image: linear-gradient(transparent 0%, black 10%, black 90%, transparent 100%);
+  background-image: url("../img/ProtodermisLight.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  padding: 6rem 10vw;
+  -webkit-mask-image: linear-gradient(
+    transparent 0%,
+    black 10%,
+    black 90%,
+    transparent 100%
+  );
+  mask-image: linear-gradient(
+    transparent 0%,
+    black 10%,
+    black 90%,
+    transparent 100%
+  );
 }
 
 .mol_blurb h2 {
-    text-shadow: 2px 2px 0px goldenrod;
+  text-shadow: 2px 2px 0px goldenrod;
 }
 
 .mol_blurb h3,
 .mol_blurb h3 a {
-    text-shadow: 1px 1px 0px goldenrod !important;
+  text-shadow: 1px 1px 0px goldenrod !important;
 }
 
 .mol_blurb p {
-    text-shadow: 0px 0px 2px #000000, 0px 0px 4px #000000 !important;
+  text-shadow: 0px 0px 2px #000000, 0px 0px 4px #000000 !important;
 }
 
 .metru_blurb {
-    margin-top: 6rem;
-    margin-bottom: 0rem;
+  margin-top: 6rem;
+  margin-bottom: 0rem;
 }
 
 .press_kit {
-    margin-top: 0rem;
+  margin-top: 0rem;
 }
 
 div.metrus {
-    background-image: url('../img/BackgroundLight.webp');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-attachment: fixed;
-    padding: 6rem 10vw;
-    -webkit-mask-image: linear-gradient(transparent 0%, black 10%, black 90%, transparent 100%);
-    mask-image: linear-gradient(transparent 0%, black 10%, black 90%, transparent 100%);
+  background-image: url("../img/BackgroundLight.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  padding: 6rem 10vw;
+  -webkit-mask-image: linear-gradient(
+    transparent 0%,
+    black 10%,
+    black 90%,
+    transparent 100%
+  );
+  mask-image: linear-gradient(
+    transparent 0%,
+    black 10%,
+    black 90%,
+    transparent 100%
+  );
 }
 
 div.metrus section {
+  margin: 0rem;
+  padding: 0rem;
+}
+
+@media screen and (max-width: 843px) {
+  * {
+    max-width: 100vw;
+  }
+
+  body {
+    max-width: 100vw;
+  }
+
+  main {
+    max-width: 100vw;
+  }
+
+  main h1 {
+    font-size: 1.5em;
+  }
+
+  main h2 {
+    font-size: 0.85em;
+  }
+
+  main section,
+  main section:nth-of-type(odd),
+  main section:nth-of-type(even) {
     margin: 0rem;
+    flex-flow: column nowrap;
+    text-align: left;
+  }
+
+  main section.social {
+    margin: auto;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    gap: 0.5rem;
     padding: 0rem;
+    width: 95vw;
+  }
+
+  main section.social a img {
+    max-width: 1rem !important;
+  }
+
+  main section img {
+    max-width: 50%;
+  }
+
+  main section div {
+    min-width: 100%;
+  }
+
+  main section div h2:first-of-type {
+    margin-top: 0em;
+  }
+
+  main section div h3 {
+    font-size: 0.9375em;
+  }
+
+  section.posters img.zoomable {
+    width: 45%;
+  }
+
+  .metrus div {
+    min-width: 0rem;
+  }
 }
