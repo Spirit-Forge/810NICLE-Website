@@ -709,4 +709,12 @@ div.metrus section {
   .metrus div {
     min-width: 0rem;
   }
+
+  .second_blurb,
+  .twenty_blurb,
+  .bohrok_blurb,
+  .mol_blurb,
+  .metrus {
+    margin-top: -5rem !important;
+  }
 }
