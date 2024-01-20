@@ -4,110 +4,99 @@
 
 
 .grid-container {
-  display: grid;
-  grid-template-columns: 30% 70%;
-  grid-template-areas:
-    'twitter news1'
-    'twitter news2'
-    'twitter news3'
-    'twitter news4'
-    'twitter news5';
+  display: flex;
+  flex-flow: column nowrap;
   gap: 10px;
-  margin-top:1.5em;
-  margin-bottom:20px;
+  margin-top: 1.5em;
+  margin-bottom: 20px;
   column-gap: 40px;
-  height:auto;
+  height: auto;
   min-height: 500px;
+  padding: 0rem 10vw;
 }
 
 
-.grid-container > div {
+.grid-container>div {
   text-align: left;
-  height:auto;
+  height: auto;
 }
 
-
-.twitter {
-grid-area: twitter;
-height: 100%;
+.news1 {
+  grid-area: news1;
 }
 
+.news2 {
+  grid-area: news2;
+}
 
-.news1 { grid-area: news1; }
-.news2 { grid-area: news2; }
-.news3 { grid-area: news3; }
-.news4 { grid-area: news4; }
-.news5 { grid-area: news5; }
-.newsold { grid-area: newsold; }
+.news3 {
+  grid-area: news3;
+}
+
+.news4 {
+  grid-area: news4;
+}
+
+.news5 {
+  grid-area: news5;
+}
+
+.newsold {
+  grid-area: newsold;
+}
 
 
 @media screen and (max-width: 843px) {
-    main {
-        max-width: 95vw;
-    }
+  main {
+    max-width: 95vw;
+  }
 
 
-    main h1 {
-        font-size: 1.5em;
-    }
+  main h1 {
+    font-size: 1.5em;
+  }
 
 
-    main h2 {
-        font-size: 0.85em;
-    }
+  main h2 {
+    font-size: 0.85em;
+  }
 
 
-    main section,
-    main section:nth-of-type(odd),
-    main section:nth-of-type(even) {
-        margin: 1em 0em;
-        flex-flow: column nowrap;
-        text-align: left;
-    }
+  main section,
+  main section:nth-of-type(odd),
+  main section:nth-of-type(even) {
+    margin: 1em 0em;
+    flex-flow: column nowrap;
+    text-align: left;
+  }
 
 
-    main section.social {
-        flex-flow: row nowrap;
-    }
+  main section.social {
+    flex-flow: row nowrap;
+  }
 
 
-    main section img {
-        max-width: 50%;
-    }
+  main section img {
+    max-width: 50%;
+  }
 
 
-    main section div {
-        min-width: 100%;
-    }
+  main section div {
+    min-width: 100%;
+  }
 
 
-    main section div h2:first-of-type {
-        margin-top: 0em;
-    }
+  main section div h2:first-of-type {
+    margin-top: 0em;
+  }
 
 
-    main section div h3 {
-        font-size: 0.9375em;
-    }
+  main section div h3 {
+    font-size: 0.9375em;
+  }
 
 
-    section.posters img.zoomable {
-        width: 45%;
-    }
-	
-.grid-container {
-  display: grid;
-  grid-template-columns: 100%;
-  grid-template-areas:
-    'news1'
-    'news2'
-    'news3'
-    'twitter';
-  gap: 10px;
-  min-height:500px;
-}
-
-.twitter {
-  height:1500px !important;
-}
+  section.posters img.zoomable {
+    width: 45%;
+  }
 }
