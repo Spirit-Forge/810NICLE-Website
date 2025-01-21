@@ -1,4 +1,4 @@
-let countdownDate = new Date("2024-08-10T16:00:00Z").getTime();
+let countdownDate = new Date("2025-08-10T16:00:00Z").getTime();
 
 
 function pad(num, size) {
@@ -27,6 +27,6 @@ let x = setInterval(function() {
   // If the count down is finished, write some text
   if (distance < 0) {
     clearInterval(x);
-    document.getElementById("countdown").innerHTML = "810NICLE DAY 2024 IS HERE!";
+    document.getElementById("countdown").innerHTML = "810NICLE DAY 2025 IS HERE!";
   }
 }, 1000);

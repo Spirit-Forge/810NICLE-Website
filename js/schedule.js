@@ -14,3 +14,8 @@ for (let i = 0; i < times.length; i++) {
     let minute = time.getMinutes();
     times[i].innerText = pad(hour, 2) + ':' + pad(minute, 2);
 }
+
+
+// Get datetime for 8/10/2024 11:30 AM ET.
+// Convert to local time.
+// Get month and date, return as string.

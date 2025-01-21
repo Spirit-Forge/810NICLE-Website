@@ -1,0 +1,120 @@
+/*Custom*/
+.b2s-post-btn {
+    float: left;
+}
+.form-inline {
+    width: 100%;
+    margin-bottom: 20px;
+}
+.form-inline .form-group  {
+    margin-left: 2px;
+}
+@media(max-width: 549px) {
+    .b2s-post-btn {
+        width: 100%;
+    }
+    .form-inline button, .form-inline a { 
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+@media(max-width: 767px) {
+    .form-inline {
+        display: none;
+    }
+    .filterHide {
+        display: none;
+    }
+    .form-inline button ,.form-inline a { 
+        width: 49%;
+        margin-bottom: 10px;
+    }
+}
+
+.b2s-loading-area{
+    width: 100% !important;
+}
+
+.loadDraftBtn {
+    margin-right: 5px;
+}
+
+.b2sFavoriteStar {
+    font-size: 22px;
+    margin-top: 6px;
+    color: #ffb900;
+    cursor: pointer;
+}
+
+.b2sFavoriteStarLoading {
+    animation: 1.5s ease-in-out 0s normal none infinite running sk-pulseScaleOut;
+}
+
+.b2s-notice-counter {
+    background-color: lightblue;
+    padding: 2px;
+    border-radius: 50%;
+    width: 22px;
+    display: inline-block;
+}
+
+
+#b2s-onboarding-toastee {
+    position: fixed; 
+    top: 30px; 
+    right: 20px;
+}
+
+#b2s-onboarding-toastee-inner {
+    display: block; 
+    position: relative; 
+    z-index: 2000; 
+    border-radius: 10px; 
+    min-width: 250px; 
+    max-width: 250px; 
+    height: auto; 
+    background: rgb(121, 179, 51);
+}
+
+.closeToastee{
+    color: #fff; 
+    text-align: center; 
+    line-height: .8; 
+    padding: 5px;
+    border-radius: 100%; 
+    border: 2px solid #fff; 
+    font-family: sans-serif; 
+    display: block; 
+    cursor: pointer; 
+    position: absolute; 
+    top: 10px; 
+    right: 10px; 
+    color: #fff;
+}
+
+.b2s-onboarding-toastee-title {
+    text-align: center; 
+    padding-left:10px;
+    padding-right:10px;
+    padding-top:5px;
+    padding-bottom:10px;
+    color: #fff;
+}
+
+.b2s-onboarding-hr {
+    color: transparent; 
+    width: 80%; 
+    margin: 0 auto; 
+    border-bottom: 1px solid #fff; 
+    opacity: 0.3
+}
+
+.b2s-onboarding-p {
+    padding: 20px; 
+    color: #fff
+}
+
+.toggle {
+    float:right;
+    width:50px !important;
+}

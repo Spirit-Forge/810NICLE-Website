@@ -6,11 +6,27 @@ main {
     flex-direction: column;
 }
 
+#thirdday {
+	min-height: 0px;
+	max-height: 382px !important;
+}
+
+.schedulecontainer {
+	display: flex;
+	flex-flow: row wrap;
+	max-width: 100%;
+	justify-content: center;
+	align-items: stretch;
+	gap: 1em;
+}
+
 table {
 	margin-left: auto;
 	margin-right: auto;
 	width: 100%;
-	max-width: 1024px;
+	max-width: none;
+	min-width: 640px;
+	min-height: calc(100% - 1rem - 36px);
 }
 
 
@@ -18,374 +34,242 @@ table tr {
 	min-height: 42px;
 	height: 42px;
 	max-height: 42px;
-	font-size: 1.2em;
+	font-size: 1.2rem;
+}
+
+.invis {
+	opacity: 0%;
 }
 
 
-table tr:nth-child(even) th {
+/*table tr:nth-child(even) th {
 	color: #eee;
-	font-size: 0.8em;
+	font-size: 0.8rem;
 	font-weight: normal;
-}
+}*/
 
 table th,
 table td {
 	padding: 0.5rem 1rem;
-	text-shadow: 2px 2px 0px darkgoldenrod;
+	/* text-shadow: 2px 2px 0px silver; */
 }
 
 
 table th {
 	font-weight: normal;
 	border-top: thin dotted #ccc;
+	padding: .25rem;
+	vertical-align: top;
+	height: 30px;
+	min-height: 30px;
+	max-height: 30px;
 }
 
 
 table td {
-	font-size: 0.8125em;
+	font-size: 0.8125rem;
 	width: 90%;
 	font-weight: bold;
 	line-height: 1.4;
 	border-radius: 0.2rem;
-	background-color: darkgoldenrod;
+	background-color: silver;
 	transition: opacity 0.3s ease;
-	padding: 0em 1em;
+	padding: 0rem 1rem;
 }
 
 
 table td h3,
 table td h3 em,
-table td p {
-	margin: 0.25em;
-	text-shadow: 0px 0px 4px #080808, 0px 0px 4px #080808;
-}
-
-table td h3 {
-	line-height: 1rem;
-}
-
-table td p {
-	line-height: .875rem;
+table td p,
+table td p em,
+table td h4,
+table td h4 em {
+	margin: 0.125rem;
+	max-width: calc(640px - 2rem - .5rem);
+	line-height: calc(42px / 3);
+	overflow: hidden;
+	font-size: 0.8125rem !important;
+	padding-left: .5rem !important;
+	text-shadow:
+		1px 1px 0 #000,
+		-1px 1px 0 #000,
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		0px 0px 4px rgba(0,0,0,0.125);
 }
 
 table td h4,
 table td h4 em {
     font-family: 'TradeMarker';
-    letter-spacing: 0.125em;
-	margin-top: 0.2em;
-	margin-bottom: 0.2em;
-	font-size: 0.9em;
-	text-shadow: 0px 0px 4px #080808, 0px 0px 4px #080808;
 	text-align: left !important;
 }
 
 
-/****************
- * EVENT COLORS *
- ****************/
+/***********************
+ * EVENT COLORS (2024) *
+ ***********************/
 
+ .rsg {
+	background-color: #ff0000;
+	background-image: url("../img/schedule/2024/RSG.webp");
+	background-position: top center;
+	background-size: cover;
+}
 
-.asabove {
-	background-color: #4e7f94;
-	background-image: url("../img/schedule/aasb.webp");
-	background-position: center right;
-	background-size: cover;
-}
-.tso {
-	background-image: url("../img/schedule/TSO.webp");
-	background-position: center right;
-	background-size: cover;
-}
-.loss {
-	background-color: #4e7f94;
-	background-image: url("../img/schedule/LossOfPower.webp");
-	background-position: center right;
-	background-size: cover;
-}
-.sci {
-	background-color: transparent;
-	background-image: url("../img/schedule/sci.webp");
-	background-position: center;
-	background-size: cover;
-}
-.abr {
-	background-color: black;
-	background-image: url("../img/schedule/abr.webp");
-	background-position: center right;
-	background-repeat: no-repeat;
-	background-size: contain;
-}
-.behindbonk {
-	background-image: url("../img/schedule/BehindBonk.webp");
-	background-position: center;
-	background-size: cover;
-}
-.beyond {
-	background-image: url("../img/schedule/beyond.webp");
-	background-position: center;
-	background-size: cover;
-}
-.legacy {
-	background-image: url("../img/schedule/legacy.webp");
-	background-position: center;
-	background-size: cover;
-}
-.mnr {
-	background-image: url("../img/schedule/Beans.webp");
+ .canon {
+	background-color: tan;
+	background-image: url("../img/schedule/2024/Canon.webp");
 	background-position: center left;
 	background-size: cover;
 }
-.bc {
-	background-image: url("../img/schedule/BC.webp");
-	background-position: center right;
+
+.retro {
+	background-color: tan;
+	background-image: url("../img/schedule/2024/BCR.webp");
+	background-position: center left;
 	background-size: cover;
-}
-.bc p {
-	width:80%;
 }
 
-.marketing {
-	background-image: url("../img/schedule/marketing.webp");
-	background-position: center;
-	background-size: cover;
+.canon h3,
+.canon p,
+.canon h4 {
+	text-shadow: 0px 0px 4px #080808, 0px 0px 4px #080808 0px 0px 4px #080808 0px 0px 4px #080808;
 }
-.elliot {
-	background-image: url("../img/schedule/elliot.webp");
-	background-position: center;
-	background-size: cover;
-}
-.break {
-	background-color: #663366;
-	background-image: url("../img/schedule/break1.webp");
-	background-position: center;
-	background-size: cover;
-}
-.break2 {
-	background-color: #663366;
-	background-image: url("../img/schedule/break2.webp");
-	background-position: center;
-	background-size: cover;
-}
-.mol {
-	background-image: url("../img/schedule/MOL20th.webp");
-	background-position: center;
-	background-size: cover;
-}
+
+
 .direct {
 	background-color: white;
-	background-image: url("../img/schedule/direct.webp");
-	background-position: center;
+	background-image: url("../img/schedule/2024/Direct.webp");
+	background-position: center right;
 	background-repeat: no-repeat;
 	background-size: cover;
 }
 .treehut{
-	background-image: url("../img/schedule/treehut_clear.webp");
+	background-image: url("../img/schedule/2024/Treehut.webp");
 	background-position: right;
 	background-size: cover;
 }
 .treehut p {
 	max-width: 55%;
 }
-.woh {
-	background-image: url("../img/schedule/woh.webp");
-	background-position: center;
-	background-size: cover;
-}
-
-
-.mangai {
-	background-color: rgb(88, 88, 88);
-	background-image: url("../img/schedule/mangai.webp");
-	background-position: right;
-	background-size: cover;
-}
-.jl {
-	background-image: url("../img/schedule/justin_clear.webp");
-	background-position: center;
-	background-size: cover;
-}
-
-.bs01 {
-	background-color: #09c2e3;
-}
-.wcp{
-	background-color: #c9c8cb;
-	background-image: url("../img/schedule/wcp_clear.webp");
-	background-position: right;
-	background-size: cover;
-}
-
-.koli {
-	background-color: #09c2e3;
-	background-image: url("../img/schedule/koli.webp");
-	background-position: center;
-	background-size: cover;
-}
-
 
 .fs {
 	background-color: #09c2e3;
-	background-image: url("../img/schedule/fs_clear.webp");
-	background-position: right;
-	background-size: cover;
-}
-
-
-.oranges {
-	background-image: url("../img/schedule/oranges.webp");
-	background-position: right;
-	background-size: cover;
-}
-
-
-.iceberg {
-	background: linear-gradient(0deg, rgba(9,9,37,1) 0%, rgba(0,153,255,1) 100%);
-	background-image: url("../img/schedule/iceberg.webp");
+	background-image: url("../img/schedule/2024/FWB.webp");
 	background-position: center;
 	background-size: cover;
 }
 
-
-.tryna {
-	background-image: url("../img/schedule/tryna.webp");
+.gf {
+	background-color: #09c2e3;
+	background-image: url("../img/schedule/2024/GF.webp");
 	background-position: center;
 	background-size: cover;
 }
-
-
-.sayger {
-	background-image: url("../img/schedule/sayger.webp");
-	background-position: center;
-	background-size: cover;
-}
-
-
-.duck {
-	background-image: url("../img/schedule/duck_clear.webp");
-	background-position: right;
-	background-size: cover;
-}
-
-
-.sunny {
-	background-image: url("../img/schedule/sunny_clear.webp");
-	background-position: center;
-	background-size: cover;
-}
-
-
-.rsg {
-	background-color: #ff0000;
-	background-image: url("../img/schedule/rsg_clear.webp");
-	background-position: top center;
-	background-size: cover;
-}
-
-
-.speed {
-	background-color: darkblue;
-	background-image: url("../img/schedule/speed.webp");
-	background-position: center;
-	background-size: cover;
-}
-
-
-.rem {
-	background-color: skyblue;
-	background-image: url("../img/schedule/rem.webp");
-	background-position: center;
-	background-size: cover;
-}
-
-
-.tammy {
-	background-image: url("../img/schedule/tammy_clear.webp");
-	background-position: center;
-	background-size: cover;
-}
-
 
 .btgs {
 	background-color: crimson;
-	background-image: url("../img/schedule/btgs_clear.webp");
+	background-image: url("../img/schedule/2024/BTGS.webp");
 	background-position: top right;
 	background-size: cover;
 }
 .btgs p {
 	width:60%;
+	overflow: visible;
+	padding-bottom: 0.2rem;
 }
 
-.ide {
-	background-image: url("../img/schedule/ide.webp");
+.beyond {
+	background-image: url("../img/schedule/2024/Slot_Asset.png");
 	background-position: center;
 	background-size: cover;
 }
 
-
-.ide p{
-	width:58%;
+.int {
+	background-color: #663366;
+	background-image: url("../img/schedule/2024/Break.webp");
+	background-position: center;
+	background-size: cover;
 }
 
-
-div.schedulecontainer {
-	display: flex;
-	flex-flow: row nowrap;
-	gap: 1em;
-	align-items: stretch;
+.saygerskakdi {
+	background-image: url("../img/schedule/2024/JoP.webp");
+	background-position: center;
+	background-size: cover;
 }
 
-
-div.schedule {
-	width: calc(50% - 0.5em);
+.mibb {
+	background-image: url("../img/schedule/2024/MIbB.webp");
+	background-position: center;
+	background-size: cover;
 }
 
-
-div.schedule table {
-	height: 100%;
+.ide {
+	background-image: url("../img/schedule/2024/Ide.webp");
+	background-position: center;
+	background-size: cover;
 }
 
-
-footer {
-	margin-top: 6em;
+.tkt {
+	background-image: url("../img/schedule/2024/TKT.webp");
+	background-position: right;
+	background-size: cover;
+}
+.omfg {
+	background-image: url("../img/schedule/2024/OMFG.webp");
+	background-position: center;
+	background-size; cover;
+}
+.kai {
+	background-image: url("../img/schedule/2024/Kai.webp");
+	background-position: right;
+	background-size: cover;	
+}
+.robo {
+	background-image: url("../img/schedule/2024/Robo.webp");
+	background-position: center bottom;
+	background-size: cover;	
 }
 
+.wmmnsg {
+	background-image: url("../img/schedule/2024/WMMNSG.webp");
+	background-position: center;
+	background-size: cover;	
+}
 
-@media screen and (max-width: 1280px) {
-	body main {
-		max-width: 95vw;
+.minionicle {
+	background-image: url("../img/schedule/2024/Mini.webp");
+	background-position: right;
+	background-size: cover;	
+}
+
+.Herora {
+	background-image: url("../img/schedule/2024/Herora.webp");
+	background-position: center;
+	background-size: cover;	
+}	
+
+.crafting {
+	background-image: url("../img/schedule/2024/Crafting.webp");
+	background-position: right;
+	background-size: cover;	
+}		
+
+.evo {
+	background-image: url("../img/schedule/2024/Evo.webp");
+	background-position: right;
+	background-size: cover;	
+}
+
+/* mobile styles */
+
+@media screen and (max-width: 1080px) {
+	.schedule {
+		width: 90vw;
 	}
 
-
-	div.schedulecontainer {
+	table {
+		min-width: 0rem !important;
 		width: 100%;
-		display: flex;
-		flex-flow: column;
-	}
-	
-	
-	div.schedule {
-		width: 100%;
-	}
-
-
-	table tr th {
-		width: 15%;
-	}
-
-
-	table tr {
-		min-height: 32px;
-		height: 32px;
-		max-height: 32px;
-	}
-
-
-	table tr td h3 {
-		font-size: 1em;
-	}
-
-
-	table tr td p {
-		font-size: 0.875em;
 	}
 }

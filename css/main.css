@@ -40,7 +40,7 @@
 
 * {
   scrollbar-width: thin;
-  scrollbar-color: rgb(255, 255, 240) #720012;
+  scrollbar-color: rgb(255, 255, 240) #929928;
 }
 
 /* Chrome, Edge, and Safari */
@@ -49,13 +49,13 @@
 }
 
 *::-webkit-scrollbar-track {
-  background: #720012;
+  background: #929928;
 }
 
 *::-webkit-scrollbar-thumb {
   background-color: rgb(255, 255, 240);
   border-radius: 20px;
-  border: 3px solid #720012;
+  border: 3px solid #929928;
 }
 
 * {
@@ -64,12 +64,6 @@
 
 body {
   background-color: #0a0b08;
-  background-image: linear-gradient(
-      180deg,
-      rgba(0, 0, 0, 0.25) 0%,
-      rgba(0, 0, 0, 1) 100%
-    ),
-    url("../img/BackgroundLight.webp");
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
@@ -96,6 +90,16 @@ main {
   flex-direction: column;
 }
 
+#bgvid {
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -900;
+}
+
 main h1,
 main h2,
 main h3,
@@ -107,7 +111,7 @@ main h3 a,
 main h3 em {
   font-family: "TradeMarker";
   letter-spacing: 0.125em;
-  text-shadow: 2px 2px 0px #720012;
+  text-shadow: 2px 2px 0px #929928;
   text-transform: uppercase;
 }
 
@@ -122,7 +126,7 @@ main h4 {
 }
 
 main h3 {
-  text-shadow: 1px 1px 0px #720012;
+  text-shadow: 1px 1px 0px #929928;
 }
 
 h2 span.disabled {
@@ -164,7 +168,7 @@ hr {
   width: 66.66vw;
   max-width: 640px;
   border: 1px solid white;
-  box-shadow: 2px 2px 0px #720012;
+  box-shadow: 2px 2px 0px #929928;
 }
 
 div h2 {
@@ -192,29 +196,29 @@ main section:nth-of-type(odd) p {
   text-align: right;
 }
 
-main div.metrus section:nth-of-type(even) {
+/*main div.metrukotos section:nth-of-type(even) {
   flex-flow: row nowrap;
 }
 
-main div.metrus section:nth-of-type(odd) {
+main div.metrukotos section:nth-of-type(odd) {
   flex-flow: row-reverse nowrap;
 }
 
-main div.metrus section:nth-of-type(odd),
-main div.metrus section:nth-of-type(odd) h2,
-main div.metrus section:nth-of-type(odd) h3,
-main div.metrus section:nth-of-type(odd) h3 a,
-main div.metrus section:nth-of-type(odd) p {
+main div.metrukotos section:nth-of-type(odd),
+main div.metrukotos section:nth-of-type(odd) h2,
+main div.metrukotos section:nth-of-type(odd) h3,
+main div.metrukotos section:nth-of-type(odd) h3 a,
+main div.metrukotos section:nth-of-type(odd) p {
   text-align: left;
 }
 
-main div.metrus section:nth-of-type(even),
-main div.metrus section:nth-of-type(even) h2,
-main div.metrus section:nth-of-type(even) h3,
-main div.metrus section:nth-of-type(even) h3 a,
-main div.metrus section:nth-of-type(even) p {
+main div.metrukotos section:nth-of-type(even),
+main div.metrukotos section:nth-of-type(even) h2,
+main div.metrukotos section:nth-of-type(even) h3,
+main div.metrukotos section:nth-of-type(even) h3 a,
+main div.metrukotos section:nth-of-type(even) p {
   text-align: right;
-}
+}*/
 
 /*****************
  * END UNIVERSAL *
@@ -449,6 +453,8 @@ div.center {
   background-position: center center;
   background-attachment: fixed;
   padding: 6rem 10vw;
+  margin-top: -50px;
+  margin-bottom: -50px;
   -webkit-mask-image: linear-gradient(
     transparent 0%,
     black 10%,
@@ -461,10 +467,6 @@ div.center {
     black 90%,
     transparent 100%
   );
-}
-
-.first_blurb img.zoomable {
-  max-width: 20% !important;
 }
 
 .first_blurb div h2 {
@@ -488,6 +490,8 @@ div.center {
   background-position: center center;
   background-attachment: fixed;
   padding: 6rem 10vw;
+  margin-top: -50px;
+  margin-bottom: -50px;
   -webkit-mask-image: linear-gradient(
     transparent 0%,
     black 10%,
@@ -518,6 +522,8 @@ div.center {
   background-position: center center;
   background-attachment: fixed;
   padding: 6rem 10vw;
+  margin-top: -50px;
+  margin-bottom: -50px;
   -webkit-mask-image: linear-gradient(
     transparent 0%,
     black 10%,
@@ -552,6 +558,8 @@ div.center {
   background-position: center center;
   background-attachment: fixed;
   padding: 6rem 10vw;
+  margin-top: -50px;
+  margin-bottom: -50px;
   -webkit-mask-image: linear-gradient(
     transparent 0%,
     black 10%,
@@ -582,6 +590,8 @@ div.center {
   background-position: center center;
   background-attachment: fixed;
   padding: 6rem 10vw;
+  margin-top: -50px;
+  margin-bottom: -50px;
   -webkit-mask-image: linear-gradient(
     transparent 0%,
     black 10%,
@@ -610,6 +620,42 @@ div.center {
 }
 
 .metru_blurb {
+  background-image: url("../img/8102024bg.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  padding: 6rem 10vw;
+  margin-top: -50px;
+  margin-bottom: -50px;
+  -webkit-mask-image: linear-gradient(
+    transparent 0%,
+    black 10%,
+    black 90%,
+    transparent 100%
+  );
+  mask-image: linear-gradient(
+    transparent 0%,
+    black 10%,
+    black 90%,
+    transparent 100%
+  );
+}
+
+.metru_blurb h2 {
+  text-shadow: 2px 2px 0px goldenrod;
+}
+
+.metru_blurb h3,
+.metru_blurb h3 a {
+  text-shadow: 1px 1px 0px goldenrod !important;
+}
+
+.metru_blurb p {
+  text-shadow: 0px 0px 2px #000000, 0px 0px 4px #000000 !important;
+}
+
+.metrukoto_blurb {
   margin-top: 6rem;
   margin-bottom: 0rem;
 }
@@ -618,8 +664,7 @@ div.center {
   margin-top: 0rem;
 }
 
-div.metrus {
-  background-image: url("../img/BackgroundLight.webp");
+div.metrukotos {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -639,7 +684,7 @@ div.metrus {
   );
 }
 
-div.metrus section {
+div.metrukotos section {
   margin: 0rem;
   padding: 0rem;
 }
@@ -662,7 +707,7 @@ div.metrus section {
   }
 
   main h2 {
-    font-size: 0.85em;
+    font-size: 1em;
   }
 
   main section,
@@ -678,12 +723,12 @@ div.metrus section {
     flex-flow: row nowrap;
     justify-content: space-between;
     gap: 0.5rem;
-    padding: 0rem;
-    width: 95vw;
+    padding: 0.5rem;
+    width: 80vw;
   }
 
   main section.social a img {
-    max-width: 1rem !important;
+    max-width: 1.5rem !important;
   }
 
   main section img {
@@ -706,7 +751,7 @@ div.metrus section {
     width: 45%;
   }
 
-  .metrus div {
+  .metrukotos div {
     min-width: 0rem;
   }
 
@@ -714,7 +759,18 @@ div.metrus section {
   .twenty_blurb,
   .bohrok_blurb,
   .mol_blurb,
-  .metrus {
+  .metru_blurb,
+  .metrukoto_blurb,
+  .metrukotos {
     margin-top: -5rem !important;
+  }
+  
+  img.zoomable {
+	width: 400px;
+    max-width: 500px;
+  }
+  
+  header {
+    max-width: 85vw;
   }
 }
