@@ -73,7 +73,7 @@
 				log: 'collapsed',
 			}
 
-			const selector = '#myIframe'
+			const selector = 'GoogleForm'
 			iframeResize(options, selector)
 		</script>
 		<style>
@@ -92,6 +92,7 @@
 		<script src="../js/jquery/jquery-ui-1.13.0/jquery-ui.min.js"></script>
 		<script src="../js/timer.js"></script>
 		<script src="../js/zoom.js"></script>
+		<script src="../js/iframe-resizer.parent.js"></script>
 		<video autoplay muted loop id="bgvid">
 			<source src="../img/BGAnim.webm"" type="video/webm" playsinline autoplay loop muted>
 		</video>
