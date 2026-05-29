@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- STANDARD -->
+		<meta property="og:url" content="https://810NICLEDay.com/feedback/" />
+		<meta property="og:type" content="website" />
+		<meta property="og:title" content="Feedback | 810NICLE Day 2026" />
+		<meta property="og:description" content="810NICLE Day is back!" />
+		<meta property="og:image" content="https://810NICLEDay.com/img/ogp-2026-light.jpg" />
+		<meta property="og:image:alt" content="810NICLE Day 2026" />
+		<meta name="theme-color" content="#313320">
+		<!-- TWITTER -->
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:title" content="Feedback | 810NICLE Day 2026" />
+		<meta name="twitter:site" content="@810NICLE" />
+		<meta name="twitter:creator" content="@JSLBrowning" />
+		<meta name="twitter:description" content="810NICLE Day is back!" />
+		<meta name="twitter:image" content="https://810NICLEDay.com/img/ogp-2026-light.jpg" />
+		<meta name="twitter:image:alt" content="810NICLE Day 2026 Feedback" />
+		<!-- END OF OGP DATA -->
+		<link rel="stylesheet" type="text/css" href="../css/main.css">
+		<link rel="icon" type="image/x-icon" href="../img/favicon.ico">
+		<title>Feedback | 810NICLE Day 2026</title>
+		<style>
+			iframe {
+				overflow: visible;
+				min-height: 2400px;
+				width: 60vw;
+				margin: 2rem 20vw;
+				background: rgb(191, 191, 191);
+				background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 25%, rgba(191, 191, 191, .75) 100%);
+				border-radius: .5rem;
+			}
+
+			@media screen and (max-width: 843px) {
+				iframe {
+					width: 90vw;
+					margin: 2rem 5vw;
+					height: 330vh;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<a id="bs01-logo-wrapper" href="https://linktr.ee/askbs01" target="_blank">
+			<img id="bs01-logo" alt="BIONICLEsector01" title="BIONICLEsector01 Linktree" src="../img/chips/bs01.webp" width="64" height="64">
+		</a>
+		<a id="mod-logo-wrapper" href="https://linktr.ee/MaskofDestiny" target="_blank">
+			<img id="mod-logo" alt="Mask of Destiny" title="Mask of Destiny Linktree" src="../img/chips/mod.webp" width="64" height="64">
+		</a>
+		<header>
+			<video id="BannerLoop" autoplay loop muted playsinline width=100%>				
+				<source src="../img/LongAnim.mp4" type='video/mp4; codecs="hvc1"'>
+				<source src="../img/LongAnim.webm" type="video/webm">
+			</video>
+		</header>
+		<main>
+			<h2><a href="../home">Home</a> | <a href="../news">News</a> | <a href="../cards">Cards</a> | <a href="../schedule">Schedule</a> | <a href="../watch">Watch</a> | <span class="disabled">Feedback</span></h2>
+			<hr>
+			<h1 class="title">Feedback</h1>
+			<h1 id="countdown">GET READY FOR THE SPIDERS...</h1>
+		</main>
+		<!--
+		<iframe src="https://prettyform.addxt.com/a/form/vf/1FAIpQLSeZkuFeTky1Ls47PiMt7ZSeV1hkTmz5xZ9Mv1vL32zJsGmRiA" width="1140" height="4850" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+		--!>
+		<script>
+			const iframeResize = require("@iframe-resizer/parent")
+			const options = {
+				license: 'xxxx',
+				log: 'collapsed',
+			}
+
+			const selector = '#myIframe'
+			iframeResize(options, selector)
+		</script>
+		<style>
+			iframe {
+				width: 100%;
+				height: 100vh;
+			}
+		</style>
+
+		<iframe id="GoogleForm" src="https://prettyform.addxt.com/a/form/vf/1FAIpQLSeZkuFeTky1Ls47PiMt7ZSeV1hkTmz5xZ9Mv1vL32zJsGmRiA"></iframe>
+
+		<footer>
+			<p>Site designed by <a href="https://linktr.ee/JSLBrowning" target="_blank">JSLBrowning</a> of <a href="https://wallofhistory.com/" target="_blank">Wall of History</a>, <a href="https://linktr.ee/vahkiti" target="_blank">Vahkiti</a> of <a href="https://maskofdestiny.com/" target="_blank">Mask of Destiny</a>, & <a href="https://linktr.ee/askbs01" target="_blank">Swert</a> of <a href="https://biosector01.com/" target="_blank">BIONICLESector01</a>.</p>
+		</footer>
+		<script src="../js/jquery/jquery-3.6.0.min.js"></script>
+		<script src="../js/jquery/jquery-ui-1.13.0/jquery-ui.min.js"></script>
+		<script src="../js/timer.js"></script>
+		<script src="../js/zoom.js"></script>
+		<video autoplay muted loop id="bgvid">
+			<source src="../img/BGAnim.webm"" type="video/webm" playsinline autoplay loop muted>
+		</video>
+	</body>
+</html>

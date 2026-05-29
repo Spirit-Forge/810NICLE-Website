@@ -1,46 +1,44 @@
-main {
-    margin: auto;
-    max-width: 95vw;
-    color: whitesmoke;
-    display: flex;
-    flex-direction: column;
-}
-
 #thirdday {
 	min-height: 0px;
-	max-height: 382px !important;
+	width:70%;
 }
 
 .schedulecontainer {
 	display: flex;
-	flex-flow: row wrap;
+	flex-flow: row nowrap;
 	max-width: 100%;
 	justify-content: center;
 	align-items: stretch;
 	gap: 1em;
 }
 
+div.zoom iframe {
+  width: 80vw;
+  height: 80vh;
+  display: flex;
+}
+
 table {
 	margin-left: auto;
 	margin-right: auto;
 	width: 100%;
-	max-width: none;
-	min-width: 640px;
-	min-height: calc(100% - 1rem - 36px);
+	max-width: 810px;
+	min-width: 300px;
+	min-height: calc(50% - 1rem - 42px);
 }
-
 
 table tr {
 	min-height: 42px;
 	height: 42px;
 	max-height: 42px;
 	font-size: 1.2rem;
+	text-shadow: 2px 2px 0 rgba(0,0,0,0.75);
+	overflow: visible;
 }
 
 .invis {
 	opacity: 0%;
 }
-
 
 /*table tr:nth-child(even) th {
 	color: #eee;
@@ -54,29 +52,42 @@ table td {
 	/* text-shadow: 2px 2px 0px silver; */
 }
 
-
 table th {
 	font-weight: normal;
 	border-top: thin dotted #ccc;
-	padding: .25rem;
+	padding: .15rem;
 	vertical-align: top;
 	height: 30px;
 	min-height: 30px;
 	max-height: 30px;
+	overflow: visible;
 }
-
 
 table td {
 	font-size: 0.8125rem;
 	width: 90%;
 	font-weight: bold;
-	line-height: 1.4;
-	border-radius: 0.2rem;
+	line-height: 2;
+	border-radius: 1.2rem;
 	background-color: silver;
 	transition: opacity 0.3s ease;
-	padding: 0rem 1rem;
+	padding: 0rem 0.5rem;
+	box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.7);
+	text-shadow: 0px 0px 4px rgba(0,0,0,1);
+	overflow: visible;
 }
 
+.timecode {
+	overflow: hidden;
+	text-shadow:
+		1px 1px 0 #000,
+		-1px 1px 0 #000,
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		0px 0px 4px rgba(0,0,0,0.125);
+    font-family: 'TradeMarker';
+	text-align: left !important;
+}
 
 table td h3,
 table td h3 em,
@@ -85,180 +96,245 @@ table td p em,
 table td h4,
 table td h4 em {
 	margin: 0.125rem;
-	max-width: calc(640px - 2rem - .5rem);
-	line-height: calc(42px / 3);
-	overflow: hidden;
-	font-size: 0.8125rem !important;
-	padding-left: .5rem !important;
-	text-shadow:
-		1px 1px 0 #000,
-		-1px 1px 0 #000,
-		-1px -1px 0 #000,
-		1px -1px 0 #000,
-		0px 0px 4px rgba(0,0,0,0.125);
+	max-width: 100%;
+	line-height: calc(50px / 2.8);
+	overflow: visible;
+	font-size: 1rem !important;
+	padding-left: 0.3rem !important;
+	text-shadow: 
+		0px 0px 6px rgba(0,0,0,1),
+		0px 0px 6px rgba(0,0,0,1),
+		0px 0px 6px rgba(0,0,0,1),
+		0px 0px 6px rgba(0,0,0,1);
 }
-
+table td h3 a {
+  	text-shadow: 
+		0px 0px 4px #929928,
+		0px 0px 4px #929928,
+		0px 0px 4px #929928,
+		0px 0px 4px #929928 !important;
+}
 table td h4,
 table td h4 em {
     font-family: 'TradeMarker';
 	text-align: left !important;
+	text-shadow: 
+		0px 0px 4px rgba(0,0,0,1),
+		0px 0px 4px rgba(0,0,0,1),
+		0px 0px 4px rgba(0,0,0,1),
+		0px 0px 4px rgba(0,0,0,1);
 }
 
-
 /***********************
- * EVENT COLORS (2024) *
+ * EVENT COLORS (2025) *
  ***********************/
+
+.int1 {
+	background-color: #663366;
+	background-image: url("../img/schedule/2025/Break1.webp");
+	background-position: left;
+	background-size: cover;
+	text-align: center;
+}
+
+.int2 {
+	background-color: #336633;
+	background-image: url("../img/schedule/2025/Break2.webp");
+	background-position: right;
+	background-size: cover;
+	text-align: center;
+}
 
  .rsg {
 	background-color: #ff0000;
-	background-image: url("../img/schedule/2024/RSG.webp");
-	background-position: top center;
+	background-image: url("../img/schedule/2025/RSG.webp");
+	background-position: center;
 	background-size: cover;
 }
 
- .canon {
+.acr {
 	background-color: tan;
-	background-image: url("../img/schedule/2024/Canon.webp");
-	background-position: center left;
-	background-size: cover;
-}
-
-.retro {
-	background-color: tan;
-	background-image: url("../img/schedule/2024/BCR.webp");
-	background-position: center left;
-	background-size: cover;
-}
-
-.canon h3,
-.canon p,
-.canon h4 {
-	text-shadow: 0px 0px 4px #080808, 0px 0px 4px #080808 0px 0px 4px #080808 0px 0px 4px #080808;
-}
-
-
-.direct {
-	background-color: white;
-	background-image: url("../img/schedule/2024/Direct.webp");
+	background-image: url("../img/schedule/2025/ACR.webp");
 	background-position: center right;
 	background-repeat: no-repeat;
 	background-size: cover;
 }
+
+.direct {
+	background-color: white;
+	background-image: url("../img/schedule/2025/Direct.webp");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.direct p{
+	width:60% !important;
+}
+
 .treehut{
-	background-image: url("../img/schedule/2024/Treehut.webp");
+	background-image: url("../img/schedule/2025/Treehut.webp");
 	background-position: right;
 	background-size: cover;
 }
+
 .treehut p {
-	max-width: 55%;
-}
-
-.fs {
-	background-color: #09c2e3;
-	background-image: url("../img/schedule/2024/FWB.webp");
-	background-position: center;
-	background-size: cover;
-}
-
-.gf {
-	background-color: #09c2e3;
-	background-image: url("../img/schedule/2024/GF.webp");
-	background-position: center;
-	background-size: cover;
+	max-width: 69%;
 }
 
 .btgs {
 	background-color: crimson;
-	background-image: url("../img/schedule/2024/BTGS.webp");
+	background-image: url("../img/schedule/2025/BTGS.webp");
 	background-position: top right;
 	background-size: cover;
 }
+
 .btgs p {
-	width:60%;
+	width:55%;
 	overflow: visible;
 	padding-bottom: 0.2rem;
 }
 
 .beyond {
-	background-image: url("../img/schedule/2024/Slot_Asset.png");
+	background-image: url("../img/schedule/2025/Beyond.webp");
 	background-position: center;
+	background-size: cover;
+	background-color:purple;
+}
+
+.sayger {
+	background-image: url("../img/schedule/2025/JoP.webp");
+	background-position: bottom;
 	background-size: cover;
 }
 
-.int {
-	background-color: #663366;
-	background-image: url("../img/schedule/2024/Break.webp");
-	background-position: center;
+.poker {
+	background-image: url("../img/schedule/2025/Poker.webp");
+	background-position: center right;
 	background-size: cover;
 }
 
-.saygerskakdi {
-	background-image: url("../img/schedule/2024/JoP.webp");
-	background-position: center;
-	background-size: cover;
-}
-
-.mibb {
-	background-image: url("../img/schedule/2024/MIbB.webp");
-	background-position: center;
-	background-size: cover;
-}
-
-.ide {
-	background-image: url("../img/schedule/2024/Ide.webp");
-	background-position: center;
+.lkb {
+	background-image: url("../img/schedule/2025/LKB.webp");
+	background-position: center left;
 	background-size: cover;
 }
 
 .tkt {
-	background-image: url("../img/schedule/2024/TKT.webp");
+	background-image: url("../img/schedule/2025/TKT.webp");
 	background-position: right;
 	background-size: cover;
 }
 .omfg {
-	background-image: url("../img/schedule/2024/OMFG.webp");
+	background-image: url("../img/schedule/2025/OMFG.webp");
 	background-position: center;
-	background-size; cover;
-}
-.kai {
-	background-image: url("../img/schedule/2024/Kai.webp");
-	background-position: right;
-	background-size: cover;	
-}
-.robo {
-	background-image: url("../img/schedule/2024/Robo.webp");
-	background-position: center bottom;
-	background-size: cover;	
+	background-size: cover;
 }
 
-.wmmnsg {
-	background-image: url("../img/schedule/2024/WMMNSG.webp");
-	background-position: center;
-	background-size: cover;	
-}
-
-.minionicle {
-	background-image: url("../img/schedule/2024/Mini.webp");
-	background-position: right;
-	background-size: cover;	
-}
-
-.Herora {
-	background-image: url("../img/schedule/2024/Herora.webp");
+.herora {
+	background-image: url("../img/schedule/2025/Herora.webp");
 	background-position: center;
 	background-size: cover;	
 }	
 
-.crafting {
-	background-image: url("../img/schedule/2024/Crafting.webp");
-	background-position: right;
+.crosswired {
+	background-image: url("../img/schedule/2025/Crosswired.webp");
+	background-position: center;
 	background-size: cover;	
 }		
 
-.evo {
-	background-image: url("../img/schedule/2024/Evo.webp");
-	background-position: right;
+.arc {
+	background-image: url("../img/schedule/2025/Arc.webp");
+	background-position: center;
 	background-size: cover;	
+}
+
+.rotkd {
+	background-image: url("../img/schedule/2025/Tryna.webp");
+	background-position: center;
+	background-size: cover;
+}
+
+.smibb {
+	background-image: url("../img/schedule/2025/Smibb.webp");
+	background-position: left;
+	background-size: cover;
+}
+
+.cdd {
+	background-image: url("../img/schedule/2025/CDD.webp");
+	background-position: center;
+	background-size: cover;
+}
+
+.mos {
+    position: relative;
+    background-image: url("../img/schedule/2025/MoS.webp");
+    background-size: 80px;
+	background-color: transparent !important;
+    width: 304px;
+    height: 304px;
+    overflow: visible; /* critical for sticky span alignment */
+    padding: 0.5rem 1rem;
+    box-sizing: border-box;
+	image-rendering: pixelated;
+	vertical-align: text-top;
+}
+
+.sticky {
+  position: sticky;
+  top: 35%;
+  z-index: 10; /* higher than ::after background borders */
+  margin-right: auto;
+}
+
+/* Border image layers */
+.mos::before,
+.mos::after {
+  content: "";
+  position: absolute;
+  pointer-events: none;
+  inset: 0;
+  image-rendering: pixelated;
+  background-repeat: no-repeat;
+  z-index: 2;
+}
+
+/* Sides */
+.mos::before {
+  background-image:
+    url("../img/schedule/2025/MoST.webp"),
+    url("../img/schedule/2025/MoSB.webp"),
+    url("../img/schedule/2025/MoSL.webp"),
+    url("../img/schedule/2025/MoSR.webp"),
+	url("../img/schedule/2025/MoSOverlay.webp");
+  background-position:
+    top center,
+    bottom center,
+    left center,
+    right center,
+	top center;
+  background-size:
+    100% 64px,  /* 16×4 */
+    100% 64px,
+    64px 100%,
+    64px 100%,
+	cover;
+}
+
+/* Corners */
+.mos::after {
+  background-image:
+    url("../img/schedule/2025/MoSTL.webp"),
+    url("../img/schedule/2025/MoSTR.webp"),
+    url("../img/schedule/2025/MoSBL.webp"),
+    url("../img/schedule/2025/MoSBR.webp");
+  background-position:
+    top left,
+    top right,
+    bottom left,
+    bottom right;
+  background-size:
+    64px 64px;
 }
 
 /* mobile styles */
@@ -268,8 +344,109 @@ table td h4 em {
 		width: 90vw;
 	}
 
+.schedulecontainer {
+	flex-flow: row wrap;
+}
 	table {
 		min-width: 0rem !important;
 		width: 100%;
 	}
+}
+
+/* Minimum allowed aspect ratio */
+/* Select aspect ratios 18/9 = 1.6 and above */
+@media screen and (orientation: portrait) {
+    div.zoom iframe {
+  width: 80vw;
+  height: 90vh !important;
+}
+}
+
+
+/************
+ * ZOOMABLE *
+ ************/
+
+
+img.zoomable {
+
+    transition: all .2s ease-in-out;
+    cursor: pointer;
+}
+
+
+img.zoomable:hover {
+    transform: scale(1.03125);
+    filter: brightness(1.1);
+}
+
+
+img.zoomable:active {
+    transform: scale(0.96875);
+    filter: brightness(0.9);
+}
+
+
+/****************
+ * END ZOOMABLE *
+ ****************/
+ 
+ /***************
+ * ZOOM STYLES *
+ ***************/
+
+
+body .zoom {
+    display: flex;
+    opacity: 0%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.75);
+    z-index: 20;
+
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-grow: none;
+}
+
+.zoom img {
+    max-height: 90vh;
+    max-width: 90vw;
+    border-radius: 1.2rem;
+    margin: 0.5em;
+}
+h3 a {
+	font-size: 1.08em;
+}
+
+
+span.exitSpan {
+    position: absolute;
+    top: 1em;
+    right: 1.5em;
+    max-width: 1em;
+    max-height: 1em;
+    font-size: 2em;
+    line-height: 1em;
+    border-radius: 50%;
+    cursor: pointer;
+    color: whitesmoke;
+    transition: all 0.2s ease-in-out;
+    opacity: 0.75;
+}
+
+
+span.exitSpan:hover {
+    color: lightgray;
+    transform: scale(1.03125);
+}
+
+
+span.exitSpan:active {
+    color: darkgray;
+    transform: scale(0.9875);
 }

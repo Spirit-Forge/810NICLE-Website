@@ -1,0 +1,156 @@
+main {
+    margin: auto;
+    color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+}
+
+.schedulecontainer {
+	display: flex;
+	flex-flow: row wrap;
+	max-width: 100%;
+	justify-content: center;
+	align-items: stretch;
+	gap: 1em;
+}
+
+.timecode {
+	overflow: hidden;
+	text-shadow:
+		1px 1px 0 #000,
+		-1px 1px 0 #000,
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		0px 0px 4px rgba(0,0,0,0.125);
+    font-family: 'TradeMarker';
+	text-align: left !important;
+}
+
+table {
+	width: 100%;
+	max-width: 1800px;
+	min-width: 1200px;
+	overflow:visible !important;
+}
+
+table tr {
+	min-height: 60px;
+	height: 60px;
+	max-height: 60px;
+	font-size: 1.2rem;
+}
+.invis {
+	opacity: 0%;
+}
+
+/*table tr:nth-child(even) th {
+	color: #eee;
+	font-size: 0.8rem;
+	font-weight: normal;
+}*/
+
+table th,
+table td {
+	padding: 0.5rem 1rem;
+	/* text-shadow: 2px 2px 0px silver; */
+}
+
+
+table th {
+	font-weight: normal;
+	border-top: thin dotted #ccc;
+	padding: .15rem;
+	vertical-align: top;
+	height: 60px;
+	min-height: 60px;
+	max-height: 60px;
+}
+
+
+table td {
+	font-size: 0.8125rem;
+	width: 90%;
+	font-weight: bold;
+	line-height: 1.4;
+	border-radius: 1.6rem;
+	transition: opacity 0.3s ease;
+}
+
+table td h2 {
+	text-align:left !important;
+	padding-left: .5rem !important;
+}
+
+table td h3,
+table td h3 em,
+table td p,
+table td p em,
+table td h4,
+table td h4 em {
+	font-family: "Gill Sans Medium" !important;
+	margin: 0.125rem;
+	line-height: calc(42px / 3);
+	overflow: hidden;
+	font-size: 1rem !important;
+	padding-left: .5rem !important;
+	text-shadow:
+		1px 1px 0 #000,
+		-1px 1px 0 #000,
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		0px 0px 4px rgba(0,0,0,0.125);
+}
+
+table td h4,
+table td h4 em {
+    font-family: 'TradeMarker';
+	text-align: left !important;
+}
+
+/***********************
+ * EVENT COLORS (2025) *
+ ***********************/
+
+.entryomfg {
+	background-color: rgba(48,220,30,0.5);
+	background-position: top center;
+	background-size: cover;
+	outline: 5px solid rgba(0,0,0,0);
+}
+
+.entrydirect {
+	background-color: rgba(250,34,50,0.5);
+	background-position: top center;
+	background-size: cover;
+	outline: 5px solid rgba(0,0,0,0);
+}
+
+.entrybb {
+	background-color: rgba(101,92,216,0.5);
+	background-position: top center;
+	background-size: cover;
+	outline: 5px solid rgba(0,0,0,0);
+}
+/*100,0,100,0.5*/
+
+/* mobile styles */
+
+ @media screen and (max-width: 1080px) {
+	.schedule {
+		width: 90vw;
+	}
+
+.schedulecontainer {
+	flex-flow: row wrap;
+}
+	table {
+		min-width: 0rem !important;
+		width: 100%;
+	}
+table tr {
+	min-height: 120px;
+	height: 120px;
+	max-height: 120px;
+	font-size: 1.2rem;
+}
+}

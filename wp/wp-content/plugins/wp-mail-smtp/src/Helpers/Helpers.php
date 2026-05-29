@@ -31,6 +31,9 @@ class Helpers {
 				'mailgun',
 				'postmark',
 				'sparkpost',
+				'elasticemail',
+				'smtp2go',
+				'mailjet',
 			],
 			true
 		);
@@ -166,5 +169,15 @@ class Helpers {
 
 		/** \Plugin_Upgrader class */
 		require_once ABSPATH . 'wp-admin/includes/class-plugin-upgrader.php';
+	}
+
+	/**
+	 * Whether the current request is a WP CLI request.
+	 *
+	 * @since 4.0.0
+	 */
+	public static function is_wp_cli() {
+
+		return defined( 'WP_CLI' ) && WP_CLI;
 	}
 }

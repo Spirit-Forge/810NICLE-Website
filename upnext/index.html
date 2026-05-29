@@ -25,11 +25,15 @@
             position: absolute;
             top: 0;
             left: 30vw;
-            width: 40vw;
+            width: 42vw;
             text-align: center;
             font-size: 2.125rem;
+			font-weight: bold;
             color: white;
-            text-shadow: 0 0 4px black;
+            text-shadow:		
+				1px 1px 3px white,			
+				1px 1px 10px #50c6d8,
+				3px 3px 2px rgba(0,0,0,0.75);
             margin-top: 3.125rem;
             display: flex;
             flex-flow: row nowrap;
@@ -37,32 +41,32 @@
         }
 
         @font-face {
-            font-family: "TradeMarker Light";
-            src: url("../fonts/TradeMarker-Light.woff");
+            font-family: "GoudyTrajan-Regular";
+            src: url("../fonts/GoudyTrajan-Regular.woff2");	
         }
 
         * {
-            font-family: "TradeMarker Light";
+            font-family: "GoudyTrajan-Regular";
         }
 
         p#up__next__label {
-            min-width: 28%;
+            min-width: 23%;
             text-align: left;
-            margin-right: .333rem;
         }
 
         p#up__next {
             text-align: center;
-            max-width: calc(72% - .333rem);
+            max-width: calc(45%);
         }
 
-        marquee#up__next {
+        marquee {
             min-width: 99%;
-            overflow: hidden;
+            overflow: visible;
             white-space: nowrap;
-            max-height: 20px;
             margin-top: auto;
-            margin-bottom: auto;
+            margin-bottom: auto;        
+			mask-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1) 5%, rgba(255,0,0,1) 45%, rgba(255,0,0,0) 80%),
+						linear-gradient(150deg, rgba(255,0,0,0) 30%, rgba(255,0,0,1), rgba(255,0,0,1) 80%, rgba(255,0,0,0)90%) !important;
         }
 
         body button {

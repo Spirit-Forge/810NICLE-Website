@@ -19,6 +19,8 @@
 .grid-container>div {
   text-align: left;
   height: auto;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.75);
+  background-color: rgba(0, 0, 0, 0.75);
 }
 
 .news1 {

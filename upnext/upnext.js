@@ -16,7 +16,7 @@ xhr.send();
 function loadText() {
     let currentLine = lines[position];
     let upNextContainer = document.getElementById("up__next");
-    if (currentLine.length > 24) {
+    if (currentLine.length > 15) {
         upNextContainer.innerHTML = "<marquee>" + currentLine + "</marquee>";
     } else {
         upNextContainer.innerHTML = currentLine;

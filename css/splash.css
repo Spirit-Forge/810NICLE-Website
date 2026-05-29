@@ -73,10 +73,12 @@
 
 body {
     background-color: #0a0b08;
+	background-image: url("../img/BackgroundLight.webp");
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
+	overflow: hidden;
 }
 
 
@@ -121,18 +123,19 @@ main h3 a,
 main h3 em {
     font-family: 'TradeMarker';
     letter-spacing: 0.125em;
-    text-shadow: 2px 2px 0px rgb(146, 153, 40);
+    text-shadow: 2px 2px 0px #7300ff, 0 0 5px #32006f, 0 0 10px #32006f, 0 0 15px #32006f;
     text-transform: uppercase;
 }
 
 h3 {
     font-family: 'TradeMarker';
     letter-spacing: 0.125em;
-    text-shadow: 2px 2px 0px rgb(146, 153, 40);
+	text-shadow: 1px 1px 0px #7300ff, 0 0 5px #32006f, 0 0 10px #32006f, 0 0 15px #32006f;
     text-transform: uppercase;
 	color: whitesmoke;
+	position:relative;
+	top:-100px;
 	margin: 0px;
-	padding-bottom: 69px;
 }
 
 
@@ -143,7 +146,7 @@ h3 {
 
 
 main h3 {
-    text-shadow: 1px 1px 0px rgb(146, 153, 40);
+    text-shadow: 1px 1px 0px #7300ff, 0 0 5px #32006f, 0 0 10px #32006f, 0 0 15px #32006f;
 }
 
 
@@ -157,6 +160,8 @@ main h1,
 main h2 {
     margin: 0em;
     text-align: center;
+	position:relative;
+	top:-50px;
 }
 
 
@@ -191,7 +196,9 @@ hr {
     width: 66.66vw;
     max-width: 640px;
     border: 1px solid white;
-    box-shadow: 2px 2px 0px rgb(146, 153, 40);
+    box-shadow: 2px 2px 0px #7300ff, 0 0 5px #32006f, 0 0 10px #32006f, 0 0 15px #32006f;
+	position:relative;
+	top:-50px;
 }
 
 
@@ -257,6 +264,18 @@ img.zoomable:active {
  * END ZOOMABLE *
  ****************/
 
+.imgmain {
+	position: flex;
+	z-index:1;
+}
+
+.imgoverlay {
+  position: absolute;
+ top:0px;
+  z-index:-1;
+  mix-blend-mode: normal;
+
+}
 
 main section.social {
     margin: 0em;
@@ -426,6 +445,9 @@ footer {
     margin: 0em;
     text-align: center;
     color: white;
+	text-shadow: 1px 1px 0px #7300ff, 0 0 5px #32006f, 0 0 10px #32006f;
+	position:relative;
+	top:-50px;
 }
 
 div.center {
@@ -433,7 +455,7 @@ div.center {
 }
 
 #LogoLoop {
-	width: 65%;
+	width: 90%;
 }
 
 div.container {
@@ -462,9 +484,10 @@ iframe.responsive-iframe {
         margin-top: 5vh;
         max-width: 99vw;
     }
-	
+		
     h3 {
         font-size: 0.6em;
+		top:30px;
     }
 
 
@@ -475,6 +498,7 @@ iframe.responsive-iframe {
 
     main h1 {
         font-size: 1.5em;
+		top:100px;
     }
 
 
@@ -514,14 +538,22 @@ iframe.responsive-iframe {
 
     main section div h3 {
         font-size: 0.9375em;
+		top:0px;
     }
-
-
+	main hr {
+		top:100px;
+	}
+	
     section.posters img.zoomable {
         width: 45%;
     }
 	
 	#LogoLoop {
 		width: 100%;
+		position:relative;
+		top:50px;
 	}
+	footer {
+		top:230px;
+}
 }

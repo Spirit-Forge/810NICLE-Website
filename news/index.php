@@ -8,24 +8,24 @@
 	<!-- STANDARD -->
 	<meta property="og:url" content="https://810NICLEDay.com/news/" />
 	<meta property="og:type" content="website" />
-	<meta property="og:title" content="News | 810NICLE Day 2025" />
+	<meta property="og:title" content="News | 810NICLE Day 2026" />
 	<meta property="og:description" content="810NICLE Day is back!" />
-	<meta property="og:image" content="https://810NICLEDay.com/img/ogp-2025-light.jpg" />
-	<meta property="og:image:alt" content="810NICLE Day 2025 News" />
+	<meta property="og:image" content="https://810NICLEDay.com/img/ogp-2026-light.jpg" />
+	<meta property="og:image:alt" content="810NICLE Day 2026 News" />
 	<meta name="theme-color" content="#313320">
 	<!-- TWITTER -->
 	<meta name="twitter:card" content="summary_large_image" />
-	<meta name="twitter:title" content="News | 810NICLE Day 2025" />
+	<meta name="twitter:title" content="News | 810NICLE Day 2026" />
 	<meta name="twitter:site" content="@810NICLE" />
 	<meta name="twitter:creator" content="@JSLBrowning" />
 	<meta name="twitter:description" content="810NICLE Day is back!" />
-	<meta name="twitter:image" content="https://810NICLEDay.com/img/ogp-2025-light.jpg" />
-	<meta name="twitter:image:alt" content="810NICLE Day 2024 News" />
+	<meta name="twitter:image" content="https://810NICLEDay.com/img/ogp-2026-light.jpg" />
+	<meta name="twitter:image:alt" content="810NICLE Day 2026 News" />
 	<!-- END OF OGP DATA -->
 	<link rel="stylesheet" type="text/css" href="../css/main.css">
 	<link rel="stylesheet" type="text/css" href="../css/news.css">
 	<link rel="icon" type="image/x-icon" href="../img/favicon.ico">
-	<title>News | 810NICLE Day 2025</title>
+	<title>News | 810NICLE Day 2026</title>
 	<style>
 		div p {
 			margin: 1rem 0rem;
@@ -58,7 +58,7 @@
 		</video>
     </header>
 	<main>
-		<h2><a href="../home">Home</a> | <span class="disabled">News</span> | <a href="../cards">Cards</a> | <a href="../schedule">Schedule</a> | <a href="../watch">Watch</a> | <a href="../signup">Sign Up</a>
+		<h2><a href="../home">Home</a> | <span class="disabled">News</span> | <a href="../cards">Cards</a> | <a href="../schedule">Schedule</a> | <a href="../watch">Watch</a> | <a href="../feedback">Feedback</a></h2> 
 		<hr>
 		<h1 class="title">News</h1>
 		<h1 id="countdown">GET READY FOR THE SPIDERS...G</h1>
@@ -117,7 +117,7 @@
 					echo "<h3>$date</h3>";
 					echo "$content";
 					echo "</div>";
-					echo "<svg height=\"5\" width=\"100%\"><line x1=\"0\" y1=\"0\" x2=\"100%\" y2=\"0\" style=\"stroke:#929928;stroke-width:2\"></line>Sorry, your browser does not support inline SVG.</svg>";
+					echo "<svg height=\"5\" width=\"100%\"><line x1=\"0\" y1=\"0\" x2=\"100%\" y2=\"0\" style=\"stroke:#7300ff;stroke-width:2\"></line>Sorry, your browser does not support inline SVG.</svg>";
 				}
 			}
 			?>

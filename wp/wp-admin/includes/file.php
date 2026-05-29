@@ -635,7 +635,7 @@ function wp_edit_theme_plugin_file( $args ) {
 			wp_opcache_invalidate( $real_file, true );
 
 			if ( ! isset( $result['message'] ) ) {
-				$message = __( 'Something went wrong.' );
+				$message = __( 'An error occurred. Please try again later.' );
 			} else {
 				$message = $result['message'];
 				unset( $result['message'] );
@@ -1237,6 +1237,24 @@ function download_url( $url, $timeout = 300, $signature_verification = false ) {
 
 			if ( ( $tmpfname !== $tmpfname_disposition ) && file_exists( $tmpfname_disposition ) ) {
 				unlink( $tmpfname_disposition );
+			}
+		}
+	}
+
+	$mime_type = wp_remote_retrieve_header( $response, 'content-type' );
+	if ( $mime_type && 'tmp' === pathinfo( $tmpfname, PATHINFO_EXTENSION ) ) {
+		$valid_mime_types = array_flip( get_allowed_mime_types() );
+		if ( ! empty( $valid_mime_types[ $mime_type ] ) ) {
+			$extensions     = explode( '|', $valid_mime_types[ $mime_type ] );
+			$new_image_name = substr( $tmpfname, 0, -4 ) . ".{$extensions[0]}";
+			if ( 0 === validate_file( $new_image_name ) ) {
+				if ( rename( $tmpfname, $new_image_name ) ) {
+					$tmpfname = $new_image_name;
+				}
+
+				if ( ( $tmpfname !== $new_image_name ) && file_exists( $new_image_name ) ) {
+					unlink( $new_image_name );
+				}
 			}
 		}
 	}
@@ -1880,6 +1898,11 @@ function _unzip_file_pclzip( $file, $to, $needed_dirs = array() ) {
 	// Determine any children directories needed (From within the archive).
 	foreach ( $archive_files as $file ) {
 		if ( str_starts_with( $file['filename'], '__MACOSX/' ) ) { // Skip the OS X-created __MACOSX directory.
+			continue;
+		}
+
+		// Don't extract invalid files:
+		if ( 0 !== validate_file( $file['filename'] ) ) {
 			continue;
 		}
 
@@ -2604,7 +2627,7 @@ function request_filesystem_credentials( $form_post, $type = '', $error = false,
 	<?php
 	if ( isset( $types['ssh'] ) ) {
 		$hidden_class = '';
-		if ( 'ssh' !== $connection_type || empty( $connection_type ) ) {
+		if ( 'ssh' !== $connection_type ) {
 			$hidden_class = ' class="hidden"';
 		}
 		?>

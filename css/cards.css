@@ -7,6 +7,20 @@
 }
 
 
+div.cards__header {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 960px;
+    margin: 0 auto;
+}
+
+div.cards__header h1 {
+    width: 33.3333%;
+}
+
+
 .cards .threed {
     width: 25%;
     height: auto;
